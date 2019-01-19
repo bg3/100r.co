@@ -1,4 +1,3 @@
-
 String.prototype.toCapitalCase = function () { return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase() }
 String.prototype.toUrl = function () { return this.trim().replace(/ /g, '_').replace(/\W/g, '').trim().toLowerCase() }
 
@@ -15,7 +14,7 @@ function Page (id, table, database, parent) {
   }
 
   function _description () {
-    return 'A digital studio aboard a sailboat.'
+    return 'TO DO'
   }
 
   function _keywords () {
@@ -25,6 +24,7 @@ function Page (id, table, database, parent) {
       str += `${id}, `
     }
     str += Object.keys(table).join(', ').trim()
+    console.log(`KEYWORDS: ${str}`)
     return str.toLowerCase().trim()
   }
 
@@ -61,20 +61,15 @@ function Page (id, table, database, parent) {
   function _social () {
     return `
     <ul id='social'>
-      <li><a href='https://twitter.com/hundredrabbits' class='twitter' target='_blank'></a></li>
-      <li><a href='https://github.com/hundredrabbits' class='github' target='_blank'></a></li>
-      <li><a href='https://patreon.com/100' class='patreon' target='_blank'></a></li>
+      <li><a href='https://twitter.com/?' class='twitter' target='_blank'></a></li>
+      <li><a href='https://github.com/?' class='github' target='_blank'></a></li>
+      <li><a href='https://patreon.com/?' class='patreon' target='_blank'></a></li>
     </ul>
     `
   }
 
   function _footer () {
-    return `
-    <p>Never miss an update</p>
-    <form action="https://tinyletter.com/hundredrabbits" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hundredrabbits', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-      <input type="email" value="" name="EMAIL" class="email" placeholder="email@address.com" required="">
-      <input type="submit" value="Subscribe" name="subscribe" class="button">
-    </form>`
+    return ``
   }
 
   this.toHtml = function () {
@@ -83,39 +78,33 @@ function Page (id, table, database, parent) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Devine Lu Linvega, Rekka Bellum">
+  <meta name="author" content="Benjamin Grayland">
   <meta name='description' content='${_description()}'/>
   <meta name='keywords' content='${_keywords()}' />
   
-  <title>Hundred Rabbits — ${this.id.toCapitalCase()}</title>
+  <title>Park Imminent — ${this.id.toCapitalCase()}</title>
 
   <link rel="alternate"  type="application/rss+xml" title="Feed" href="../links/rss.xml" />
   <link rel="stylesheet" type="text/css" href="../links/reset.css"/>
   <link rel="stylesheet" type="text/css" href="../links/fonts.css"/>
   <link rel="stylesheet" type="text/css" href="../links/main.css"/>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53987113-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-53987113-3');
-  </script>
-
 </head>
 <body>
   <div id='wrapper'>
-    <a id='logo' href='https://100r.co'></a>
+    <div id="header">
+      <div id="header-left">
+        <a href='http://parkimminent.com'>Park Imminent</a>
+      </div>
+      <div id="header-right">
+        <a href='${this.parent.toUrl()}.html'>${this.parent}</a>
+      </div>
+    </div>
     <div id='core'>
       ${_core(this.id, this.parent)}
     </div>
     <div id='navi'>
       ${_navi(database)}
-      ${_social()}
-    </div>
-    <div id='footer'>
-      ${_footer()}
     </div>
   </div>
 </body>
