@@ -1,11 +1,14 @@
 String.prototype.toCapitalCase = function () { return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase() }
 String.prototype.toUrl = function () { return this.trim().replace(/ /g, '_').replace(/\W/g, '').trim().toLowerCase() }
 
-function Page (id, table, database, parent) {
+function Index (id, table, database, parent) {
   const runic = require('./lib/runic')
   const curlic = require('./lib/curlic')
+
+  console.log(typeof id)
+  console.log(id)
   this.id = id.toLowerCase()
-  this.parent = parent || 'index'
+  this.parent = parent || 'home'
   this.filename = this.id.toUrl()
 
   this.path = function () {
@@ -23,6 +26,7 @@ function Page (id, table, database, parent) {
       str += `${id}, `
     }
     str += Object.keys(table).join(', ').trim()
+    console.log(`KEYWORDS: ${str}`)
     return str.toLowerCase().trim()
   }
 
@@ -44,31 +48,30 @@ function Page (id, table, database, parent) {
   }
 
   function _core (id, parent, content) {
-    return `<div id="core">\n<h1>${id.toCapitalCase()}</h1>\n${_jump(table)}${Object.keys(table).reduce(_template, '')}\n</div>\n`.trim()
+    return `<h1>${id.toCapitalCase()}</h1>\n${_jump(table)}${Object.keys(table).reduce(_template, '')}\n`.trim()
   }
 
-  //  could change this so i'm passing a truncated database to create the sub-content pages, instead of choosing deep/shallow
-  function _navi (database, deep) {
-    const hidden = ['SETTINGS', 'SINGLE-SECTION']   
-    const keys = Object.keys(database).filter(key => !hidden.includes(key))
+  function _navi (database) {
+    const keys = Object.keys(database)
+    return `<ul>${keys.reduce((acc, key) => {
+      const keys = Object.keys(database[key])
+      return `${acc}<li><a href='${key.toUrl()}.html'>${key}</a></li>\n<ul>${keys.reduce((acc, key) => { return `${acc}<li><a href='${key.toUrl()}.html'>${key.toCapitalCase()}</a></li>\n` }, '')}</ul>\n`
+    }, '')
+    }</ul>`.trim()
+  }
 
-    if (deep) {
-      return `<div id="navi-deep">\n<h1>${id.toCapitalCase()}</h1>\n<ul>${keys.reduce((acc, key) => {
-        const keys = Object.keys(database[key]).filter(key => !hidden.includes(key))
-        return `${acc}<li><a href='${key.toUrl()}.html'>${key}</a></li>\n<ul>${keys.reduce((acc, key) => { return `${acc}<li><a href='${key.toUrl()}.html'>${key.toCapitalCase()}</a></li>\n` }, '')}</ul>\n`
-        }, '')
-      }</ul></div>`.trim()
-    } else {
-      return `<div id="navi-shallow">\n<h1>${id.toCapitalCase()}</h1>\n<ul>${keys.reduce((acc, key) => {
-          const keys = Object.keys(database[key]).filter(key => !hidden.includes(key))
-          return `${acc}<li><a href='${key.toUrl()}.html'>${key.toCapitalCase()}</a></li>\n`
-        }, '')
-      }</ul></div>`.trim()
-    }
+  function _social () {
+    return `
+    <ul id='social'>
+      <li><a href='https://twitter.com/?' class='twitter' target='_blank'></a></li>
+      <li><a href='https://github.com/?' class='github' target='_blank'></a></li>
+      <li><a href='https://patreon.com/?' class='patreon' target='_blank'></a></li>
+    </ul>
+    `
   }
 
   function _footer () {
-    return `<div id="footer"></div>`
+    return ``
   }
 
   this.toHtml = function () {
@@ -81,7 +84,7 @@ function Page (id, table, database, parent) {
   <meta name='description' content='${_description()}'/>
   <meta name='keywords' content='${_keywords()}' />
   
-  <title>Park Imminent — ${this.id.toCapitalCase()}</title>
+  <title>Park Imminent</title>
 
   <link rel="alternate"  type="application/rss+xml" title="Feed" href="../links/rss.xml" />
   <link rel="stylesheet" type="text/css" href="../links/reset.css"/>
@@ -96,15 +99,19 @@ function Page (id, table, database, parent) {
         <a href='http://parkimminent.com'>Park Imminent</a>
       </div>
       <div id="header-right">
-        ${this.id != 'index' ? `<a href='${this.parent.toUrl()}.html'>${this.parent}</a>` : `` }
+        <a href='${this.parent.toUrl()}.html'>${this.parent}</a>
       </div>
     </div>
-      ${parent ? _core(this.id, this.parent) : _navi(table, this.id == 'index')}
+    <div id='core'>
+      ${_navi(database)}
+    ${_core(this.id, this.parent)}
+    </div>
+    <div id='navi'>
+    </div>
   </div>
-  ${_footer()}
 </body>
 </html>`
   }
 }
 
-module.exports = Page
+module.exports = Index
