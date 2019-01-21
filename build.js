@@ -7,6 +7,7 @@ const Manager = require('./build/manager')
 const Builder = require('./build/builder')
 
 const indexes = ['journal', 'essays', 'assorted']
+
 const database = new Database(indexes)
 const manager = new Manager(database.storage)
 const builder = new Builder(manager.pages, manager.feeds)
