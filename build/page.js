@@ -4,6 +4,7 @@ String.prototype.toUrl = function () { return this.trim().replace(/ /g, '_').rep
 function Page (id, table, database, parent) {
   const runic = require('./lib/runic')
   const curlic = require('./lib/curlic')
+  const fs = require('fs')
   this.id = id.toLowerCase()
   this.parent = parent || 'index'
   this.filename = this.id.toUrl()
@@ -41,6 +42,15 @@ function Page (id, table, database, parent) {
   function _template (acc, key) {
     if (key === 'SETTINGS') { return acc }
     return `${acc}<h3 id='${key.toUrl()}'><a href='${parent ? '#' + key.toUrl() : key.toUrl() + '.html'}'>${key.toCapitalCase()}</a></h3>\n${Array.isArray(table[key]) ? _main(table[key]) : _list(key, table[key])}\n`
+  }
+
+  function _banner (id) {
+    const path = id === 'index' ? 'media/banners/' : '../media/banners/'
+    const filename = path + id.toUrl() + '.png'
+    if (fs.existsSync(filename)) {
+      return `\n<img id="banner" src="${path + id.toUrl()}.png">\n`
+    }
+    return ``
   }
 
   function _core (id, parent, content) {
@@ -98,8 +108,7 @@ function Page (id, table, database, parent) {
       <div id="header-right">
         ${this.id === 'index' ? `` : this.parent === 'index' ? `<a href="../index.html">index</a>` : `<a href='${this.parent.toUrl()}.html'>${this.parent}</a>` }
       </div>
-    </div>
-      ${parent ? _core(this.id, this.parent) : _navi(table, this.id == 'index')}
+    </div>${_banner(this.id)}${parent ? _core(this.id, this.parent) : _navi(table, this.id == 'index')}
   </div>
   ${_footer()}
 </body>

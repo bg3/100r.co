@@ -6,6 +6,7 @@ body #wrapper #header { display: inline-block; width: 100%; margin-top: 0.5em; m
 body #wrapper #header #header-left { float: left; text-transform: uppercase; }
 body #wrapper #header #header-right { float: right; text-transform: uppercase; }
 
+#banner { width: 100%; } 
 body #wrapper #core #singlesection { display: none; } /* hide heading for single-section posts */
 body #wrapper #core {} 
 body #wrapper #core h1 { font-size: calc(24px + 1.2vw);  font-style: italic; font-weight: 700; text-align: center; margin-top: 1em;  margin-bottom: 1.5em; text-transform: capitalize; padding-left: 2em; padding-right: 2em; }
