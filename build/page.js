@@ -9,7 +9,7 @@ function Page (id, table, database, parent) {
   this.filename = this.id.toUrl()
 
   this.path = function () {
-    return `./pages/${this.filename}.html`
+    return this.id === 'index' ? `./index.html` : `./pages/${this.filename}.html`
   }
 
   function _description () {
@@ -55,7 +55,7 @@ function Page (id, table, database, parent) {
     if (deep) {
       return `<div id="navi-deep">\n<h1>${id.toCapitalCase()}</h1>\n<ul>${keys.reduce((acc, key) => {
         const keys = Object.keys(database[key]).filter(key => !hidden.includes(key))
-        return `${acc}<li><a href='${key.toUrl()}.html'>${key}</a></li>\n<ul>${keys.reduce((acc, key) => { return `${acc}<li><a href='${key.toUrl()}.html'>${key.toCapitalCase()}</a></li>\n` }, '')}</ul>\n`
+        return `${acc}<li><a href='./pages/${key.toUrl()}.html'>${key}</a></li>\n<ul>${keys.reduce((acc, key) => { return `${acc}<li><a href='./pages/${key.toUrl()}.html'>${key.toCapitalCase()}</a></li>\n` }, '')}</ul>\n`
         }, '')
       }</ul></div>`.trim()
     } else {
@@ -84,9 +84,9 @@ function Page (id, table, database, parent) {
   <title>Park Imminent — ${this.id.toCapitalCase()}</title>
 
   <link rel="alternate"  type="application/rss+xml" title="Feed" href="../links/rss.xml" />
-  <link rel="stylesheet" type="text/css" href="../links/reset.css"/>
-  <link rel="stylesheet" type="text/css" href="../links/fonts.css"/>
-  <link rel="stylesheet" type="text/css" href="../links/main.css"/>
+  <link rel="stylesheet" type="text/css" href=${this.id === 'index' ? "links/reset.css" : "../links/reset.css"}/>
+  <link rel="stylesheet" type="text/css" href=${this.id === 'index' ? "links/fonts.css" : "../links/fonts.css"}/>
+  <link rel="stylesheet" type="text/css" href=${this.id === 'index' ? "links/main.css"  : "../links/main.css"}/>
 
 </head>
 <body>
@@ -96,7 +96,7 @@ function Page (id, table, database, parent) {
         <a href='http://parkimminent.com'>Park Imminent</a>
       </div>
       <div id="header-right">
-        ${this.id != 'index' ? `<a href='${this.parent.toUrl()}.html'>${this.parent}</a>` : `` }
+        ${this.id === 'index' ? `` : this.parent === 'index' ? `<a href="../index.html">index</a>` : `<a href='${this.parent.toUrl()}.html'>${this.parent}</a>` }
       </div>
     </div>
       ${parent ? _core(this.id, this.parent) : _navi(table, this.id == 'index')}

@@ -7,7 +7,7 @@ function Builder (pages, feeds) {
     console.log('Building..')
     for (const id in pages) {
       const page = pages[id]
-      const path = `./pages/${page.filename}.html`
+      const path = id === 'index' ? `./index.html` : `./pages/${page.filename}.html`
       console.log(`Building ${path}`)
       fs.writeFileSync(path, page.toHtml())
     }
