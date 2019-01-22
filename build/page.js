@@ -84,9 +84,9 @@ function Page (id, table, database, parent) {
   <title>Park Imminent — ${this.id.toCapitalCase()}</title>
 
   <link rel="alternate"  type="application/rss+xml" title="Feed" href="../links/rss.xml" />
-  <link rel="stylesheet" type="text/css" href=${this.id === 'index' ? "links/reset.css" : "../links/reset.css"}/>
-  <link rel="stylesheet" type="text/css" href=${this.id === 'index' ? "links/fonts.css" : "../links/fonts.css"}/>
-  <link rel="stylesheet" type="text/css" href=${this.id === 'index' ? "links/main.css"  : "../links/main.css"}/>
+  <link rel="stylesheet" type="text/css" href="${this.id === 'index' ? 'links/reset.css' : '../links/reset.css'}"/>
+  <link rel="stylesheet" type="text/css" href="${this.id === 'index' ? 'links/fonts.css' : '../links/fonts.css'}"/>
+  <link rel="stylesheet" type="text/css" href="${this.id === 'index' ? 'links/main.css'  : '../links/main.css'}"/>
 
 </head>
 <body>
