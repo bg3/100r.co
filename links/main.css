@@ -16,7 +16,7 @@ body #wrapper #core p b { font-weight: 700; }
 body #wrapper #core p i { font-style: italic }
 body #wrapper #core img { max-width: 100%; max-height: 92vh; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em; }
 body #wrapper #core ul { margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1.5em; margin-right: 1.5em; }
-body #wrapper #core ul li { line-height: 1.6em; font-style: italic; margin-top 0em; margin-bottom: 0em; }
+body #wrapper #core ul li { font-size: calc(13px + 0.5vw); line-height: 1.6em; font-style: italic; margin-top 0em; margin-bottom: 0em; }
 body #wrapper #navi ul { margin-top: 3em; }
 body #wrapper #navi ul ul { margin-top: 0em; }
 body #wrapper #navi ul li { font-family: europa, sans-serif; text-transform: uppercase; font-weight: 700; font-size: calc(12px + 0.25vw); margin-top: 1.5em; margin-bottom: 0.5em; }
