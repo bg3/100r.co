@@ -59,7 +59,7 @@ function Page (id, table, database, parent) {
 
   //  could change this so i'm passing a truncated database to create the sub-content pages, instead of choosing deep/shallow
   function _navi (database, deep) {
-    const hidden = ['SETTINGS', 'SINGLE-SECTION']   
+    const hidden = ['SETTINGS', 'UNTITLED']   
     const keys = Object.keys(database).filter(key => !hidden.includes(key))
 
     if (deep) {
