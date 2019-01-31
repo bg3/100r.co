@@ -7,7 +7,7 @@ body #wrapper #header #header-left { float: left; text-transform: uppercase; }
 body #wrapper #header #header-right { float: right; text-transform: uppercase; }
 
 #banner { width: 100%; } 
-body #wrapper #core #singlesection { display: none; } /* hide heading for single-section posts */
+body #wrapper #core #untitled { display: none; } /* hide heading for single-section posts */
 body #wrapper #core {} 
 body #wrapper #core h1 { font-size: calc(24px + 1.2vw);  font-style: italic; font-weight: 700; text-align: center; margin-top: 1em;  margin-bottom: 1.5em; text-transform: capitalize; padding-left: 2em; padding-right: 2em; }
 body #wrapper #core h3 { font-family: europa, sans-serif; font-size: calc(12px + 0.5vw); font-weight: 700; text-align: left; margin-top: 1.5em; margin-bottom: 0.8em; text-transform: uppercase; }
