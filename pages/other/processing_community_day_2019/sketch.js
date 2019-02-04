@@ -96,7 +96,7 @@ function draw() {
     frameRate(frame_rate());
   }
 
-  console.log(art_line_delay);
+
   //  how random points are specified
   //    across canvas
   //    within a randomly placed circle(s)
