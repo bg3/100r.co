@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Park Imminent - Shield Generator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+      @import url("https://use.typekit.net/uhb7zqq.css");
+
+			body {
+				font-family: linotype-sabon, serif;
+				background-color: #fffcf3;
+				color: #000;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#info {
+				position: absolute;
+				padding: 20px;
+				width: 100%;
+				text-align: left;
+			}
+      #title {
+        font-family: europa, sans-serif;
+        font-size: 2em;
+        font-weight: 500;
+      }
+			a {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+      #svgimage {
+        position: absolute;
+        line-height: 0px;
+        left: 20px; 
+        top: 20px;
+      }
+		</style>
+	</head>
+
+	<body>
+		<div id="info">
+      <div id="title"></div><br/>
+      <div id="debug-1"></div>
+      <div id="debug-2"></div>
+      <div id="debug-3"></div>
+      <div id="debug-4"></div>
+		</div>
+
+    <div id="svgimage"></div>
+
+		<script src="lib/three.js"></script>
+
+		<script src="lib/WebGL.js"></script>
+		<script src="lib/OrbitControls.js"></script>
+
+		<script src="lib/Cloth.js"></script>
+
+    <script src="svg.js"></script>
+		<script src="nbanner.js"></script>
+    <script src="image.js"></script>
+	</body>
+</html>
