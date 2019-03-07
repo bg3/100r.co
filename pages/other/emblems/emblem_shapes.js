@@ -103,7 +103,66 @@ function chevron_notch(e) { return e.path('M0,128l32,0l32,-32l32,32l32,0l0,-32l-
 
 function triangle_1(e) { return e.path('M62.934,32l-32,55.424l64,0l-32,-55.424Z'); }
 
-const shapes = [ square, half_square, circle, crown, tail, cross, quarter_triangle, rosette, third_rect, corner_circle, corner_triangle, third_square, l_third, arc_third, arc_big, third_rod, diamond, big_quarter_circle, checkers_4, half_tri, third_circle, waves_3, waves_2, circles_4, squares_4, circles_big_5, circles_small_5, donuts_5, third_rect_edge, chevron_full, chevron_twothirds, four_burst, big_donut, funnel, big_volcom, little_volcom, half_circle, half_bowl, circles_8, circles_5, eye, closed_eye, two_triangles, chevron_notch, triangle_1
+function big_rosette(e) { return e.path('M112.27,64c8.304,-4.496 12.088,-14.56 8.392,-23.472c-3.688,-8.912 -13.48,-13.352 -22.528,-10.664c2.688,-9.048 -1.744,-18.84 -10.664,-22.528c-8.912,-3.688 -18.976,0.096 -23.472,8.392c-4.496,-8.296 -14.56,-12.08 -23.472,-8.392c-8.912,3.688 -13.344,13.48 -10.656,22.528c-9.048,-2.688 -18.84,1.752 -22.536,10.664c-3.688,8.912 0.096,18.976 8.4,23.472c-8.304,4.496 -12.088,14.56 -8.4,23.472c3.696,8.912 13.488,13.352 22.536,10.664c-2.688,9.04 1.744,18.84 10.656,22.528c8.912,3.688 18.976,-0.096 23.472,-8.392c4.496,8.296 14.56,12.08 23.472,8.392c8.92,-3.688 13.352,-13.488 10.664,-22.528c9.048,2.688 18.84,-1.752 22.528,-10.664c3.696,-8.912 -0.088,-18.976 -8.392,-23.472'); }
+
+function circles_3(e) { return e.path('M51.199,91.711c0,10.608 -8.592,19.2 -19.2,19.2c-10.608,0 -19.2,-8.592 -19.2,-19.2c0,-10.6 8.592,-19.2 19.2,-19.2c10.608,0 19.2,8.6 19.2,19.2Zm64,0c0,10.608 -8.592,19.2 -19.2,19.2c-10.608,0 -19.2,-8.592 -19.2,-19.2c0,-10.6 8.592,-19.2 19.2,-19.2c10.608,0 19.2,8.6 19.2,19.2Zm-32,-55.422c0,10.6 -8.592,19.2 -19.2,19.2c-10.608,0 -19.2,-8.6 -19.2,-19.2c0,-10.608 8.592,-19.2 19.2,-19.2c10.608,0 19.2,8.592 19.2,19.2Z'); }
+
+function four_pt_star(e) { return e.path('M64,128l-64,0l0,-64c35.344,0 64,28.656 64,64Zm-64,-128l128,0l0,128l-64,0c0,-35.344 28.656,-64 64,-64c-35.344,0 -64,-28.656 -64,-64c0,35.344 -28.656,64 -64,64l0,-64Z'); }
+
+function yin_triangle(e) { return e.path('M32,48c-8.832,0 -16,-7.168 -16,-16c0,-8.832 7.168,-16 16,-16c8.832,0 16,7.168 16,16c0,8.832 -7.168,16 -16,16m-32,-48l0,128l128,-128l-128,0Z'); }
+
+function big_triangle(e) { return e.path('M0,128l64,-128l64,128l-128,0Z'); }
+
+function equibig_triangle(e) { return e.path('M64,6.48l-64,110.848l128,0l-64,-110.848Z'); }
+
+function four_bars(e) { 
+  let g = e.group();
+  g.add(e.rect(32, 128).attr({ x: 0, y: 0 }));
+  g.add(e.rect(32, 128).attr({ x: 64, y: 0 }));
+  return g;
+}
+
+function half_arc(e) { return e.path('M64,32c-17.672,0 -32,-14.328 -32,-32l-32,0c0,35.344 28.656,64 64,64c35.344,0 64,-28.656 64,-64l-32,0c0,17.672 -14.328,32 -32,32'); }
+
+function epaulets(e) { return e.path('M0,0l128,0l0,64l-64,-64l-64,64l0,-64Z'); }
+
+function big_donut(e) { return e.path('M64,74.668c-5.888,0 -10.664,-4.776 -10.664,-10.664c0,-5.896 4.776,-10.672 10.664,-10.672c5.888,0 10.664,4.776 10.664,10.672c0,5.888 -4.776,10.664 -10.664,10.664m0,-53.336c-23.56,0 -42.664,19.104 -42.664,42.672c0,23.56 19.104,42.664 42.664,42.664c23.56,0 42.664,-19.104 42.664,-42.664c0,-23.568 -19.104,-42.672 -42.664,-42.672'); }
+
+function big_funnel(e) { return e.path('M85.334,0l-42.664,0l-42.672,0c0,32 42.672,42.664 42.672,74.664l0,53.336l42.664,0l0,-53.336c0,-32 42.664,-42.664 42.664,-74.664l-42.664,0Z'); }
+
+function hex(e) { return e.path('M30.691,44.77l0,38.464l33.312,19.224l33.304,-19.224l0,-38.464l-33.304,-19.232l-33.312,19.232Z'); }
+
+function big_circle(e) { return e.circle(128/1.2).attr({ cx: 64, cy: 64 }); }
+
+function small_circle(e) { return e.circle(128/1.5).attr({ cx: 64, cy: 64 }); }
+
+function ring_six(e) { return e.path('M53.332,106.668c0,-5.888 4.776,-10.664 10.664,-10.664c5.896,0 10.672,4.776 10.672,10.664c0,5.888 -4.776,10.664 -10.672,10.664c-5.888,0 -10.664,-4.776 -10.664,-10.664Zm42.285,-12.098c-5.104,-2.944 -6.848,-9.472 -3.904,-14.568c2.944,-5.104 9.472,-6.856 14.568,-3.904c5.104,2.944 6.848,9.472 3.904,14.568c-2.944,5.104 -9.464,6.848 -14.568,3.904Zm-73.902,-18.472c5.104,-2.952 11.624,-1.2 14.576,3.904c2.944,5.096 1.192,11.624 -3.912,14.568c-5.096,2.944 -11.624,1.2 -14.568,-3.904c-2.944,-5.096 -1.2,-11.624 3.904,-14.568Zm84.57,-24.196c-5.104,2.952 -11.624,1.2 -14.576,-3.904c-2.944,-5.096 -1.192,-11.624 3.912,-14.568c5.096,-2.944 11.624,-1.2 14.568,3.904c2.944,5.096 1.2,11.624 -3.904,14.568Zm-73.902,-18.472c5.104,2.944 6.848,9.472 3.904,14.568c-2.944,5.104 -9.472,6.856 -14.568,3.904c-5.104,-2.944 -6.848,-9.472 -3.904,-14.568c2.944,-5.104 9.464,-6.848 14.568,-3.904Zm42.285,-12.098c0,5.888 -4.776,10.664 -10.664,10.664c-5.896,0 -10.672,-4.776 -10.672,-10.664c0,-5.888 4.776,-10.664 10.672,-10.664c5.888,0 10.664,4.776 10.664,10.664Z'); }
+
+function cross_hole(e) { return e.path('M64,80c-4.552,-6.056 -9.944,-11.448 -16,-16c6.056,-4.552 11.448,-9.944 16,-16c4.552,6.056 9.944,11.448 16,16c-6.056,4.552 -11.448,9.944 -16,16m16,-80l-32,0c0,26.504 -21.496,48 -48,48l0,32c26.504,0 48,21.496 48,48l32,0c0,-26.504 21.496,-48 48,-48l0,-32c-26.504,0 -48,-21.496 -48,-48'); }
+
+function bart(e) { return e.path('M0,0l21.336,32l21.328,-32l21.336,32l21.336,-32l21.328,32l21.336,-32l0,128l-128,0l0,-128Z'); }
+
+function door(e) { return e.rect(64, 96).attr({ x: 32, y: 32 }); }
+
+function an_x(e) { return e.path('M128,0l-16,0l-48,48l-48,-48l-16,0l0,16l48,48l-48,48l0,16l16,0l48,-48l48,48l16,0l0,-16l-48,-48l48,-48l0,-16Z'); }
+
+function mitre(e) { return e.path('M64,0c0,0 -62.208,51.392 -64,128l128,0c-1.792,-76.608 -64,-128 -64,-128'); }
+
+function bart2(e) { return e.path('M32,128l-32,0l16,-27.712l16,27.712Zm32,0l-32,0l16,-27.712l16,27.712Zm64,0l-64,0l16,-27.712l16,27.712l16,-27.712l16,27.712Z'); }
+
+function burst2(e) { return e.path('M0,0l32,64l-32,64l64,-32l64,32l-32,-64l32,-64l-64,32l-64,-32Z'); }
+
+function burst3(e) { return e.path('M0,64l42.664,-21.336l21.336,-42.664l21.336,42.664l42.664,21.336l-42.664,21.336l-21.336,42.664l-21.336,-42.664l-42.664,-21.336Z'); }
+
+function burst4(e) { return e.path('M0,0l64,21.336l64,-21.336l-21.336,64l21.336,64l-64,-21.336l-64,21.336l21.336,-64l-21.336,-64Z'); }
+
+function split_bars(e) { return e.path('M32,64l32,0l0,64l-32,0l0,-64l-32,0l0,-64l32,0l0,64Zm64,0l32,0l0,64l-32,0l0,-64l-32,0l0,-64l32,0l0,64Z'); }
+
+function leaf(e) { return e.path('M0,0c0,70.688 57.312,128 128,128c0,-70.688 -57.312,-128 -128,-128'); }
+
+function tiny_circle(e) { return e.path('M74.668,21.332c0,5.888 -4.776,10.664 -10.664,10.664c-5.896,0 -10.672,-4.776 -10.672,-10.664c0,-5.888 4.776,-10.664 10.672,-10.664c5.888,0 10.664,4.776 10.664,10.664'); }
+
+const shapes = [ square, half_square, circle, crown, tail, cross, quarter_triangle, rosette, third_rect, corner_circle, corner_triangle, third_square, l_third, arc_third, arc_big, third_rod, diamond, big_quarter_circle, checkers_4, half_tri, third_circle, waves_3, waves_2, circles_4, squares_4, circles_big_5, circles_small_5, donuts_5, third_rect_edge, chevron_full, chevron_twothirds, four_burst, big_donut, funnel, big_volcom, little_volcom, half_circle, half_bowl, circles_8, circles_5, eye, closed_eye, two_triangles, chevron_notch, triangle_1, big_rosette, circles_3, four_pt_star, yin_triangle, big_triangle, equibig_triangle, four_bars, half_arc, epaulets, big_donut, big_funnel, hex, big_circle, small_circle, ring_six, cross_hole, bart, door, an_x, mitre, bart2, burst2, burst3, burst4, split_bars, leaf, tiny_circle
                  ];
 
 function shape(element, index) {
