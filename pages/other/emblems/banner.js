@@ -1,20 +1,5 @@
 /* testing cloth simulation */
-var pinsFormation = [];
-var pins = [ 6 ];
-pinsFormation.push( pins );
 pins = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
-pinsFormation.push( pins );
-pins = [ 0 ];
-pinsFormation.push( pins );
-pins = []; // cut the rope ;)
-pinsFormation.push( pins );
-pins = [ 0, cloth.w ]; // classic 2 pins
-pinsFormation.push( pins );
-pins = pinsFormation[ 1 ];
-
-function togglePins() {
-  pins = pinsFormation[ ~~ ( Math.random() * pinsFormation.length ) ];
-}
 
 if ( WEBGL.isWebGLAvailable() === false ) {
   document.body.appendChild( WEBGL.getWebGLErrorMessage() );
@@ -26,8 +11,29 @@ var clothGeometry;
 var debug_1, debug_2, debug_3, debug_4;
 var object;
 
+// --------
+s = new Emblem('test', 'svgimage', 512);
+
+clothSVG = s.svg();
+var can = document.createElement("canvas");
+can.width = 512;
+can.height = 512; 
+var ctx = can.getContext("2d");
+
+var img = document.createElement("img");
+img.setAttribute("src", "data:image/svg+xml;base64," + window.btoa(unescape(encodeURIComponent(clothSVG))) );
+
+img.onload = function() {
+  ctx.drawImage(img, 0, 0);
+
+
+  //  -------------
+
+
 init();
 animate();
+
+}
 
 function init() {
   container = document.createElement( 'div' );
@@ -44,10 +50,10 @@ function init() {
         
 	// camera
 	camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 10000 );
-	camera.position.set(250, 124, 700);
-  camera.rotation.set(-0.11, 0.78, 0.08);
-        
-	// lights
+	camera.position.set(269.82, 0, 962.91);
+  camera.rotation.set(-0.0, 0.27, 0.00);
+	
+  // lights
 	scene.add( new THREE.AmbientLight( 0x666666 ) );
 
 	var light = new THREE.DirectionalLight( 0xdfebff, 1 );
@@ -70,10 +76,10 @@ function init() {
 
 	scene.add( light );
 
-	// cloth material
-	var loader = new THREE.TextureLoader();
-	var clothTexture = loader.load( 'banner3.png' );
+  //  cloth material
+  var clothTexture = new THREE.Texture(can);
 	clothTexture.anisotropy = 16;
+  clothTexture.needsUpdate = true;
 
 	var clothMaterial = new THREE.MeshLambertMaterial( {
 		map: clothTexture,
@@ -86,7 +92,7 @@ function init() {
 
 	// cloth mesh
 	object = new THREE.Mesh( clothGeometry, clothMaterial );
-	object.position.set( 0, 0, 0 );
+	object.position.set( 0, 70, 0 );
 	object.castShadow = true;
 	scene.add( object );
 	object.customDepthMaterial = new THREE.MeshDepthMaterial( {
@@ -96,7 +102,7 @@ function init() {
 	} );
 
   // ground
-	var groundMaterial = new THREE.MeshLambertMaterial( { color: 0xe1a6cb });
+	var groundMaterial = new THREE.MeshLambertMaterial( { color: 0x333333 });
 	var mesh = new THREE.Mesh( new THREE.PlaneBufferGeometry( 20000, 20000 ), groundMaterial );
 	mesh.position.y = - 250;
 	mesh.rotation.x = - Math.PI / 2;
@@ -159,7 +165,7 @@ function render() {
 	}
 	clothGeometry.attributes.position.needsUpdate = true;
 	clothGeometry.computeVertexNormals();
-  debug_1.innerHTML = `<b>cam.pos</b> ${camera.position.x.toFixed(2)}, ${camera.position.y.toFixed(2)}, ${camera.position.z.toFixed(2)}`
-  debug_2.innerHTML = `<b>cam.rot</b> ${camera.rotation.x.toFixed(2)}, ${camera.rotation.y.toFixed(2)}, ${camera.rotation.z.toFixed(2)}` 
+//  debug_1.innerHTML = `<b>cam.pos</b> ${camera.position.x.toFixed(2)}, ${camera.position.y.toFixed(2)}, ${camera.position.z.toFixed(2)}`
+//  debug_2.innerHTML = `<b>cam.rot</b> ${camera.rotation.x.toFixed(2)}, ${camera.rotation.y.toFixed(2)}, ${camera.rotation.z.toFixed(2)}` 
 	renderer.render( scene, camera );
 }

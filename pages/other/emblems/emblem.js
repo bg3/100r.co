@@ -1,13 +1,10 @@
-const element = 'svgimage'
-const size = 128;
-
 function Emblem(seed, element, size) {
-  this.seed = seed || 'Marmaladian'; 
-  this.size = size || 100; 
+  this.size = size || 128; 
 
-  let svg = SVG(element).size(size, size);
+  let el = SVG(element).size(size, size);
+  let svg = el.group()
 
-  //  background fill
+//  background fill
   shape(svg,0).attr({ fill: randomColour(-1) }); 
 
   let c = randomColour(-1);
@@ -58,9 +55,11 @@ function Emblem(seed, element, size) {
     s2.flip('y', 64);
   }
 
- // 1/4 scale and repeat 4 times.
+  svg.transform({ scale: 4, cx: 0, cy: 0 });
+
+  return el;
 }
 
-for (let i = 0; i < 66; i++) {
-  new Emblem('test', element, size); 
-}
+//for (let i = 0; i < 66; i++) {
+//  new Emblem('test', element, size); 
+//}
