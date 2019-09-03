@@ -1,0 +1,21 @@
+html {
+  background-color: #ebebef;
+  /*background-color: #eaebeb;*/
+  margin: 10% 10% 10% 10%;
+  color: #0c2427;
+  line-height: 1.4;
+  /*font-family: sans-serif;*/
+}
+
+h1 { margin: 0.5em 0 }
+h2 { margin: 0.5em 0 }
+h3 { margin: 0.5em 0 }
+
+table, th, td {
+  border: 1px solid black;   
+  background-color: #ffffff;
+  padding: 0.50em;
+  border-collapse: collapse;
+}
+
+/*https://stackoverflow.com/questions/6867254/browsers-default-css-for-html-elements*/
