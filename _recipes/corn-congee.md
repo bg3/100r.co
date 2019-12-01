@@ -23,6 +23,13 @@ fg: "#FF8A13"
 | | freshly sliced chilli or chilli oil, to garnish |
 | | pickled Chinese mushrooms, to garnish |
 
+| Logical | Operators |
+|:---:| --- |
+| `&&` | Logical and |
+| `\|\|` | Logical or |
+| `!` | Logical not |
+| `? :` | Logical ternary |
+
 # Method
 Heat both oils in a saucepan over a medium heat. Sweat off the spring onion, garlic and ginger until soft, then add the star anise. Cook for another minute, then add the corn, stir again and cook for another 2 minutes.
 Add the rice and stir to coat. Add the wine and soy sauce and cook out for 30 seconds. Pour the stock over the rice and bring to a simmer. Reduce he heat to low and cook, stirring regularly to avoid the rice sticking for 45 minutes to 1 hour, or until the rice is very soft and beginning to fall apart. Add a little extra stock if needed during cooking. Remove the star anise.
