@@ -3,7 +3,8 @@ layout: default
 title: "Corn Congee"
 source: "Smith & Deli-cious"
 author: "Mo Wyse and Shannon Martinez"
-bg: "#FEE715"
+bg: "#FFDB54"
+fg: "#FF8A13"
 ---
 # Ingredients
 - 2 tablespoons vegetable oil
