@@ -4,6 +4,6 @@ title: "About fish"
 category: fish
 tags: test, eggs
 ---
-#{{post.title}}
+# {{page.title}}
 
 Fish roe is fish eggs.
