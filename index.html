@@ -9,20 +9,11 @@ fg: "#1a1a1a"
 	<p>Under construction</p>
 </div><!-- /.blurb -->
 
-{% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
+{% for collection in site.collections %}
+  <h2>{{collection.label}}</h2>
   <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% for item in collection %}
+    <li><a href="{{ item.url}}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
-{% endfor %}
-
-{% for recipe in site.recipes %}
-  <h2>
-    <a href="{{ recipe.url }}">
-      {{ recipe.title }}
-    </a>
-  </h2>
-  <p>{{ recipe.source | markdownify }}</p>
 {% endfor %}
