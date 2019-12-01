@@ -10,10 +10,10 @@ fg: "#1a1a1a"
 </div><!-- /.blurb -->
 
 {% for collection in site.collections %}
-  <h2>{{collection.label}}</h2>
+  <h2>{{ collection.label }}</h2>
   <ul>
-    {% for item in collection %}
-    <li><a href="{{ item.url}}">{{ item.title }}</a></li>
+    {% for item in site[collection.label] %}
+    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
