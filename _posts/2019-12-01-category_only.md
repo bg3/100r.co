@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About fish"
-categories: fish
+category: fish
 tags: test, eggs
 ---
 #{{post.title}}
