@@ -67,9 +67,12 @@ strong {
 
 .index-collection {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .index-collection {
   width: 33%;
-  float: left;
 }
