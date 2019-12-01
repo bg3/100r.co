@@ -8,35 +8,20 @@ fg: "#FF8A13"
 ---
 # Ingredients
 
-| Qty     | Item |
-|:---:    | --- |
-| 2 tbsp  | vegetable oil |
-| 1 tsp   | sesame oil, plus extra to garnish |
-| 4       | large spring onions, white and green parts, finely sliced, plus extra to garnish |
-| 2       | garlic cloves, minced |
-| 20g     | ginger, peeled and julienned |
-| 1       | star anise |
-| 420g    | tin of creamed corn |
-| 150g    | jasmine rice |
-| 3 tbsp  | Shaoxing wine or dry sherry |
-| 1 tbsp  | light soy sauce |
-| 1 litre | vegetable or chicken stock |
-|         | freshly sliced chilli or chilli oil, to garnish |
-|         | pickled Chinese mushrooms, to garnish |
-
-| Qty     | Item |
-|:---:    | --- |
-| 2 tbsp  | vegetable oil |
-| 1 tsp   | sesame oil plus extra to garnish |
-| 4       | large spring onions |
-| 2       | garlic cloves |
-
-| Logical | Operators |
-|:---:    | --- |
-| `&&`    | Logical and |
-| `\|\|`  | Logical or |
-| `!`     | Logical not |
-| `? :`   | Logical ternary |
+|---: | :---  | :--- |
+| 2   | tbsp  | vegetable oil |
+| 1   | tsp   | sesame oil, plus extra to garnish |
+| 4   |       | large spring onions, white and green parts, finely sliced, plus extra to garnish |
+| 2   |       | garlic cloves, minced |
+| 20  | g     | ginger, peeled and julienned |
+| 1   |       | star anise |
+| 420 | g     | tin of creamed corn |
+| 150 | g     | jasmine rice |
+| 3   | tbsp  | Shaoxing wine or dry sherry |
+| 1   | tbsp  | light soy sauce |
+| 1   | litre | vegetable or chicken stock |
+|     |       | freshly sliced chilli or chilli oil, to garnish |
+|     |       | pickled Chinese mushrooms, to garnish |
 
 # Method
 Heat both oils in a saucepan over a medium heat. Sweat off the spring onion, garlic and ginger until soft, then add the star anise. Cook for another minute, then add the corn, stir again and cook for another 2 minutes.
