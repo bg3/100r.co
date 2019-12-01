@@ -1,3 +1,6 @@
 name: Park Imminent
 markdown: kramdown
-bg: #ffff33
+bg: #ff0000
+collections:
+  - recipes:
+      output: true
