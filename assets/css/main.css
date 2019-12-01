@@ -64,3 +64,8 @@ table, th, td {
 strong {
   font-weight: bold;
 }
+
+.collection-index {
+  width: 33%;
+  float: left;
+}

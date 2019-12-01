@@ -5,10 +5,12 @@ bg: "#a5a5a5"
 fg: "#1a1a1a"
 ---
 {% for collection in site.collections %}
-  <h2>{{ collection.label }}</h2>
-  <ul>
-    {% for item in site[collection.label] %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="index-collection">
+    <h2>{{ collection.label }}</h2>
+    <ul>
+      {% for item in site[collection.label] %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endfor %}
