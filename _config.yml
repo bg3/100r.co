@@ -1,8 +1,13 @@
 name: Park Imminent
 markdown: kramdown
-layout: default
 collections:
   recipes:
     output: true
   common-lisp:
     output: true
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
