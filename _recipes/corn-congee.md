@@ -8,7 +8,7 @@ fg: "#FF8A13"
 ---
 # Ingredients
 | Qty | Item |
-| :--- | :--- |
+|:---:| --- |
 | 2 tbsp | vegetable oil |
 | 1 tsp | sesame oil, plus extra to garnish |
 | 4 | large spring onions, white and green parts, finely sliced, plus extra to garnish |
