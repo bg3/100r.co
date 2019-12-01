@@ -1,8 +1,7 @@
 ---
 layout: default
 title: "About fish"
-categories: [fish, meta]
-tags: [test, eggs]
+categories: [books]
 ---
 # {{page.title}}
 
