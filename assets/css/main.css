@@ -1,5 +1,60 @@
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/cooperl.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/cooperli.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/cooperm.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/coopermi.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
 body {
+  line-height: 1.4;
+  font-size: 200%;
+  font-family: Cooper, Big Caslon, sans-serif;
+
   background-color: #cbc9bf;
   color: #464341;
   a:any-link: #338252;
+}
+
+p {
+  margin: 0.5em 0em 0.5em;
+}
+
+li {
+  margin: 0.25em 0em;
+}
+
+h1 { font-weight: bold; font-size: 1.6em; margin: 0.5em 0 }
+h2 { font-weight: bold; font-size: 1.3em; margin: 0.7em 0 0.3em }
+h3 { font-weight: bold; font-size: 1.2em; margin: 0.5em 0 }
+
+table, th, td {
+  border: 1px solid black;
+  background-color: #ffffff;
+  padding: 0.50em;
+  border-collapse: collapse;
+}
+
+strong {
+  font-weight: bold;
 }
