@@ -3,8 +3,8 @@ layout: default
 title: "Corn Congee"
 source: "Smith & Deli-cious"
 author: "Mo Wyse and Shannon Martinez"
-bg: "#ffeca6"
-fg: "#a58331"
+bg: "#a6bddb"
+fg: "#636363"
 ---
 # {{ page.title }}
 
