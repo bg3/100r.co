@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Park Imminent
-bg: "#333333"
+bg: "#e5d8bf"
 ---
 <div class="blurb">
 	<h1>Park Imminent</h1>
@@ -15,4 +15,13 @@ bg: "#333333"
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+{% endfor %}
+
+{% for recipe in site.recipes %}
+  <h2>
+    <a href="{{ recipe.url }}">
+      {{ recipe.title }}
+    </a>
+  </h2>
+  <p>{{ recipe.source | markdownify }}</p>
 {% endfor %}
