@@ -33,7 +33,11 @@ body {
 
   background-color: #cbc9bf;
   color: #464341;
-  a:any-link: #338252;
+}
+
+a {
+  color: #338252;
+  text-decoration: none;
 }
 
 p {
