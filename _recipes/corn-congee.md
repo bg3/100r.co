@@ -8,7 +8,7 @@ fg: "#935116"
 ---
 # {{ page.title }}
 
-![A bowl of corn congee with various pickles and chilli oil.](/assets/corn-congee.png)
+![A bowl of corn congee with various pickles and chilli oil.](/assets/images/corn-congee.png)
 
 ## Ingredients
 
