@@ -27,8 +27,9 @@
 }
 
 body {
+  padding: 10% 10%;
   line-height: 1.4;
-  font-size: 200%;
+  font-size: 160%;
   font-family: Cooper, Big Caslon, sans-serif;
 
   background-color: #cbc9bf;
