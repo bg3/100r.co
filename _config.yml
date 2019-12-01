@@ -1,5 +1,8 @@
 name: Park Imminent
 markdown: kramdown
+layout: default
 collections:
   recipes:
+    output: true
+  common-lisp:
     output: true
