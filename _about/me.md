@@ -1,5 +1,5 @@
 ---
-title: "Making the site"
+title: "Me"
 bg: "#fffcff"
 fg: "#060606"
 ---
