@@ -14,12 +14,12 @@ It was surprisingly tasty.
 
 |---: | :---  | :--- |
 | 1   | pkt   | Edgell Instant Mashed Potatoes |
-| 200 | ml    | boiling water |
+| 2   | cups  | boiling water |
 
 ## Method
-Slowly add boiling water to mash potato powder while stirring.
+Slowly add boiling water to mashed potato powder while stirring.
 
-Stand for 2 minutes.
+Stand for 1 minute.
 
 Sit down and eat it.
 
