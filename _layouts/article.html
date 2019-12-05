@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+			<link rel="stylesheet" type="text/css" href="/assets/css/article.css">
+      <style>
+        body {
+					background-color: {{page.bg}};
+					color: {{page.fg}};
+				}
+
+				a {
+					color: {{page.link}};
+				}
+      </style>
+		</head>
+		<body>
+			<h3><a href="/">Park Imminent</a></h3>
+			<div class="container">
+				<article>
+					{{ content }}
+				</article>
+			</div><!-- /.container -->
+		</body>
+	</html>

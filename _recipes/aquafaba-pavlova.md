@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Aquafaba pavlova"
 bg: "#ffffff"
 fg: "#eedddd"

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/cooperl.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/cooperli.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/cooperm.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src:url("/assets/fonts/coopermi.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  padding: 10% 10%;
+  line-height: 1.4;
+  font-size: 160%;
+  font-family: Cooper, Big Caslon, sans-serif;
+
+  background-color: #DBD8D3;
+  color: #2E2B25;
+}
+
+article {
+  width: 36em;
+  margin: 0 auto;
+  max-width: 100%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+a {
+  color: #F1F0EE;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5em 0em 0.5em;
+}
+
+li {
+  margin: 0.25em 0em;
+}
+
+h1 { font-weight: bold; font-size: 1.6em; margin: 0.5em 0 }
+h2 { font-weight: bold; font-size: 1.3em; margin: 0.7em 0 0.3em }
+h3 { font-weight: bold; font-size: 1.2em; margin: 0.5em 0 }
+
+table, th, td {
+  padding: 0.50em;
+  border-collapse: collapse;
+}
+
+strong {
+  font-weight: bold;
+}

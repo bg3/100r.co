@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Edgell Instant Mashed Potatoes"
 source: ""
 author: "Sarah Foster"

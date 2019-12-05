@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Corn Congee"
 source: "Smith & Deli-cious"
 author: "Mo Wyse and Shannon Martinez"
