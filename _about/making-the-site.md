@@ -13,7 +13,7 @@ https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll
 
 ## Typography
 Setting line length based on type size
-https://blog.prototypr.io/how-to-set-perfect-line-lengths-for-the-web-528f08f8b344
+http://www.simon-li.com/design-and-code/how-to-set-perfect-line-lengths-for-your-webpages/
 
 # To do list
 - Add 'notes/in progress' section formatting.
