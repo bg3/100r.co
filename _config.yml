@@ -7,7 +7,7 @@ collections:
     output: true
   common-lisp:
     output: true
-  Woodworking:
+  woodworking:
     output: true
 defaults:
   -
