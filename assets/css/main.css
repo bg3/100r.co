@@ -30,8 +30,7 @@ body {
   padding: 10% 10%;
   line-height: 1.4;
   font-size: 18px;
-  font-family: Cooper, Big Caslon, sans-serif;
-
+  font-family: Helvetica;
   background-color: #DBD8D3;
   color: #2E2B25;
 }
@@ -48,6 +47,10 @@ p {
 
 li {
   margin: 0.25em 0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Cooper, Big Caslon, sans-serif;
 }
 
 h1 { font-weight: bold; font-size: 1.6em; margin: 0.5em 0 }
