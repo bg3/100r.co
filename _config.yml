@@ -5,9 +5,13 @@ collections:
     output: true
   recipes:
     output: true
+  language:
+    output: true
   common-lisp:
     output: true
   woodworking:
+    output: true
+  sailing:
     output: true
 defaults:
   -

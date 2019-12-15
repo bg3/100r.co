@@ -1,0 +1,52 @@
+I"é<div class="c_title">
+# Making the site
+</div>
+
+<div class="article">
+## References used
+
+### Responsive index page
+
+&lt;https://www.w3schools.com/css/css3_flexbox.asp&gt;
+
+### Jekyll
+    $ bundle exec jekyll serve
+
+Iterating through all collections, and their pages.
+&lt;https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll&gt;
+
+### Typography
+Setting line length based on type size
+&lt;http://www.simon-li.com/design-and-code/how-to-set-perfect-line-lengths-for-your-webpages/&gt;
+Styling lists
+&lt;http://css.maxdesign.com.au/listutorial/index.htm&gt;
+
+### Inspiration
+- &lt;https://www.awwwards.com/inspiration/scroll-triggered-animation-disrupt&gt;
+- &lt;https://emergencemagazine.org/story/fermenting-culture/&gt;
+- &lt;https://www.awwwards.com/inspiration/ben-mingo-projects-navigation&gt;
+- &lt;https://hpla.co&gt;
+- &lt;https://1til1landskab.dk&gt;
+- &lt;http://justinmcguirk.com&gt;
+- &lt;http://formcontent.org&gt;
+- &lt;https://readwildness.com/20/&gt;
+
+### Palettes
+
+- &lt;https://www.awwwards.com/sites/gautier-maillard-portfolio-1&gt;
+- &lt;https://collection-wakawaka.world/objects&gt;
+- &lt;https://ecosistemadeldise√±o.es&gt;
+- &lt;http://www.d-p-q.uk&gt;
+- &lt;https://dribbble.com/shots/5970272-Kitsune-App-Celebration&gt;
+
+### Typefaces?
+- Baskerville
+- Big Caslon
+- Bodoni
+- Charter
+
+
+## To do list
+- Add 'draft/notes' section formatting... perhaps fixed width type.
+</div>
+:ET

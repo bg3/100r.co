@@ -5,8 +5,6 @@ author: "Mo Wyse and Shannon Martinez"
 bg: "#F9E79F"
 fg: "#935116"
 ---
-# {{ page.title }}
-
 ![A bowl of corn congee with various pickles and chilli oil.](/assets/images/corn-congee.png)
 
 ## Ingredients

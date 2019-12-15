@@ -1,0 +1,30 @@
+html, body { width: 100%; height: 100%; margin: 0px; padding: 0px; overflow-x: hidden; }
+body { font-size: calc(16px + 0.5vw); background: #fffcf3; color: #223; font-family: linotype-sabon, serif; overflow-x: hidden; } 
+/* #f7f5eb and 3e3428; */
+body #wrapper { padding: 1em 2em 1em 2em; max-width: 29em; margin-left: auto; margin-right: auto; display: block; }
+body #wrapper #header { display: inline-block; width: 100%; margin-top: 0.5em; margin-bottom: 3em; font-family: europa, sans-serif; text-transform: uppercase; font-weight: 700; font-size: calc(12px + 0.25vw); }
+body #wrapper #header #header-left { float: left; text-transform: uppercase; }
+body #wrapper #header #header-right { float: right; text-transform: uppercase; }
+
+#banner { width: 100%; } 
+body #wrapper #core #untitled { display: none; } /* hide heading for single-section posts */
+body #wrapper #core {} 
+body #wrapper #core h1 { font-size: calc(24px + 1.2vw);  font-style: italic; font-weight: 700; text-align: center; margin-top: 1em;  margin-bottom: 1.5em; text-transform: capitalize; padding-left: 2em; padding-right: 2em; }
+body #wrapper #core h3 { font-family: europa, sans-serif; font-size: calc(12px + 0.5vw); font-weight: 700; text-align: left; margin-top: 1.5em; margin-bottom: 0.8em; text-transform: uppercase; }
+body #wrapper #core p { text-align: justify; text-indent: 1.5em; line-height: 1.6em; }
+body #wrapper #core p b { font-weight: 700; }
+body #wrapper #core p i { font-style: italic }
+body #wrapper #core img { max-width: 100%; max-height: 92vh; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em; }
+body #wrapper #core ul { margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1.5em; margin-right: 1.5em; }
+body #wrapper #core ul li { font-size: calc(13px + 0.5vw); line-height: 1.6em; font-style: italic; margin-top 0em; margin-bottom: 0em; }
+body #wrapper #navi ul { margin-top: 3em; }
+body #wrapper #navi ul ul { margin-top: 0em; }
+body #wrapper #navi ul li { font-family: europa, sans-serif; text-transform: uppercase; font-weight: 700; font-size: calc(12px + 0.25vw); margin-top: 1.5em; margin-bottom: 0.5em; }
+body #wrapper #navi ul ul li { font-family: linotype-sabon, sans-serif; font-weight: 400; text-transform: capitalize; font-size: calc(12px + 0.25vw); text-indent: 1.5em; margin-top: 0em; }
+body #wrapper #navi-deep h1 { display: none; }
+body #wrapper #navi-deep ul li { font-family: europa, sans-serif; text-transform: uppercase; font-weight: 700; margin-top: 1.5em; margin-bottom: 0.8em; font-size: calc(12px + 0.5vw); }
+body #wrapper #navi-deep ul ul li { font-family: linotype-sabon, serif; font-size: calc(12px + 0.5vw); text-transform: capitalize; font-weight: 500; font-style: italic; margin-top: 0em; margin-bottom: 0.15em; } 
+body #wrapper #navi-shallow h1 { font-family: europa, sans-serif; text-transform: uppercase; font-weight: 700; margin-top: 1.5em; margin-bottom: 0.8em; font-size: calc(12px + 0.5vw); }
+body #wrapper #navi-shallow ul li { font-family: linotype-sabon, serif; font-size: calc(12px + 0.5vw); text-transform: capitalize; font-weight: 500; font-style: italic; margin-top: 0em; margin-bottom: 0.15em; } 
+body #footer { margin-top: 6em; }
+

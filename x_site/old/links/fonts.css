@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/uhb7zqq.css");
+
+@font-face {
+  font-family: 'telegramo_c';
+  src: url('../media/fonts/telegramo_c.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'telegramo_c_med';
+  src: url('../media/fonts/telegramo_c_med.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'telegramo_c_bold';
+  src: url('../media/fonts/telegramo_c_bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

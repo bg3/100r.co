@@ -3,8 +3,6 @@ title: "Aquafaba pavlova"
 bg: "#ffffff"
 fg: "#eedddd"
 ---
-# {{ page.title }}
-
 ![A bowl of corn congee with various pickles and chilli oil.](/assets/images/corn-congee.png)
 
 ## Ingredients

@@ -5,8 +5,6 @@ author: "Sarah Foster"
 bg: "#f7f6ec"
 fg: "#a7182f"
 ---
-# {{ page.title }}
-
 It was surprisingly tasty.
 
 ## Ingredients
