@@ -3,23 +3,23 @@
 }
 
 .c_title {
-  flex: 1 1 50%;
-  padding-left: 25%;
+  flex: 1 1 25%;
+  padding-left: 10%;
   padding-right: 5%;
   padding-top: 15%;
 }
 
 .c_article {
-  flex: 1 1 50%;
+  flex: 1 1 75%;
 }
 
 body {
   padding: 10% 10%;
   line-height: 1.4;
-  font-size: 160%;
+  font-size: 120%;
   font-family: sans-serif;
-  background-color: #DBD8D3;
-  color: #2E2B25;
+  background-color: #d1d4cd;
+  color: #000000;
 }
 
 article {
@@ -37,7 +37,7 @@ article {
 }
 
 a {
-  color: #336633;
+  color: #00445b;
   text-decoration: none;
 }
 

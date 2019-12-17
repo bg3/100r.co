@@ -6,9 +6,14 @@ link: "#99336a"
 ---
 ## References used
 
-### Responsive index page
+### Layout
 
 <https://www.w3schools.com/css/css3_flexbox.asp>
+<https://every-layout.dev>
+
+### Markdown
+<https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links>
+<https://www.xaprb.com/blog/how-to-style-images-with-markdown/>
 
 ### Jekyll
     $ bundle exec jekyll serve
@@ -31,6 +36,7 @@ Styling lists
 - <http://justinmcguirk.com>
 - <http://formcontent.org>
 - <https://readwildness.com/20/>
+- **<https://www.behance.net/gallery/71857697/Lucas-Bargen>**
 
 ### Palettes
 
@@ -39,6 +45,7 @@ Styling lists
 - <https://ecosistemadeldiseño.es>
 - <http://www.d-p-q.uk>
 - <https://dribbble.com/shots/5970272-Kitsune-App-Celebration>
+- <https://cloudflare.design/color>
 
 ### Typefaces?
 - Baskerville
@@ -49,3 +56,4 @@ Styling lists
 
 ## To do list
 - Add 'draft/notes' section formatting... perhaps fixed width type.
+- [] <https://btholt.github.io/intro-to-web-dev-v2/>

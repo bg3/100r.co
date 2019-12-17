@@ -8,7 +8,7 @@ link: "#333333"
 <div class="index-collections">
   {% for collection in site.collections %}
   <div class="index-collection">
-    <h2>{{ collection.label }}</h2>
+    <h2>{{ collection.title }}</h2>
     <ul>
       {% for item in site[collection.label] %}
       <li><a href="{{ item.url }}">{{ item.title }}</a></li>

@@ -3,16 +3,25 @@ markdown: kramdown
 collections:
   about:
     output: true
+    title: About
   recipes:
     output: true
+    title: Cooking and recipes
   language:
     output: true
+    title: Language
   common-lisp:
     output: true
+    title: Common Lisp
   woodworking:
     output: true
+    title: Woodworking
   sailing:
     output: true
+    title: Sailing
+  electronics:
+    output: true
+    title: Electronics
 defaults:
   -
     scope:

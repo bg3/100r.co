@@ -1,0 +1,31 @@
+I"�<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Date</th>
+      <th style="text-align: left">Name/link</th>
+      <th style="text-align: center">Rating</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">20191210</td>
+      <td style="text-align: left"><a href="https://www.jamieoliver.com/recipes/pasta-recipes/scruffy-aubergine-lasagne/">Scruffy eggplant lasagne</a></td>
+      <td style="text-align: center">good</td>
+      <td>Needed more simmering time and burnt easily in the first stage.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.theguardian.com/food/2019/nov/11/thomasina-miers-celeriac-steaks-sherry-lardons-capers-recipe?CMP=Share_iOSApp_Other">Celeriac steaks with sherry, lardons and capers</a></td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://pickledplum.com/vegan-jajangmyeon-korean-noodles-black-bean-sauce/">Jajangmyeon</a></td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+:ET

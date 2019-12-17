@@ -1,11 +1,6 @@
 ---
-title: Table example
-bg: "#337CA0"
-fg: "#EADEDA"
+title: Common Lisp reading
+fg: "#337CA0"
 ---
-| Logical | Operators |
-|:---:| --- |
-| `&&` | Logical and |
-| `\|\|` | Logical or |
-| `!` | Logical not |
-| `? :` | Logical ternary |
+
+- [ ] <https://news.ycombinator.com/item?id=21735148>
