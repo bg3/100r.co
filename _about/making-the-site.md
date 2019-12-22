@@ -13,6 +13,7 @@ link: "#99336a"
 [Jekyll difference in days](https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll)
 <https://www.w3schools.com/css/css3_flexbox.asp>
 <https://every-layout.dev>
+Accessibility: <https://avanier.now.sh/wiki/ara.html>
 
 ### Markdown
 <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links>
