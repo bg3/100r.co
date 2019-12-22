@@ -59,6 +59,19 @@ Styling lists
 #333333 + #d1d4cd (default)
 #fffff5 + #13140f
 
+**Index default **
+
+fg:   "#333333"
+link: "#333333"
+linkhover: "#ffffff"
+
+**Under construction**
+
+fg: "#000000"
+bg: "#ffcc00"
+link: "#ffffff"
+linkhover: "#000000"
+
 ### Typefaces?
 - Baskerville
 - Big Caslon
