@@ -6,12 +6,13 @@ fg:   "#333333"
 link: "#333333"
 ---
 <div class="index-collections">
-  {% for collection in site.collections %}
+  {% assign cols = site.collections | where_exp:"collection", "collection.label != 'posts'" %}
+  {% for collection in cols %}
   <div class="index-collection">
     <h2>{{ collection.title }}</h2>
     <ul>
       {% for item in site[collection.label] %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      <li><a href="{{ item.url }}">{{ item.title }}</a> {{ item.date | date: "%m %b %Y" }}</li>
       {% endfor %}
     </ul>
   </div>

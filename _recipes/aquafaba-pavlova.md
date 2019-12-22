@@ -1,10 +1,9 @@
 ---
-title: "Aquafaba pavlova"
-bg: "#ffffff"
-fg: "#eedddd"
+title: "Aquafaba pavlova, with colliding descenders and ascenders"
+bg: "#FF4136"
+fg: "#ffffff"
+link: "#FFA390"
 ---
-![A bowl of corn congee with various pickles and chilli oil.](/assets/images/corn-congee.png)
-
 ## Ingredients
 
 |---: | :---  | :--- |

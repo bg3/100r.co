@@ -1,36 +1,8 @@
-@font-face {
-  font-family: 'Cooper';
-  src:url("/assets/fonts/cooperl.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cooper';
-  src:url("/assets/fonts/cooperli.ttf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Cooper';
-  src:url("/assets/fonts/cooperm.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cooper';
-  src:url("/assets/fonts/coopermi.ttf");
-  font-weight: bold;
-  font-style: italic;
-}
-
 body {
   padding: 10% 10%;
   line-height: 1.4;
-  font-size: 24px;
-  font-family: serif;
+  font-size: 1.5em;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   background-color: #d1d4cd;
   color: #000000;
 }
@@ -73,7 +45,7 @@ strong {
 
 .index-collections {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   /*justify-content: space-between;*/
   justify-content: flex-start;
@@ -81,6 +53,14 @@ strong {
 }
 
 .index-collection {
-  width: 33%;
   margin: 0.7em 0 1.3em 0;
+}
+
+.site-name {
+  font-family: serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  padding-bottom: 0.5em;
+  line-height: 0.8em;
 }

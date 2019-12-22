@@ -43,6 +43,9 @@ Rather than keep a lot of tabs open or add bookmarks, I keep links here where I 
 - [ ] <https://www.reddit.com/r/DnD/comments/cufwiz/art_oc_henry_oak_a_nature_loving_hippie_druid_dad/>
 - [ ] <https://www.amazon.com/How-Do-Nothing-Resisting-Attention-ebook/dp/B07RHWKD7N/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=>
 - [ ] <https://www.reddit.com/r/worldnews/comments/ebr4h7/like_a_furnace_australia_to_see_hottest_day_ever/>
+- [ ] <https://www.newyorker.com/magazine/2019/12/23/the-art-of-dying>
+- [ ] <https://publicdomainreview.org/essay/the-sound-and-the-story-exploring-the-world-of-paradise-lost>
+- [ ] <https://theamericanscholar.org/solitude-and-leadership/#.Xf7FeC1L3OR>
 
 ## Fashion ##
 - [ ] <https://www.gq.com/story/errolson-hugh-acronym-profile>
@@ -82,6 +85,10 @@ Rather than keep a lot of tabs open or add bookmarks, I keep links here where I 
 
 ## Japanese ##
 - [ ] <https://www.youtube.com/watch?v=rvUoakQf3I8>
+
+## Excel ##
+- [ ] <https://www.youtube.com/watch?v=0nbkaYsR94c>
+
 
 ## Art ##
 - [ ] <https://www.behance.net/gallery/85504157/Commissioned-Works-Mid-2019?tracking_source=best_of_behance_big_covers>

@@ -37,6 +37,8 @@ Styling lists
 - <http://formcontent.org>
 - <https://readwildness.com/20/>
 - **<https://www.behance.net/gallery/71857697/Lucas-Bargen>**
+- <https://emergencemagazine.org/story/papas-nativas/>
+- <https://boysbygirls.co.uk/news/marco-at-img-for-issue-15>
 
 ### Palettes
 
@@ -46,6 +48,8 @@ Styling lists
 - <http://www.d-p-q.uk>
 - <https://dribbble.com/shots/5970272-Kitsune-App-Celebration>
 - <https://cloudflare.design/color>
+#6b4a32 + #fefefe
+#333333 + #d1d4cd (default)
 
 ### Typefaces?
 - Baskerville
