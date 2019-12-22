@@ -1,6 +1,7 @@
 ---
-title: "Our boat"
+title: "The boat"
 ---
+Currently named 'Free Spirit'.
 
 AU WWA 12333 4A B4
 

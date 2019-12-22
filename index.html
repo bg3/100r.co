@@ -4,17 +4,42 @@ title: Park Imminent
 
 fg:   "#333333"
 link: "#333333"
+linkhover: "#ffffff"
 ---
-<div class="index-collections">
+<table>
+  <tr>
+    <th class="td-collection">Section</th>
+    <th>Title</th>
+    <th class="td-update">Updated</th>
+    <th class="td-date">Published</th>
+  <tr>
   {% assign cols = site.collections | where_exp:"collection", "collection.label != 'posts'" %}
   {% for collection in cols %}
-  <div class="index-collection">
-    <h2>{{ collection.title }}</h2>
-    <ul>
-      {% for item in site[collection.label] %}
       <li><a href="{{ item.url }}">{{ item.title }}</a> {{ item.date | date: "%m %b %Y" }}</li>
-      {% endfor %}
-    </ul>
-  </div>
+    {% for item in site[collection.label] %}
+      {%   assign today = item.update | date: '%s' %}
+      {%   assign start = item.date | date: '%s' %}
+      {%   assign secondsSince = today | minus: start %}
+      {%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60 %}
+      {%   assign daysSince = hoursSince | divided_by: 24 %}
+    <tr>
+      <td class="td-collection">
+        {% if forloop.first %}
+          {{ collection.title }}
+        {% endif %}
+      </td>
+      <td class="td-title">
+        {% if daysSince <= 30 and daysSince > 0  %}<strong>{% endif %}
+          <a class="truncate" href="{{ item.url }}">{{ item.title }}</a>
+        {% if daysSince <= 30 %}</strong>{% endif %}
+      </td>
+      <td class="td-update">
+        {{ item.update | date: "%d-%m-%Y" }}
+      </td>
+      <td class="td-date">
+        {{ item.date | date: "%d-%m-%Y" }}
+      </td>
+    </tr>
+        {% endfor %}
   {% endfor %}
-</div>
+</table>

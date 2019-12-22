@@ -3,6 +3,8 @@ title: "Aquafaba pavlova, with colliding descenders and ascenders"
 bg: "#FF4136"
 fg: "#ffffff"
 link: "#FFA390"
+date: "2019-12-01"
+update: "2019-12-03"
 ---
 ## Ingredients
 

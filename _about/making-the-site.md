@@ -8,6 +8,9 @@ link: "#99336a"
 
 ### Layout
 
+[Table of contents without outer padding](https://css-tricks.com/table-borders-inside/)
+[Jekyll liquid cheat sheet](https://gist.github.com/JJediny/a466eed62cee30ad45e2)
+[Jekyll difference in days](https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll)
 <https://www.w3schools.com/css/css3_flexbox.asp>
 <https://every-layout.dev>
 
