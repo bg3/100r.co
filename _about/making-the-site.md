@@ -1,8 +1,10 @@
 ---
 title: "Making the site"
-bg: "#fffcff"
-fg: "#060606"
-link: "#99336a"
+bg: "#eec8c7"
+fg: "#2e5ca9"
+link: "#1f78ff"
+date: 2019-12-02
+update: 2019-12-23
 ---
 ## References used
 
@@ -14,6 +16,7 @@ link: "#99336a"
 <https://www.w3schools.com/css/css3_flexbox.asp>
 <https://every-layout.dev>
 Accessibility: <https://avanier.now.sh/wiki/ara.html>
+<https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp>
 
 ### Markdown
 <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links>
@@ -54,6 +57,7 @@ Styling lists
 - <https://cloudflare.design/color>
 #6b4a32 + #fefefe
 #333333 + #d1d4cd (default)
+#fffff5 + #13140f
 
 ### Typefaces?
 - Baskerville

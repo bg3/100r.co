@@ -1,5 +1,9 @@
 ---
 title: "Links"
+bg: "#fffff5"
+fg: "#13140f"
+link: "#6633ff"
+date: 2019-12-06
 ---
 Rather than keep a lot of tabs open or add bookmarks, I keep links here where I can give them context and comments. This is a constant draft, there is no guarantee any of these links will be here next time.
 
@@ -46,6 +50,8 @@ Rather than keep a lot of tabs open or add bookmarks, I keep links here where I 
 - [ ] <https://www.newyorker.com/magazine/2019/12/23/the-art-of-dying>
 - [ ] <https://publicdomainreview.org/essay/the-sound-and-the-story-exploring-the-world-of-paradise-lost>
 - [ ] <https://theamericanscholar.org/solitude-and-leadership/#.Xf7FeC1L3OR>
+- [ ] <https://www.youtube.com/watch?time_continue=182&v=DHLPRrPXaPo&feature=emb_logo>
+- [ ] <https://www.youtube.com/watch?time_continue=72&v=AYSFN6UiVA8&feature=emb_logo>
 
 ## Fashion ##
 - [ ] <https://www.gq.com/story/errolson-hugh-acronym-profile>

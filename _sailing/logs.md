@@ -1,5 +1,6 @@
 ---
 title: Logs
+date: "2019-12-14"
 ---
 
 [Ship's log](#shipslog)

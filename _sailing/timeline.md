@@ -3,6 +3,7 @@ title: Boat history
 bg: "#f2e8df"
 fg: "#1f1f21"
 link: "#604d3c"
+date: "2019-12-16"
 ---
 | **Date**   | **Type** | **Description** | **Source** | **Amount AUD** |
 |:---        | :--- | :--- | :--- | ---: |

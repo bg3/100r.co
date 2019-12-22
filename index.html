@@ -15,10 +15,14 @@ linkhover: "#ffffff"
   <tr>
   {% assign cols = site.collections | where_exp:"collection", "collection.label != 'posts'" %}
   {% for collection in cols %}
-    {% for item in site[collection.label] %}
-      {%   assign today = item.update | date: '%s' %}
-      {%   assign start = item.date | date: '%s' %}
-      {%   assign secondsSince = today | minus: start %}
+    {% assign sorted_col = site[collection.label] | sort: 'update' | reverse %}
+    {% for item in sorted_col %}
+      {%   assign updated = site.time | date: '%s' %}
+      {% if item.update %}
+        {%  assign updated = item.update | date: '%s' %}
+      {% endif %}
+      {%   assign published = item.date | date: '%s' %}
+      {%   assign secondsSince = updated | minus: published %}
       {%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60 %}
       {%   assign daysSince = hoursSince | divided_by: 24 %}
     <tr>
@@ -28,7 +32,7 @@ linkhover: "#ffffff"
         {% endif %}
       </td>
       <td class="td-title">
-        {% if daysSince <= 30 and daysSince > 0  %}<strong>{% endif %}
+        {% if daysSince <= 30 and daysSince >= 0  %}<strong>{% endif %}
           <a class="truncate" href="{{ item.url }}">{{ item.title }}</a>
         {% if daysSince <= 30 %}</strong>{% endif %}
       </td>

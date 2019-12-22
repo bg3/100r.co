@@ -1,24 +1,31 @@
 body {
   padding: 10% 10%;
   line-height: 1.4;
-  font-size: 1.5em;
-  font-family: serif;
+  font-size: 1.0em;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   background-color: #d1d4cd;
   color: #000000;
 }
 
-article {
+.site-name {
+  position: fixed;
+  float: left;
+  font-family: serif;
+  font-size: 2.0em;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  padding-bottom: 3em;
+  padding-right: 1em;
+  line-height: 0.8em;
+}
+
+.c_article {
+  float: right;
   width: 36em;
   margin: 0 auto;
   max-width: 100%;
   line-height: 1.5;
   font-size: 18px;
-}
-
-@media only screen and (max-width: 320px) {
-  article {
-    font-size: 16px;
-  }
 }
 
 a {
@@ -34,18 +41,23 @@ li {
   margin: 0.25em 0em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.05em;
-    padding-bottom: 0.5em;
-    line-height: 0.8em;
+h1 {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 2em;
 }
 
-h1 { font-weight: normal; font-size: 2.8em; }
-h2 { font-weight: bold; font-size: 1.6em; }
-h3 { font-weight: bold; font-size: 1.2em; }
+h2 {
+  padding: 1em 0 1em 0;
+  font-style: oblique;
+}
+
+.task-list-item-checkbox  {
+  margin-right: 1em;
+}
 
 table, th, td {
-  padding: 0.50em;
+  padding: 0.25em;
   border-collapse: collapse;
 }
 
@@ -53,25 +65,7 @@ strong {
   font-weight: bold;
 }
 
-.site-name {
-  font-size: 1.6em;
-  font-weight: bold;
-  letter-spacing: -0.05em;
-  padding-bottom: 0.5em;
-  line-height: 0.8em;
-}
-
-.container {
-  display: flex; /* or inline-flex */
-  margin-top: 3em;
-}
-
-.c_title {
-  flex: 1 1 25%;
-  padding-left: 0%;
-  padding-right: 10%;
-}
-
-.c_article {
-  flex: 1 1 75%;
+img {
+  right: 0em;
+  max-width: 100%;
 }
