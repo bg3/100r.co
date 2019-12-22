@@ -15,7 +15,6 @@ linkhover: "#ffffff"
   <tr>
   {% assign cols = site.collections | where_exp:"collection", "collection.label != 'posts'" %}
   {% for collection in cols %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a> {{ item.date | date: "%m %b %Y" }}</li>
     {% for item in site[collection.label] %}
       {%   assign today = item.update | date: '%s' %}
       {%   assign start = item.date | date: '%s' %}
