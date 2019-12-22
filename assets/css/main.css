@@ -12,7 +12,7 @@ body {
   font-size: 2.0em;
   font-weight: bold;
   letter-spacing: -0.05em;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
   line-height: 0.8em;
 }
 
@@ -136,4 +136,12 @@ table tr td:last-child, table tr th:last-child {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.webring {
+  padding-top: 9em;
+  width: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
