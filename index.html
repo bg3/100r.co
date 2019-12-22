@@ -33,12 +33,12 @@ linkhover: "#000000"
         {% endif %}
       </td>
       <td class="td-title">
-        {% if daysSince <= 30 and daysSince >= 0  %}<strong>{% endif %}
+        {% if daysSince <= 30 and daysSince >= -1  %}<strong>{% endif %}
           <a class="truncate" href="{{ item.url }}">{{ item.title }}</a>
         {% if daysSince <= 30 %}</strong>{% endif %}
       </td>
       <td class="td-update">
-        {{ item.update | date: "%d-%m-%Y" }} ({{ daysSince }})
+        {{ item.update | date: "%d-%m-%Y" }}
       </td>
       <td class="td-date">
         {{ item.date | date: "%d-%m-%Y" }}
