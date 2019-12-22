@@ -38,7 +38,7 @@ linkhover: "#000000"
         {% if daysSince <= 30 %}</strong>{% endif %}
       </td>
       <td class="td-update">
-        {{ item.update | date: "%d-%m-%Y" }}
+        {{ item.update | date: "%d-%m-%Y" }} ({{ daysSince }})
       </td>
       <td class="td-date">
         {{ item.date | date: "%d-%m-%Y" }}
