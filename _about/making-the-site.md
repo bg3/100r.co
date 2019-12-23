@@ -1,12 +1,21 @@
 ---
-title: "Making the site"
-bg: "#eec8c7"
+title: "Site 'making-of' and to-do list"
+bg: "#D9D8DE"
 fg: "#2e5ca9"
 link: "#1f78ff"
 date: 2019-12-02
 update: 2019-12-23
 ---
-## References used
+## To do
+
+* create a notes/sketch style for pages that are (temporarily or continuously) in draft.
+* add css for bulleted/numbered lists
+* add css for quotes
+
+## Completed
+Started 23-12-2019, anything earlier is not listed.
+
+## References
 
 ### Layout
 

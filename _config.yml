@@ -22,6 +22,9 @@ collections:
   electronics:
     output: true
     title: Electronics
+  misc:
+    output: true
+    title: Miscellaneous
 defaults:
   -
     scope:
