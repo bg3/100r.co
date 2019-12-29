@@ -29,8 +29,12 @@ body {
 }
 
 .meta {
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding-bottom: 2em;
+}
+
+i, em {
+  font-style: italic;
 }
 
 a {
@@ -39,7 +43,8 @@ a {
 }
 
 p {
-  margin: 0.5em 0em 0.5em;
+  /*text-indent: 2em;*/
+  margin: 0.8em 0;
 }
 
 li {
@@ -48,23 +53,37 @@ li {
 
 h1 {
   font-weight: bold;
-  text-decoration: underline;
-  padding-bottom: 1em;
+  font-size: 1.2em;
+  padding: 1em 0 0.5em 0;
   line-height: 1.8;
 }
 
 h2 {
-  padding: 1em 0 1em 0;
-  font-style: oblique;
+  padding: 0 0 0.5em 0;
+  margin: 1.5em 0 0.5em 0;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+h3 {
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  font-weight: bold;
 }
 
 .task-list-item-checkbox  {
   margin-right: 1em;
 }
 
+table {
+  margin: 1em 0;
+  width: 100%;
+  font-size: 0.8em;
+}
 table, th, td {
-  padding: 0.25em;
   border-collapse: collapse;
+  padding: 0.5em 0.75em;
+  background-color: #ffffff;
 }
 
 strong {
@@ -72,6 +91,11 @@ strong {
 }
 
 img {
+  width: auto;
+  height: auto;
   right: 0em;
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

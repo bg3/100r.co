@@ -20,28 +20,27 @@ Each task or event gets its own line and I draw a square box next to it. When I 
 
 I also take short notes sometimes, these just get marked with a dot instead of a box. I don't take detailed notes or do brainstorming on these pages.
 
-## STRUCTURE
+## Structure
 Here's how I organise the pages:
 
-## Year to do/goals
+### Year to do/goals
 I add this page when I start the notebook. This is where I capture any goals or tasks that I won't be doing in the current month. This is a good place for loosely defined goals as well.
 
 When I start a new month, I choose which of these I'd like to attempt in that month and write them down in that month's **month to do/goals**.
 
-## Year events
+### Year events
 Similar to the **year to do/goals**, this is for regular occurrences like birthdays and events/appointments that are in the future. I just write a date and a description when I add them and don't worry that they're not necessarily in chronological order.
 
 When I start a new month, I look for any events listed for that month and write them in that month's **month events** page.
 
-## Month to do/goals
-## Month events
+### Month to do/goals & Month events
 I write these pages at the start of the month. For the month events I write the days of the month down one page, one day per line and write any appointments on the line.
 
 They both work similarly to the year pages, at the start of a week I copy over any goals I want to achieve or events that will occur to their pages.
 
 I find I put more items into the month pages than the year pages because I don't get a lot of advance notice on things.
 
-## Daily
+###  Daily
 I combine the goals and events into a single daily page. Each day can be less than a whole page, depending on how much you note down.
 
 I set up the daily pages at the start of each week, filling out the scheduled appointments from the monthly list and picking the tasks I want to achieve from the monthly goals. You could make a weekly goals section but I think once you get to this level it's better to allocate them to a specific day.

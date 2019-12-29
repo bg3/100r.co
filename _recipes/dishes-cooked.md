@@ -1,6 +1,7 @@
 ---
 title: "Dishes cooked/to try"
 bg: "#FF4136"
+tablebg: "#FF4136"
 fg: "#ffffff"
 link: "#FFA390"
 date: 2019-12-06

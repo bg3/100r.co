@@ -3,6 +3,7 @@ title: "Edgell Instant Mashed Potatoes (by Sarah)"
 source: ""
 author: "Sarah Foster"
 bg: "#f7f6ec"
+tablebg: "#f7f6ec"
 fg: "#a7182f"
 date: 2019-12-06
 ---

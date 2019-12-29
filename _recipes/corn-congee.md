@@ -4,6 +4,7 @@ source: "Smith & Deli-cious"
 author: "Mo Wyse and Shannon Martinez"
 date: 2019-12-06
 bg: "#F9E79F"
+tablebg: "#F9E79F"
 fg: "#935116"
 ---
 ![A bowl of corn congee with various pickles and chilli oil.](/assets/images/corn-congee.png)

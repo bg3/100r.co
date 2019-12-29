@@ -148,7 +148,7 @@ table tr td:last-child, table tr th:last-child {
 }
 
 .webring {
-  padding-top: 9em;
+  margin-top: 9em;
   width: 3em;
   display: block;
   margin-left: auto;

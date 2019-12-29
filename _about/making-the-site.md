@@ -11,6 +11,7 @@ location: Melbourne, Australia
 ## To do
 
 * create a notes/sketch style for pages that are (temporarily or continuously) in draft.
+* add nav links/skip
 * add css for bulleted/numbered lists
 * add css for quotes
 * get rid of reset.css and use normalise.
