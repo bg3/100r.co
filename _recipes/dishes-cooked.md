@@ -15,3 +15,5 @@ date: 2019-12-06
 | | [Jajangmyeon](https://pickledplum.com/vegan-jajangmyeon-korean-noodles-black-bean-sauce/) | |
 | | [Peanut butter biscuits](https://lovingitvegan.com/crunchy-vegan-peanut-butter-cookies/) | |
 | | [Seasons of the monastic table](https://emergencemagazine.org/story/seasons-of-the-monastic-table/#/) | |
+| | Babka | |
+| | [Fire cider vinegar](https://www.onegreenplanet.org/vegan-recipe/fire-cider-vinegar/) | |

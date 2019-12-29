@@ -24,7 +24,7 @@ The project for this chapter is to implement a series of logic gates using only 
 
 I simulated these using a tool called [Logisim](http://www.cburch.com/logisim/), which is a lot of fun to tinker with. The circuit images for the gates are screenshots from Logisim.
 
-### NAND
+### NAND (1-bit)
 
 |Inputs   | a, b |
 |Outputs  | out  |
@@ -68,9 +68,10 @@ Negating the two inputs before they pass through a NAND gate makes an OR gate.
 |Outputs  | out |
 |Function | If a ≠ b then out = 1, else out = 0 |
 
-XOR only outputs true when one of the inputs is true, not both.
+XOR only outputs true when one of the inputs is true, not both. This was the first tricky one for me.
+I've marked in the gate functions being performed by clusters of NANDs.
 
-
+![Circuit diagram of an XOR gate made from five NAND gates](/assets/images/programming/elements/1-xor.png)
 
 ### MUX (1-bit)
 
@@ -80,10 +81,14 @@ Multiplexer, can control which input passes through to the output by using a *se
 |Outputs  | out |
 |Function | If sel = 0 then out = a, else out = b |
 
+![Circuit diagram of a MUX gate made from eight NAND gates](/assets/images/programming/elements/1-mux.png)
+
 ### DMUX (1-bit)
 
 Demultiplexer, controls which output the input passes through to.
 
-|Inputs   | a, b |
-|Outputs  | out |
+|Inputs   | in, sel |
+|Outputs  | a, b |
 |Function | If sel = 0 then { a = in, b = 0 } else { a = 0, b = in }
+
+![Circuit diagram of a DMUX gate made from five NAND gates](/assets/images/programming/elements/1-dmux.png)

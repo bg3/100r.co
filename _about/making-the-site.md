@@ -87,13 +87,6 @@ bg: "#ffcc00"
 link: "#ffffff"
 linkhover: "#000000"
 
-### Typefaces?
-- Baskerville
-- Big Caslon
-- Bodoni
-- Charter
-
-
 ## To do list
 - Add 'draft/notes' section formatting... perhaps fixed width type.
 - [] <https://btholt.github.io/intro-to-web-dev-v2/>
