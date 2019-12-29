@@ -1,16 +1,20 @@
 ---
-title: "Site 'making-of' and to-do list"
+title: "Site to-do list and notes"
+layout: normalized_article
 bg: "#D9D8DE"
 fg: "#2e5ca9"
 link: "#1f78ff"
 date: 2019-12-02
-update: 2019-12-23
+update: 2019-12-25
+location: Melbourne, Australia
 ---
 ## To do
 
 * create a notes/sketch style for pages that are (temporarily or continuously) in draft.
 * add css for bulleted/numbered lists
 * add css for quotes
+* get rid of reset.css and use normalise.
+* when the index page grows, only show the most recent X items in each collection?
 
 ## Completed
 Started 23-12-2019, anything earlier is not listed.

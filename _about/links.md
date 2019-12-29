@@ -4,6 +4,8 @@ bg: "#fffff5"
 fg: "#13140f"
 link: "#6633ff"
 date: 2019-12-06
+updated: 2019-12-25
+location: Melbourne, Australia
 ---
 Rather than keep a lot of tabs open or add bookmarks, I keep links here where I can give them context and comments. This is a constant draft, there is no guarantee any of these links will be here next time.
 
@@ -18,14 +20,15 @@ Rather than keep a lot of tabs open or add bookmarks, I keep links here where I 
 ## Games and storytelling
 - [ ] <http://situationlab.org/project/the-thing-from-the-future/>
 
+## Board games
+- [ ] [Pax Pamir](https://www.meeplemountain.com/reviews/pax-pamir-2nd-edition-review-the-players-of-games/)
+
 ## Music
 - [ ] [Oddworld: Abe's Oddysee - full soundtrack](https://www.youtube.com/watch?v=8npn9vKSALc)
-
 - [x] [Legacy of Kain : Soul Reaver Official Sound Track](https://www.youtube.com/watch?v=0HfYVKJEGvo)
-
 - [ ] [Shadow of the Colossus OST (Playstation 2](https://www.youtube.com/watch?v=pmoYLtObCtY)
-
 - [x] [Age of Empires 2 Soundtrack (Full)](https://www.youtube.com/watch?v=jadxTFqyhRM)
+- [ ] <https://soundcloud.com/user-183876901>
 
 ## Lines ##
 - [x] <https://www.premiumropes.com/rope-advice/rope-length>
@@ -96,6 +99,8 @@ Rather than keep a lot of tabs open or add bookmarks, I keep links here where I 
 ## Excel ##
 - [ ] <https://www.youtube.com/watch?v=0nbkaYsR94c>
 
+## Music ##
+- [ ] <https://daily.bandcamp.com/best-of-2019/the-best-ambient-releases-of-2019>
 
 ## Art ##
 - [ ] <https://www.behance.net/gallery/85504157/Commissioned-Works-Mid-2019?tracking_source=best_of_behance_big_covers>

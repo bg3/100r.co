@@ -3,14 +3,18 @@ title: Boat history
 bg: "#f2e8df"
 fg: "#1f1f21"
 link: "#604d3c"
-date: "2019-12-16"
+date: 2019-12-16
+layout: normalized_article
 ---
 | **Date**   | **Type** | **Description** | **Source** | **Amount AUD** |
 |:---        | :--- | :--- | :--- | ---: |
-| 2008-04-16 | INVOICE | FF5040 Fuel filter short Bosch 2002, R12T fuel filter, labour | Miller Marine, Langwarrin, #N301| 155.65 |
-| 2007-10-23 | INVOICE | Custom prop anode + inst., repair shower supply pump and bilge pump, 4 crumps, 1 anode prop nut shaft 3/4 unc (BLA 191482), Fuseholder 3AG 3a, 2 position switch | e-sea Marine Electronics, Brighton, #07-065 | 929.48 |
+| 2018-02-09 | SURVEY  | Restricted waters only. | Jeff Casely, Blue Marine | |
+| 2017-04-04 | QUOTE   | Rigging, furling jib, fibreglass, etc. repairs | Stephan, Tidal Marine and Dive quote #205 |
+| 2012-12-20 | SURVEY  |  | B.E. Dark, Maritek Pty Ltd. | |
 | 2009-04-24 | INVOICE | Club Marine (65K/10M/20K, 500 ex) comprehensive | Policy V178254, exp. 2009-03-10 | 876.60 |
+| 2008-04-16 | INVOICE | FF5040 Fuel filter short Bosch 2002, R12T fuel filter, labour | Miller Marine, Langwarrin, #N301| 155.65 |
 | 2008-03-20 | INVOICE | Club Marine (65K/10M/20K, 500 ex) comprehensive | Policy V178254, exp. 2009-03-26 | 864.60 |
+| 2007-10-23 | INVOICE | Custom prop anode + inst., repair shower supply pump and bilge pump, 4 crumps, 1 anode prop nut shaft 3/4 unc (BLA 191482), Fuseholder 3AG 3a, 2 position switch | e-sea Marine Electronics, Brighton, #07-065 | 929.48 |
 | 2007-03-26 | INVOICE | Club Marine (65K/10M/20K, 500 ex) comprehensive | Policy V178254, exp. 2008-03-26 | 860.50 |
 | 2007-03-26 | INVOICE | Club Marine (65K/0/0, 1000 ex) transit cover | Policy V178253, exp. 2008-04-26 | 206.25 |
 | 2007-06-25 | INVOICE | Uniden 5W VHF marine handheld radio | Rope & Marine Supplies SA inv 37556 | 204.00 |
@@ -26,10 +30,10 @@ date: "2019-12-16"
 | 2007-03-15 | SALE | Purchased from MF | Sale invoice/receipt | 65,000.00 |
 | 2007-03-14 | SALE | Purchased from MF | CP, Club Marine insurance app (2007-03-21) | 65,000.00 |
 | 2007-03-13 | | CP applied to SYC to register yacht and transfer SM sail number. | | |
-| 2007-02-07 | VALUATION | Available for sale | SB, email enquiry to David Bray Yachts | 69,000.00 |
-| 2007-02-15 | SURVEY | | Stephen Charles Gale |
-| 2003       | | ? Engine overhaul | CP, Club Marine insurance app (2007-03-21) | |
-| 2003-02-05 | | Named Crystal Dreaming | Survey (2003-02-05) | |
+| 2007-02-07 | NOTE | Available for sale | SB, email enquiry to David Bray Yachts | 69,000.00 |
+| 2007-02-15 | SURVEY | | Stephen Charles Gale | ? |
+| 2003       | NOTE | ? Engine overhaul | CP, Club Marine insurance app (2007-03-21) | |
+| 2003-02-05 | NOTE | Named Crystal Dreaming | Survey (2003-02-05) | |
 | 2003-02-05 | VALUATION |  | Survey (2003-02-05) | 75,000.00 |
-| 2003-02-05 | SURVEY | | Navatair Pty Ltd | 423.00 |
+| 2003-02-05 | SURVEY | | Peter K. Southwell, Navatair Pty Ltd | 423.00 |
 | 2002       | | ? New rigging | CP, Club Marine insurance app (2007-03-21) | |

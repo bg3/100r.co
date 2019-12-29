@@ -5,7 +5,14 @@ fg: "#000000"
 bg: "#ffcc00"
 linkhover: "#ffffff"
 link: "#000000"
+banner: UNDER CONSTRUCTION!
+bannerbg: "#000000"
+bannerfg: "#ffcc00"
+
 ---
+{% if page.banner %}
+<div class="banner">{{ page.banner }}</div>
+{% endif %}
 <table>
   <tr>
     <th class="td-collection">Section</th>

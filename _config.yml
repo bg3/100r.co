@@ -7,21 +7,12 @@ collections:
   recipes:
     output: true
     title: Cooking and recipes
-  language:
+  programming:
     output: true
-    title: Language
-  common-lisp:
-    output: true
-    title: Common Lisp
-  woodworking:
-    output: true
-    title: Woodworking
+    title: Programming
   sailing:
     output: true
     title: Sailing
-  electronics:
-    output: true
-    title: Electronics
   misc:
     output: true
     title: Miscellaneous

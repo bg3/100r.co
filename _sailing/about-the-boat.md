@@ -2,7 +2,7 @@
 title: "Cavalier 32"
 bg: "#e6e7ea"
 link: "#45716c"
-date: "2019-12-14"
+date: 2019-12-14
 ---
 
 ![Our boat, a 1984 Cavalier 32](/assets/images/IMG_5573.png)

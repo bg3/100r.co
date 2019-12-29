@@ -4,6 +4,7 @@ bg: "#C1C1C1"
 fg: "#333333"
 link: "#34168D"
 date: "2019-12-24"
+location: Melbourne, Australia
 ---
 I use a plain hardcover notebook to keep track of appointments, to do lists and as a general log. Because it's a plain notebook, I add new sections/pages as I go and don't have to worry about running out of room.
 

@@ -1,6 +1,6 @@
 ---
 title: Logs
-date: "2019-12-14"
+date: 2019-12-14
 ---
 
 [Ship's log](#shipslog)
@@ -26,6 +26,7 @@ DATE         COMMENTS
 ------------------------------------------------------------------------------------------------------
 2019-12-14   First sailing in our yacht. Sandringham to Docklands. Arrived in the middle of a speech by Lisa Blair. Met Dan, won a trip on Lisa's yacht next week, went for dinner: us three, Lisa and Tom (Corsair, Southport).
 2019-12-16   Visited yacht around 7pm to fit new mooring lines. Met Lisa and Mark who are in opposite berth.
+2019-12-21   Dan, Sarah and I went sailing on Lisa's yacht. Winds were 25+ kts, she decided it was too rough to take us out into the bay. We sailed up and back the port entry a few times.
 
 ENGINEERING AND MAINTENANCE
 <a name="englog"></a>

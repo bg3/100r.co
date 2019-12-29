@@ -1,6 +1,6 @@
 ---
 title: "Mooring lines"
-date: "2019-12-16"
+date: 2019-12-16
 ---
 
 Diameter for 32ft ~ 16mm
