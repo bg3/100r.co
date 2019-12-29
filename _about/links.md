@@ -56,6 +56,9 @@ Rather than keep a lot of tabs open or add bookmarks, I keep links here where I 
 - [ ] <https://www.youtube.com/watch?time_continue=182&v=DHLPRrPXaPo&feature=emb_logo>
 - [ ] <https://www.youtube.com/watch?time_continue=72&v=AYSFN6UiVA8&feature=emb_logo>
 - [ ] <https://solar.lowtechmagazine.com/2011/12/the-chinese-wheelbarrow.html>
+- [ ] [HN reading list](https://news.ycombinator.com/item?id=21900498)
+- [ ] [HN paean to Sid Meier's Alpha Centauri](https://news.ycombinator.com/item?id=21901268)
+- [ ] <https://en.wikipedia.org/wiki/The_Conquest_of_Bread>
 
 ## Fashion ##
 - [ ] <https://www.gq.com/story/errolson-hugh-acronym-profile>

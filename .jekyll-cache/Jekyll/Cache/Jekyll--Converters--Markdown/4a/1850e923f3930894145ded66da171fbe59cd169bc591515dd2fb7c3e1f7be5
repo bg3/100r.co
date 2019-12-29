@@ -1,0 +1,7 @@
+I"ž<h2 id="introduction">Introduction</h2>
+<p>The book <em>The Elements of Computing Systems</em> by Noam Nisan and Shimon Schocken explains the design of a modern computer starting at the level of the most basic logic gates and working up to high level programming languages and operating systems.</p>
+
+<p>Each chapter of the book contains a project to be completed, such as designing a CPU, building an assembler and implementing an operating system. Each chapters and project builds on the knowledge and work in the previous chapters (though they could also be completed out of order as independent exercises).</p>
+
+<p>These are my notes as I work through the book.</p>
+:ET

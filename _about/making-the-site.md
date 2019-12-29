@@ -5,7 +5,7 @@ bg: "#D9D8DE"
 fg: "#2e5ca9"
 link: "#1f78ff"
 date: 2019-12-02
-update: 2019-12-25
+update: 2019-12-29
 location: Melbourne, Australia
 ---
 ## To do
@@ -15,6 +15,7 @@ location: Melbourne, Australia
 * add css for quotes
 * get rid of reset.css and use normalise.
 * when the index page grows, only show the most recent X items in each collection?
+* expand 'Mooring lines' page into mooring guide over time.
 
 ## Completed
 Started 23-12-2019, anything earlier is not listed.

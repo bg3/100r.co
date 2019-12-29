@@ -8,4 +8,5 @@ date: 2019-12-27
 ---
 
 - <https://en.cppreference.com/w/c>
+- <http://buildyourownlisp.com/chapter8_error_handling>
 - [ ] Learn how to use lldb
