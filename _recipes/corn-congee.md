@@ -1,7 +1,7 @@
 ---
 title: "Corn Congee"
-source: "Smith & Deli-cious"
-author: "Mo Wyse and Shannon Martinez"
+original-source: "Smith & Deli-cious"
+original-author: "Mo Wyse and Shannon Martinez"
 date: 2019-12-06
 bg: "#F9E79F"
 tablebg: "#F9E79F"

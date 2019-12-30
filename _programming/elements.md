@@ -16,7 +16,7 @@ Each chapter of the book contains a project to be completed, such as designing a
 
 You can find more information about the book here: [From Nand to Tetris](https://www.nand2tetris.org).
 
-These are my notes as I work through the book.
+These are my notes as I work through the book. I'm sure there are much better solutions than mine to many of the problems.
 
 ## Chapter 1: Boolean Logic
 
@@ -92,3 +92,61 @@ Demultiplexer, controls which output the input passes through to.
 |Function | If sel = 0 then { a = in, b = 0 } else { a = 0, b = in }
 
 ![Circuit diagram of a DMUX gate made from five NAND gates](/assets/images/programming/elements/1-dmux.png)
+
+### Multi-bit gates
+
+These are simply arrays of the above gates, e.g. an 8-bit OR gate applies an OR function to 8 separate pairs of input bits (a[0 to 7] and b[0 to 7]).
+
+### Multi-way gates
+
+For multi-way gates, the logic applies to all of the inputs at once, not separately. For example, a multi-way OR gate with 8 input bits would have a single output bit that would be true if any of the 8 input bits were true.
+
+### Multi-way OR (8-way)
+
+|Inputs   | in[8] |
+|Outputs  | out   |
+|Function | out = Or(in[0], in[1], in[2], ..., in[7]) |
+
+Is there a version that uses less gates?
+
+![Circuit diagram of an 8-way OR gate made from 20 NAND gates](/assets/images/programming/elements/1-8-way-or.png)
+
+### 4-way 16-bit MUX
+
+|Inputs   | a[16], b[16], c[16], d[16], sel[2] |
+|Outputs  | out[16] |
+|Function | If sel = 00 then out = a, else if sel = 01 then out = b, else if sel = 10 then out = c else if sel = 11 then out = d |
+
+A 4-way multiplexer is essentially two multiplexers mashed together. It has two select bits: sel[0] selects between a/b and c/d. The second bit selects between the two 'winners' of the first multiplexer.
+
+I've substituted 16-bit gates for most of this diagram to keep it comprehensible. The *extenders* are turning a 1-bit input into a 16-bit output (all bits are the same as the input).
+
+![Circuit diagram of an 16-bit 4-way MUX gate](/assets/images/programming/elements/1-4-way-mux-16.png)
+
+### 8-way 16-bit MUX
+
+|Inputs   | a[16], b[16], c[16], d[16], e[16], f[16], g[16], h[16], sel[3] |
+|Outputs  | out[16] |
+|Function | If sel = 000 then out = a, else if sel = 001 then out = b, else if sel = 010 then out = c ... else if sel = 111 then out = h |
+
+Have simplified the diagram for this one by showing 16-bit versions of the gates.
+
+![Circuit diagram of an 16-bit 8-way MUX gate](/assets/images/programming/elements/1-8-way-mux-16.png)
+
+### 4-way 1-bit DMUX
+
+|Inputs   | in, sel[2] |
+|Outputs  | a, b, c, d   |
+|Function | If sel = 00 then {a = in, b = c = d = 0}, else if sel = 01 then {b = in, a = c = d = 0}, else if sel = 10 then {c = in, a = b = d = 0}, else if sel = 11 then {d = in, a = b = c = 0} |
+
+![Circuit diagram of an 4-way DMUX gate](/assets/images/programming/elements/1-4-way-dmux.png)
+
+### 8-way 1-bit DMUX
+
+|Inputs   | in, sel[3] |
+|Outputs  | a, b, c, d, e, f, g, h  |
+|Function | If sel = 000 then {a = in, b = c = d = e = f = g = h = 0}, else if sel = 001 then {b = in, a = c = d = e = f = g = h = 0}, else if sel = 010 ... else if sel = 111 then {h = in, a = b = c = d = e = f = g = 0} |
+
+![Circuit diagram of an 8-way DMUX gate](/assets/images/programming/elements/1-8-way-dmux.png)
+
+## Chapter 2: Boolean Arithmetic
