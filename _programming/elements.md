@@ -150,3 +150,60 @@ Have simplified the diagram for this one by showing 16-bit versions of the gates
 ![Circuit diagram of an 8-way DMUX gate](/assets/images/programming/elements/1-8-way-dmux.png)
 
 ## Chapter 2: Boolean Arithmetic
+
+The project for this chapter is to implement adder chips, then use these as part of an arithmetic logic unit (ALU).
+
+### Half-adder
+
+My first attempt worked but was a little redundant:
+![Circuit diagram of a half-adder](/assets/images/programming/elements/2-half-adder.png)
+
+Improved:
+![Circuit diagram of a half-adder](/assets/images/programming/elements/2-half-adder-v2.png)
+
+### Full-adder
+
+*h/a* indicates half-adders.
+
+![Circuit diagram of a full-adder](/assets/images/programming/elements/2-full-adder.png)
+
+### 16-bit adder
+
+This is a chain of full adders, each passing their carry bit to the next adder.
+
+I can't get this to work in Logisim unless I put a constant 0 bit in to the carry pin of the first full adder (see centre top of diagram).
+Might come back to this.
+
+![Circuit diagram of a 16-bit adder](/assets/images/programming/elements/2-16-bit-adder.png)
+
+### Arithmetic logic unit (ALU)
+
+There's a lot to explain here. This has been the most interesting exercise in the book so far.
+
+![Circuit diagram of an ALU](/assets/images/programming/elements/2-alu.png)
+
+## Chapter 3: Sequential Logic
+
+### 1-bit register
+
+The square block is a data flip flop (another fundamental piece used as a primitive for the textbook). It has a clock signal feeding into it, and outputs whatever was fed in one clock cycle ago.
+
+Feeding its output back in means it will store the value permanently. I have added a multiplexer however, so we can choose between feeding in the currently stored value (default), or when the load bit is set, storing a new value.
+
+![Circuit diagram of a 1-bit register](/assets/images/programming/elements/3-bit.png)
+
+### 16-bit register
+
+Just many 1-bit registers linked together and sharing a load bit and clock signal.
+
+![Circuit diagram of a 16-bit register](/assets/images/programming/elements/3-register.png)
+
+### RAM
+
+This is 8 x 16-bit registers linked together. The address input will determine which 16-bit register is selected (by the multiplexers) to load and to output.
+
+![Circuit diagram of RAM](/assets/images/programming/elements/3-ram8.png)
+
+### Program counter
+
+![Circuit diagram of a program counter](/assets/images/programming/elements/3-counter.png)

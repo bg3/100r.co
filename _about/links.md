@@ -76,6 +76,8 @@ Rather than keep a lot of tabs open or add bookmarks, I keep links here where I 
 - [ ] <https://www.divio.com/blog/documentation/>
 - [ ] <https://github.com/danistefanovic/build-your-own-x>
 - [ ] <https://cse.buffalo.edu/~rapaport/Papers/phics.pdf>
+- [ ] <http://craftinginterpreters.com>
+- [ ] <https://news.ycombinator.com/item?id=21923737>
 
 ## Reverse engineering ##
 - [ ] <https://www.youtube.com/watch?v=NwfZBRTqXFY>

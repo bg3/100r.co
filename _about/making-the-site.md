@@ -23,6 +23,12 @@ Started 23-12-2019, anything earlier is not listed.
 
 ## References
 
+### Jekyll
+
+Updating OS X seems to have taken Ruby out of my path. Fixed by entering:
+
+`export PATH=$HOME/.gem/ruby/X.X.0/bin:$PATH`
+
 ### Layout
 
 [Table of contents without outer padding](https://css-tricks.com/table-borders-inside/)
