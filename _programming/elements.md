@@ -200,7 +200,7 @@ Just many 1-bit registers linked together and sharing a load bit and clock signa
 
 ### RAM
 
-This is 8 x 16-bit registers linked together. The address input will determine which 16-bit register is selected (by the multiplexers) to load and to output.
+This is 8 x 16-bit registers linked together. The address input will determine which 16-bit register is selected (by the demultiplexers) to load and to output.
 
 ![Circuit diagram of RAM](/assets/images/programming/elements/3-ram8.png)
 
