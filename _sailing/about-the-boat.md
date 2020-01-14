@@ -7,6 +7,7 @@ date: 2019-12-14
 
 ![Our boat, a 1984 Cavalier 32](/assets/images/IMG_5573.png)
 
+## Notes
 Currently named 'Free Spirit'.
 
 AU WWA 12333 4A B4
@@ -21,4 +22,5 @@ country "waterways authority"
 The first project for the boat was replacing the mooring lines, done.
 Next are 1) replace the prop anode, 2) get the sitting water out of the bilge, 3) clean the head lines, 4) map out the electrical and plumbing systems, 5) map and replace the running rigging.
 
+## To read
 - [ ] <https://we.riseup.net/assets/268677/sailfarm.pdf>

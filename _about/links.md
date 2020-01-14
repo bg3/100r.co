@@ -1,5 +1,5 @@
 ---
-title: "Links"
+title: "Links (to read list)"
 bg: "#fffff5"
 fg: "#13140f"
 link: "#6633ff"

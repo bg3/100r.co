@@ -1,5 +1,5 @@
 ---
-title: "How I keep track of things"
+title: "Organisation method"
 bg: "#C1C1C1"
 fg: "#333333"
 link: "#34168D"
@@ -40,7 +40,7 @@ They both work similarly to the year pages, at the start of a week I copy over a
 
 I find I put more items into the month pages than the year pages because I don't get a lot of advance notice on things.
 
-###  Daily
+### Daily
 I combine the goals and events into a single daily page. Each day can be less than a whole page, depending on how much you note down.
 
 I set up the daily pages at the start of each week, filling out the scheduled appointments from the monthly list and picking the tasks I want to achieve from the monthly goals. You could make a weekly goals section but I think once you get to this level it's better to allocate them to a specific day.

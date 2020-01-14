@@ -1,0 +1,36 @@
+I"�<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="cant-stop-engine">Can’t stop engine</h3>
+<p>Unlike a petrol engine, a diesel engine does not require electrical ignition for combustion. The compressed air in a diesel engine reaches a temperature high enough to ignite the fuel.</p>
+
+<p>This means that once it’s running, it’s pretty easy to keep the engine running - it only needs fuel and air.</p>
+
+<p>Removing the fuel line from the intake pump will <em>eventually</em> cause the engine to stop, after it’s exhausted the fuel left in the pump and lines.</p>
+
+<h2 id="component-details">Component details</h2>
+<h3 id="key-switch">Key switch</h3>
+<p>The key has 5 positions:</p>
+<ul>
+  <li><strong>a</strong> Off position (insert and remove key)</li>
+  <li><strong>b</strong> Warning and instrument lamps only</li>
+  <li><strong>c</strong> Thermostart</li>
+  <li><strong>d</strong> Start</li>
+  <li><strong>e</strong> Engine stop</li>
+</ul>
+
+<p><img src="/assets/images/bukh-key-switch.png" alt="Diagram of key positions" /></p>
+
+<p>The starter should not be used for more than 10 secs, without a rest of at least 30 seconds.</p>
+
+<p>The switch should not be left in the stop position because the stop solenoid draws a lot of current and will be damaged.</p>
+
+<h2 id="replacement-parts">Replacement parts</h2>
+<h3 id="fuel-stop-solenoid">Fuel stop solenoid</h3>
+<p>BUKH Stop Solenoid. BOSCH p/n 0 330 101 024
+Diesel Parts Direct: £80.14
+Amazon: £118.59
+T.Norris: £298.00</p>
+
+<h2 id="references">References</h2>
+<p>http://bukh.co.uk/wp-content/uploads/sites/8/2016/09/Owners-Handbook-BUKH-DV-10-20-ME.pdf
+https://www.youtube.com/watch?v=M-BkJYN-xvQ</p>
+:ET

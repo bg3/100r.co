@@ -26,8 +26,8 @@ Spring Lines prevent fore and aft movement and should run nearly parallel to the
 
 Double all lines with high winds (50 kt +)
 
-The 'cleat' on the foredeck is actually called a Samson post, although perhaps not a true one?
-Seems like midship cleats would be worth it.
+The 'cleat' on our foredeck is actually called a Samson post, although perhaps not a true one? Guess it's because needs to be strong to hold the anchor line?
+Seems like midship cleats might be worth it.
 <https://www.thehulltruth.com/boating-forum/770980-how-tie-off-post-cleat.html>
 
 ## Springing on/off ##

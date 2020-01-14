@@ -1,6 +1,5 @@
 ---
 title: CL reading list
-fg: "#337CA0"
 date: 2019-12-06
 ---
 

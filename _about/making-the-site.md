@@ -25,9 +25,7 @@ Started 23-12-2019, anything earlier is not listed.
 
 ### Jekyll
 
-Updating OS X seems to have taken Ruby out of my path. Fixed by entering:
 
-`export PATH=$HOME/.gem/ruby/X.X.0/bin:$PATH`
 
 ### Layout
 
@@ -48,6 +46,10 @@ Accessibility: <https://avanier.now.sh/wiki/ara.html>
 
 Iterating through all collections, and their pages.
 <https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll>
+
+Updating OS X seems to take Ruby version out of my path each time it updates. Fixed by entering:
+`export PATH=$HOME/.gem/ruby/X.X.0/bin:$PATH`
+(version 2.6.0)
 
 ### Typography
 Setting line length based on type size
