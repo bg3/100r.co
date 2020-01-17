@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<link rel="stylesheet" type="text/css" href="/assets/css/article-v2.css">
+      <style>
+        body {
+					background-color: {{page.bg}};
+					color: {{page.fg}};
+				}
+
+				a {
+					color: {{page.link}};
+				}
+
+				a:hover {
+					color: {{page.linkhover}}
+				}
+      </style>
+		</head>
+		<body>
+			<div class="con">
+					<h1>{{ page.title }}</h1>
+					{{ content }}
+			</div>
+			<div class="nav">
+				<div class="site-name"><a href="/">Park</br>Imminent</a></div>
+				<div class="meta">
+				{% if page.update and page.date %}
+					<p>Published {{ page.date | date: "%-d %b %Y" }}</p>
+					<p>Updated {{ page.update | date: "%-d %b %Y"}}</p>
+				{% elsif page.date %}
+					<p>Published {{ page.date | date: "%-d %b %Y" }}</p>
+				{% endif %}
+				{% if page.location %}
+					<p>{{ page.location }}</p>
+				{% endif %}
+				</div>
+			</div>
+
+		</body>
+	</html>

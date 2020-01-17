@@ -1,7 +1,10 @@
 ---
 title: "Bukh DV20 ME diesel engine"
-bg: "#e6e7ea"
-link: "#45716c"
+fg: "#333333"
+bg: "#d1d4cd"
+linkhover: "#366"
+link: "#333333"
+layout: article-v2
 date: 2020-01-13
 update: 2020-01-14
 ---
@@ -14,6 +17,8 @@ This means that once it's running, it's pretty easy to keep the engine running -
 Removing the fuel line from the intake pump will *eventually* cause the engine to stop, after it's exhausted the fuel left in the pump and lines.
 
 Removing the air supply could be used if the engine is getting fuel from somewhere else (e.g. leaking oil).
+
+Studierende der Leibnitz Universitat Hannover entwerfen Visionen wie Arbeit die Stadt von morgen strukturiert.
 
 *Possible causes: faulty key switch, faulty fuel stop solenoid.*
 
@@ -34,9 +39,38 @@ The switch should not be left in the stop position (**e**) because the stop sole
 
 The thermostart heats an electric coil in the air inlet manifold which then ignites fuel, so that the air intake is preheated.
 
+### Fuel stop solenoid
+
+Stop magnet
+Make BOSCH type 0330 101 024
+Voltage 12 volt
+In case of defects on the stop solenoid, which cannot be repaired, the stop solenoid must be replaced. When mounting a new stop solenoid observe the following:
+1. Tighten the four fixing screws A evenly. At the slightest misalignment due to the tightening the stop solenoid will not work.
+2. The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as
+on the stop solenoid previously used.
+This is done easiest by dismounting the stop solenoid together with the cover C.
+3. "Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam." from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
+4. Tighten the four fixing screws A evenly. At the slightest misalignment due to the tightening the stop solenoid will not work.
+5. The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod.
+6. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as
+on the stop solenoid previously used.
+7. This is done easiest by dismounting the stop solenoid together with the cover C.
+8. "Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam." from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
+9. Tighten the four fixing screws A evenly. At the slightest misalignment due to the tightening the stop solenoid will not work.
+10. The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as
+on the stop solenoid previously used.
+This is done easiest by dismounting the stop solenoid together with the cover C.
+11. "Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam." from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
+
+
+
+
+Or this...
+https://www.youtube.com/watch?v=5u5fLYRtiKQ
+
 ## Replacement parts
 ### Fuel stop solenoid
-BUKH Stop Solenoid. BOSCH p/n 0 330 101 024
+BUKH Stop Solenoid. BOSCH 0 330 101 024
 Diesel Parts Direct: £80.14
 Amazon: £118.59
 T.Norris: £298.00
@@ -44,4 +78,5 @@ T.Norris: £298.00
 ## References
 http://bukh.co.uk/wp-content/uploads/sites/8/2016/09/Owners-Handbook-BUKH-DV-10-20-ME.pdf
 https://www.youtube.com/watch?v=M-BkJYN-xvQ
-https://www.seabreeze.com.au/forums/Sailing/General/Cant-stop?page=1
+https://www.seabreeze.com.au/forums/Sailing/General/Cant-stop
+https://forums.ybw.com/index.php?threads/bukh-stop-solenoid-it-pays-to-shop-around.492152/

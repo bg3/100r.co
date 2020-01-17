@@ -1,6 +1,6 @@
 ---
 title: "Site to-do list and notes"
-layout: normalized_article
+layout: article-v2
 bg: "#D9D8DE"
 fg: "#2e5ca9"
 link: "#1f78ff"
@@ -70,7 +70,7 @@ Styling lists
 - <https://emergencemagazine.org/story/papas-nativas/>
 - <https://boysbygirls.co.uk/news/marco-at-img-for-issue-15>
 
-### Palettes
+## Palettes
 
 - <https://www.awwwards.com/sites/gautier-maillard-portfolio-1>
 - <https://collection-wakawaka.world/objects>
@@ -81,6 +81,12 @@ Styling lists
 #6b4a32 + #fefefe
 #333333 + #d1d4cd (default)
 #fffff5 + #13140f
+
+### Under construction
+fg: "#000000"
+bg: "#ffcc00"
+linkhover: "#ffffff"
+link: "#000000"
 
 **Index default **
 
