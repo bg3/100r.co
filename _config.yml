@@ -16,6 +16,12 @@ collections:
   misc:
     output: true
     title: Miscellaneous
+  unstarted:
+    output: true
+    title: Ideas and unstarted projects
+  language:
+    output: true
+    title: Language
 defaults:
   -
     scope:

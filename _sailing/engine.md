@@ -49,21 +49,8 @@ In case of defects on the stop solenoid, which cannot be repaired, the stop sole
 2. The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as
 on the stop solenoid previously used.
 This is done easiest by dismounting the stop solenoid together with the cover C.
-3. "Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam." from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
-4. Tighten the four fixing screws A evenly. At the slightest misalignment due to the tightening the stop solenoid will not work.
-5. The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod.
-6. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as
-on the stop solenoid previously used.
-7. This is done easiest by dismounting the stop solenoid together with the cover C.
-8. "Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam." from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
-9. Tighten the four fixing screws A evenly. At the slightest misalignment due to the tightening the stop solenoid will not work.
-10. The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as
-on the stop solenoid previously used.
-This is done easiest by dismounting the stop solenoid together with the cover C.
-11. "Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam." from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
 
-
-
+>Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam. from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
 
 Or this...
 https://www.youtube.com/watch?v=5u5fLYRtiKQ

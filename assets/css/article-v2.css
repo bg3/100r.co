@@ -378,6 +378,15 @@ template {
   font-family: sans-serif;
 }
 
+.page-title {
+  margin-top: 6em;
+}
+
+ .page-title h1 {
+   letter-spacing: 0.025em;
+   font-family: sans-serif;
+ }
+
 .con h1, h2, h3 {
   font-size: 1em;
 }
@@ -397,7 +406,7 @@ template {
 }
 
 .meta {
-  padding-top: 8em;
+  padding-top: 4em;
   width: 15em;
   font-size: 0.8em;
   line-height: 1em;
@@ -414,6 +423,7 @@ ol {
 
 ol>li {
   list-style: none;
+  margin-bottom: 0.5em;
   /* remove this line and you can see the 'real' numbering */
 }
 
@@ -424,4 +434,22 @@ ol>li:before {
   width: 4em;
   display: inline-block;
   text-align: left;
-}}
+}
+
+ul {
+  margin-left: 1.5em;
+}
+
+ul>li>ul, ol>li>ul {
+  margin-left: -1em;
+  margin-bottom: 0.5em;
+}
+
+img {
+  width: 100%;
+}
+
+blockquote {
+  margin: 2em;
+  font-style: italic;
+}
