@@ -5,8 +5,7 @@ bg: "#d1d4cd"
 linkhover: "#366"
 link: "#333333"
 layout: article-v2
-date: 2020-01-13
-update: 2020-01-14
+date: 2020-01-21
 published: true
 ---
 I received a tear-off Japanese calendar as a gift. Aside from many horological divisions and symbols, each day has a short saying at the bottom. I've started translating these, in an effort to improve my vocabulary.
