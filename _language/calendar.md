@@ -10,6 +10,11 @@ published: true
 ---
 I received a tear-off Japanese calendar as a gift. Aside from many horological divisions and symbols, each day has a short saying at the bottom. I've started translating these, in an effort to improve my vocabulary.
 
+## ２０２０年１月２１日（か）
+知る者は　言わず　言う者は　知らず
+shirumono wa iwazu iumono wa shirazu.
+Those who know do not say, those who say do not know.
+
 ## ２０２０年１月２０日（月）
 無病は　一生の　極楽  
 mubyou wa　isshou no　gokuraku  
