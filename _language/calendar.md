@@ -83,7 +83,7 @@ Beautiful flowers come later on.
 ## １月２９日
 聞くは一時の恥、聞かぬは一生の恥  
 *kiku wa hitotoki no haji, kikanu wa isshou no haji.*  
-Asking a question is embarassing for a moment, not asking for a lifetime.
+Asking a question is embarrassing for a moment, not asking is embarrassing forever.
 
 ## １月３０日
 去る者は追わず  
