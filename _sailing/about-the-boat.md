@@ -3,12 +3,21 @@ title: "Cavalier 32"
 bg: "#e6e7ea"
 link: "#45716c"
 date: 2019-12-14
+update: 2020-02-01
 ---
 
 ![Our boat, a 1984 Cavalier 32](/assets/images/IMG_5573.png)
 
-## Notes
 Currently named 'Free Spirit'.
+
+# To do
+
+- replace fuel stop solenoid with cable
+- replace prop anode
+- clean foreward hatch handle buildup
+- replace seals on foreward hatch
+- find source of leak in galley
+- clean pilot berth locker
 
 AU WWA 12333 4A B4
 
