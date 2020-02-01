@@ -17,7 +17,7 @@ Currently named 'Free Spirit'.
 - clean foreward hatch handle buildup
 - replace seals on foreward hatch
 - find source of leak in galley
-- clean pilot berth locker
+- clean quarter berth locker
 
 AU WWA 12333 4A B4
 
