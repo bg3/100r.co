@@ -16,9 +16,7 @@ This means that once it's running, it's pretty easy to keep the engine running -
 
 Removing the fuel line from the intake pump will *eventually* cause the engine to stop, after it's exhausted the fuel left in the pump and lines.
 
-Removing the air supply could be used if the engine is getting fuel from somewhere else (e.g. leaking oil).
-
-Studierende der Leibnitz Universitat Hannover entwerfen Visionen wie Arbeit die Stadt von morgen strukturiert.
+Removing the air supply could be used if the engine is getting fuel from somewhere else (e.g. leaking oil).\
 
 *Possible causes: faulty key switch, faulty fuel stop solenoid.*
 
@@ -56,6 +54,13 @@ Or this...
 https://www.youtube.com/watch?v=5u5fLYRtiKQ
 
 ## Replacement parts
+
+### Oil
+Morris Lubricants: I would recommend a product now called Golden Film SAE 30 for this application which is slightly thicker but will give you an API of CC.
+
+Bukh: the engine and gearbox any 15W40 mineral oil that is suitable for heavy duty diesel engines will be fine.
+https://forums.ybw.com/index.php?threads/bukh-dv20-diesel-sulphur-engine-oil-all-very-confusing.463716/
+
 ### Fuel stop solenoid
 BUKH Stop Solenoid. BOSCH 0 330 101 024
 Diesel Parts Direct: £80.14
