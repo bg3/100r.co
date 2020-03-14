@@ -59,7 +59,9 @@ https://www.youtube.com/watch?v=5u5fLYRtiKQ
 Morris Lubricants: I would recommend a product now called Golden Film SAE 30 for this application which is slightly thicker but will give you an API of CC.
 
 Bukh: the engine and gearbox any 15W40 mineral oil that is suitable for heavy duty diesel engines will be fine.
+
 https://forums.ybw.com/index.php?threads/bukh-dv20-diesel-sulphur-engine-oil-all-very-confusing.463716/
+https://www.canalworld.net/forums/index.php?/topic/77731-correct-oil-for-bukh-engines/
 
 ### Fuel stop solenoid
 BUKH Stop Solenoid. BOSCH 0 330 101 024
