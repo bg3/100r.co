@@ -11,18 +11,6 @@ fg: "#33322B"
 
 ## Ingredients
 
-1 1/2 C . Warm Water
-1 T . Sugar
-2 tsp . Kosher Salt
-1 tsp Package Active Dry Yeast 2 1/4
-4 1/2 C . All-Purpose Flour
-2 T . Vegan Margarine Melted
-1 oz Package Veggie Dogs 12 .
-1 C . Warm Water
-1 T . Baking Soda
-1-2 T . Vegan Margarine Melted
-Kosher or Pretzel Salt to Finish
-
 |---:   | :---    | :--- |
 | 1.5   | cups    | warm water |
 | 1     | tbsp    | sugar |
