@@ -18,6 +18,7 @@ fg: "#33322B"
 | 1/2   |       | lemon, zested
 
 ### Icing
+
 |---:   | :---  | :--- |
 | 150   | g     | icing sugar |
 | 12    |       | lemon, juiced |
