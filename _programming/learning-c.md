@@ -11,13 +11,13 @@ location:   Melbourne, Australia
 
 This page is a journal of my efforts to learn C. It details the resources I used, what I learned from them and whether I would recommend them. Most recent entries are towards the bottom.
 
-# Prior knowledge
+## Prior knowledge
 
 I have tinkered with computers since I was a kid, but never became proficient in any area. I can clumsily put together HTML and CSS, I get a lot out of Excel, get something moving around in an engine like Unity and make something simple with a scripting language and a lot of Stack Overflow searches.
 
 My programming knowledge is shallow - I know what variables and loops and functions are but not continuations or callbacks or generics. I have difficulty creating anything complex without it becoming overwhelming.
 
-# Why C?
+## Why C?
 
 I had managed to cobble together a single page web application at work using HTML and JavaScript. It took some poorly formatted CSV records and validated them against a set of business rules, allowing the user to fix the errors before exporting the corrected versions in the original format. The heavy lifting was done by some libraries ([Tabulator](http://tabulator.info) and [Papa Parse](https://www.papaparse.com)) but I was still amazed that I had managed to make a complete _thing_.
 
@@ -33,13 +33,13 @@ This feeling had been growing over time. A year or so back I reached some sort o
 
 So, why not start at the other end of things? Something portable, low-level and not built on layers and layers of abstraction. There were languages old and new I could have chosen, but I settled on C. This was largely based on feeling rather than reason, so there's not much I can say to defend it. That feeling probably came from the composting of dozens of articles and blog posts I read that mentioned C and other languages over the years.
 
-# April 2020: Modern C
+## April 2020: Modern C
 
 I found this book in a Hacker News [comment](https://news.ycombinator.com/item?id=22519876) and searching for some other comments indicated it was probably okay to start with. It's divided into three sections, _Acquaintance_, _Cognition_ and _Experience_, corresponding to beginner, intermediate and advanced.
 
 If I didn't have some inkling about programming this book would be unapproachable. It's very dense and seems very technical.
 
-# Miscellaneous notes (these will be removed or merged into sections above)
+## Miscellaneous notes (these will be removed or merged into sections above)
 
 - [Modern C](https://modernc.gforge.inria.fr)
 - [Ask HN: How do I learn C properly?](https://news.ycombinator.com/item?id=22519876)
