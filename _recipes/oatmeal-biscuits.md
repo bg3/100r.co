@@ -6,7 +6,7 @@ fg:           "#111111"
 bg:           "#fffff9"
 link:         "#fa5c5c"
 linkhover:    "#fe8268"
-tablebg:      "#eeeeee""
+tablebg:      "#eeeeee"
 ---
 
 ## Ingredients
