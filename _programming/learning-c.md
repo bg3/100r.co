@@ -39,11 +39,50 @@ I found this book in a Hacker News [comment](https://news.ycombinator.com/item?i
 
 If I didn't have some inkling about programming this book would be unapproachable. It's very dense and seems very technical.
 
-### Notes
+Chapter 11 talks about destroying a struct. I know C has some memory management, have heard of malloc before. But up to and including this point it hasn't been mentioned.
+
+## Delete a struct?
 ```
 void rat_destroy(rat* rp) {
   if (rp) *rp = (rat){ 0 };
 }
+```
+
+### 10.2 Pointers and structures
+I have struggled a bit with this section and will need to return to it.
+
+Why was this function defined to accept rat (ratio) structs as well as pointers?
+```
+rat* rat_rma(rat* rp, rat x, rat y) {
+  return rat_sumup(rp, rat_get_prod(x, y));
+}
+```
+
+This section in one explanation also puzzled me, I couldn't work out what the second line was doing... assigning the result of toto_get somehow?
+It's not doing anything. It's a declaration of a function... struct toto* is the return type.
+
+```
+/* forward declaration of struct toto */
+struct toto;
+struct toto* toto_get(void);
+void toto_destroy(struct toto*);
+void toto_doit(struct toto*, unsigned);
+```
+
+### 10.3 Pointers and arrays
+This is interesting. Pointers and arrays can be accessed interchangeably.
+
+So these are equivalent:
+
+```
+A[i]
+*(A+i)
+```
+
+And so are these:
+```
+A[m][n]
+(*A)[n]
 ```
 
 ## Miscellaneous notes (these will be removed or merged into sections above)
