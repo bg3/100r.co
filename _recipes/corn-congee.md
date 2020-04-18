@@ -1,5 +1,5 @@
 ---
-title: "Corn Congee"
+title: "Corn congee"
 original-source: "Smith & Deli-cious"
 original-author: "Mo Wyse and Shannon Martinez"
 date: 2019-12-06

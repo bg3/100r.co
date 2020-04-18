@@ -1,5 +1,5 @@
 ---
-title:        "Oatmeal Biscuits"
+title:        "Oatmeal biscuits"
 original-url: "https://lovingitvegan.com/simple-vegan-oatmeal-cookies/"
 date:         2020-04-18
 fg:           "#111111"
