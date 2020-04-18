@@ -39,6 +39,13 @@ I found this book in a Hacker News [comment](https://news.ycombinator.com/item?i
 
 If I didn't have some inkling about programming this book would be unapproachable. It's very dense and seems very technical.
 
+### Notes
+```
+void rat_destroy(rat* rp) {
+  if (rp) *rp = (rat){ 0 };
+}
+```
+
 ## Miscellaneous notes (these will be removed or merged into sections above)
 
 - [Modern C](https://modernc.gforge.inria.fr)
