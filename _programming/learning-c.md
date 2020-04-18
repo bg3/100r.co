@@ -37,11 +37,13 @@ So, why not start at the other end of things? Something portable, low-level and 
 
 I found this book in a Hacker News [comment](https://news.ycombinator.com/item?id=22519876) and searching for some other comments indicated it was probably okay to start with. It's divided into three sections, _Acquaintance_, _Cognition_ and _Experience_, corresponding to beginner, intermediate and advanced.
 
-If I didn't have some inkling about programming this book would be unapproachable. It's very dense and seems very technical.
+If I didn't have some inkling about programming this book would be unapproachable. It's very dense and some things are not explained at all - extern and static are used and I have no idea what they do. Same with the [...] operator for areas and (...) for functions.
 
-Chapter 11 talks about destroying a struct. I know C has some memory management, have heard of malloc before. But up to and including this point it hasn't been mentioned.
+The density I appreciate in this case, because I am not having to skim and skip over sections.
+## 10
 
-## Delete a struct?
+This talks about destroying a struct. I know C has some memory management, have heard of malloc before. But up to and including this point it hasn't been mentioned.
+
 ```
 void rat_destroy(rat* rp) {
   if (rp) *rp = (rat){ 0 };
@@ -84,6 +86,26 @@ And so are these:
 A[m][n]
 (*A)[n]
 ```
+
+### 11.4 Function Pointers
+
+```
+typedef void atexit_function(void);
+// Two equivalent definitions of the same type, which hides a pointer
+typedef atexit_function* atexit_function_pointer;
+typedef void (*atexit_function_pointer)(void);
+// Five equivalent declarations for the same function
+void atexit(void f(void));
+void atexit(void (*f)(void));
+void atexit(atexit_function f);
+void atexit(atexit_function* f);
+void atexit(atexit_function_pointer f);
+```
+
+I'm not sure what's happening here. p146.
+1. Is this declaring atexit_function(void) as symbol representing void?
+3. Defines atexit_function_pointer as a symbol for atexit_function*?
+4. Defines (\*atexit_function_pointer)(void) as a void type?
 
 ## Miscellaneous notes (these will be removed or merged into sections above)
 
