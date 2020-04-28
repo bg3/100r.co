@@ -41,7 +41,9 @@ I found this book in a Hacker News [comment](https://news.ycombinator.com/item?i
 If I didn't have some inkling about programming this book would be unapproachable. It's very dense and some things are not explained at all - extern and static are used and I have no idea what they do. Same with the [...] operator for areas and (...) for functions.
 
 The density I appreciate in this case, because I am not having to skim and skip over sections.
-## 10
+
+### 10.2 Pointers and structures
+I have struggled a bit with this section and will need to return to it.
 
 This talks about destroying a struct. I know C has some memory management, have heard of malloc before. But up to and including this point it hasn't been mentioned.
 
@@ -50,9 +52,6 @@ void rat_destroy(rat* rp) {
   if (rp) *rp = (rat){ 0 };
 }
 ```
-
-### 10.2 Pointers and structures
-I have struggled a bit with this section and will need to return to it.
 
 Why was this function defined to accept rat (ratio) structs as well as pointers?
 ```
@@ -104,9 +103,19 @@ void atexit(atexit_function_pointer f);
 ```
 
 I'm not sure what's happening here. p146.
-1. Is this declaring atexit_function(void) as symbol representing void?
-3. Defines atexit_function_pointer as a symbol for atexit_function*?
-4. Defines (\*atexit_function_pointer)(void) as a void type?
+I understand the idea, but not the syntax.
+
+### 12.2 Unions
+This is interesting. It seems simpler than the explanation, actually.
+
+## Kilo text editor
+At this point I was almost finished with the intermediate section of the book and wanted to follow along with making something. I found a tutorial on building a simple text editor, only 1000 lines of code.
+
+[Build Your Own Text Editor](https://viewsourcecode.org/snaptoken/kilo/index.html)
+
+The first thing I notice is that there are a lot of arcane structures, functions and flags required to work with the editor. I looked up man pages online for some of these, which gives me comfort that these are all documented _somewhere_. But the man pages are still very cryptic for me. How could I work out on my own that a particular terminal needs XYZ flag set in order to do something, whereas in Windows some additional flag must be set?
+
+This sort of things is intimidating sometimes - it feels undiscoverable and dissuades experimentation. Too easy to get lost trying to figure out a tiny little thing that you're just supposed to know. Obviously tutorials like the one linked above explain these things, but it's back to the feeling of layers upon layers.
 
 ## Miscellaneous notes (these will be removed or merged into sections above)
 
