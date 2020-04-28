@@ -1,6 +1,7 @@
 ---
 title:        "Oatmeal biscuits"
 original-url: "https://lovingitvegan.com/simple-vegan-oatmeal-cookies/"
+original-source: "lovingitvegan.com"
 date:         2020-04-18
 fg:           "#111111"
 bg:           "#fffff9"
