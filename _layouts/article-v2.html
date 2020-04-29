@@ -19,13 +19,10 @@
       </style>
 		</head>
 		<body>
-			<div class="con">
-					{{ content }}
-			</div>
 			<div class="nav">
-				<div class="site-name"><a href="/">Park</br>Imminent</a></div>
-				<div class="page-title"><h1>{{ page.title }}</h1></div>
-				<div class="meta">
+			<div class="site-name"><a href="/">Park</br>Imminent</a></div>
+			<div class="page-title"><h1>{{ page.title }}</h1></div>
+			<div class="meta">
 				{% if page.update and page.date %}
 					<p>Published {{ page.date | date: "%-d %b %Y" }}</p>
 					<p>Updated {{ page.update | date: "%-d %b %Y"}}</p>
@@ -37,6 +34,10 @@
 				{% endif %}
 				</div>
 			</div>
+			<div class="con">
+					{{ content }}
+			</div>
+
 
 		</body>
 	</html>
