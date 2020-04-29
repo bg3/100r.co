@@ -1,0 +1,16 @@
+html {
+  font-size: medium;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: georgia, times, serif;
+  margin: 2rem auto 8rem;
+	min-width: 25em;
+	max-width: 33em;
+  // padding: 0 2em;
+  width: auto;
+  font-size: 1rem;
+  line-height: 1.4;
+}
