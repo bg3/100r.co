@@ -1,0 +1,49 @@
+html {
+  font-size: medium;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: serif;
+  margin: 2rem auto 8rem;
+  min-width: 25em;
+  max-width: 40em;
+  /* padding: 0 2em; */
+  width: auto;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/*
+.nav {
+  position: fixed;
+  margin-left: 42em;
+  padding: 4em 1em 0em 4em;
+  float: left;
+}
+*/
+
+.site-name {
+  font-family: serif;
+  font-size: 2.0em;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  line-height: 0.8em;
+}
+
+.site-name a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
