@@ -117,6 +117,25 @@ The first thing I notice is that there are a lot of arcane structures, functions
 
 This sort of things is intimidating sometimes - it feels undiscoverable and dissuades experimentation. Too easy to get lost trying to figure out a tiny little thing that you're just supposed to know. Obviously tutorials like the one linked above explain these things, but it's back to the feeling of layers upon layers.
 
+### 1 May 2020
+
+I can follow along with how this program works. The tutorial is very clearly written. If I was to start on something of my own however, I don't know when and how to use all the memory allocation functions as well as many other parts of the standard libraries.
+
+I will keep a list of some important ones to review, that I may have difficulty searching for later due to not knowing how to describe them. I will need to look back over the parts of the tutorial I have already covered.
+
+- memmove - this is like memcpy but safe to use when src and dest arrays overlap. Why use memcpy at all then? [link](https://flak.tedunangst.com/post/memcpy-vs-memmove)
+- free
+- malloc
+
+### 2 May 2020
+
+I take another detour and start trying to write something of my own. Beginning with [Advent of Code 2015](https://adventofcode.com/2015). I complete the first day's exercises, but decide to refine the answer so it reads the data from an input file instead of a literal. First roadblock... reading from a file. Safely.
+
+I will continue with the text editor for the moment.
+
+
+
+
 ## Miscellaneous notes (these will be removed or merged into sections above)
 
 - [Modern C](https://modernc.gforge.inria.fr)
@@ -130,7 +149,7 @@ This sort of things is intimidating sometimes - it feels undiscoverable and diss
 - <https://en.cppreference.com/w/c>
 - <http://buildyourownlisp.com>
 - [ ] Learn how to use lldb
-
+- [ ] https://github.com/glouw/gel/blob/master/main.c
 ## Compile
 `cc -std=c99 -Wall hello_world.c -o hello_world`
 
