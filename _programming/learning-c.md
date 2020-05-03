@@ -4,7 +4,6 @@ fg:           "#111111"
 bg:           "#fffff9"
 link:         "#fa5c5c"
 linkhover:    "#fe8268"
-tablebg:      "#eeeeee"
 date:       2019-12-27
 update:     2020-04-10
 location:   Melbourne, Australia
