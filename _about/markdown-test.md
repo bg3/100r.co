@@ -1,9 +1,5 @@
 ---
 title: "Markdown test page"
-fg: "#333333"
-bg: "#d1d4cd"
-linkhover: "#366"
-link: "#333333"
 layout: article-v2
 date: 2020-01-13
 update: 2020-01-14
