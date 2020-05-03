@@ -60,7 +60,7 @@ rat* rat_rma(rat* rp, rat x, rat y) {
 ```
 
 This section in one explanation also puzzled me, I couldn't work out what the second line was doing... assigning the result of toto_get somehow?
-It's not doing anything. It's a declaration of a function... struct toto* is the return type.
+It's not doing anything. It's a declaration of a function... struct toto\* is the return type.
 
 ```
 /* forward declaration of struct toto */
@@ -131,6 +131,22 @@ I will keep a list of some important ones to review, that I may have difficulty 
 I take another detour and start trying to write something of my own. Beginning with [Advent of Code 2015](https://adventofcode.com/2015). I complete the first day's exercises, but decide to refine the answer so it reads the data from an input file instead of a literal. First roadblock... reading from a file. Safely.
 
 I will continue with the text editor for the moment. I notice I have been typing in some parts of the code for this editor without really thinking about how they work. I will make more of an effort to understand each part.
+
+### 3 May 2020
+
+```
+E.cx = match - row->render;
+```
+
+"Otherwise, we loop through all the rows of the file. We use strstr() to check if query is a substring of the current row. It returns NULL if there is no match, otherwise it returns a pointer to the matching substring. To convert that into an index that we can set E.cx to, we subtract the row->render pointer from the match pointer, since match is a pointer into the row->render string."
+
+I do not understand how this pointer subtraction works.
+
+```
+char *editorPrompt(char* prompt, void (*callback)(char*, int));
+```
+
+I've been aligning the asterisks to the left so far, but how does it work in this case? ```(* callback)```? 
 
 ## Miscellaneous notes (these will be removed or merged into sections above)
 
