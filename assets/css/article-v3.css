@@ -23,6 +23,11 @@ body {
   float: left;
 }
 */
+p {
+  line-height: 2;
+  text-align: justify;
+}
+
 
 .site-name {
   font-family: serif;

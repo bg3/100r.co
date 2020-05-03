@@ -40,7 +40,7 @@ I found this book in a Hacker News [comment](https://news.ycombinator.com/item?i
 
 If I didn't have some inkling about programming this book would be unapproachable. It's very dense and some things are not explained at all - extern and static are used and I have no idea what they do. Same with the [...] operator for areas and (...) for functions.
 
-The density I appreciate in this case, because I am not having to skim and skip over sections.
+This is not saying it is a bad book - it seems to be vert good. The density I appreciate, because I am not having to skim and skip over filler. It is not an introductory text though.
 
 ### 10.2 Pointers and structures
 I have struggled a bit with this section and will need to return to it.
@@ -131,14 +131,10 @@ I will keep a list of some important ones to review, that I may have difficulty 
 
 I take another detour and start trying to write something of my own. Beginning with [Advent of Code 2015](https://adventofcode.com/2015). I complete the first day's exercises, but decide to refine the answer so it reads the data from an input file instead of a literal. First roadblock... reading from a file. Safely.
 
-I will continue with the text editor for the moment.
-
-
-
+I will continue with the text editor for the moment. I notice I have been typing in some parts of the code for this editor without really thinking about how they work. I will make more of an effort to understand each part.
 
 ## Miscellaneous notes (these will be removed or merged into sections above)
 
-- [Modern C](https://modernc.gforge.inria.fr)
 - [Ask HN: How do I learn C properly?](https://news.ycombinator.com/item?id=22519876)
 - [To become a good C programmer](http://fabiensanglard.net/c/)
 - [How to C in 2016](https://matt.sh/howto-c)
@@ -150,11 +146,6 @@ I will continue with the text editor for the moment.
 - <http://buildyourownlisp.com>
 - [ ] Learn how to use lldb
 - [ ] https://github.com/glouw/gel/blob/master/main.c
-## Compile
-`cc -std=c99 -Wall hello_world.c -o hello_world`
-
-`cc -std=c99 -Wall prompt.c -ledit -o prompt`
-
-`cc -std=c99 -Wall parsing.c mpc.c -ledit -lm -o parsing`
-
--ledit and -lm are shortcuts for linking editline and maths library?
+- <https://github.com/glouw/gel/blob/master/main.c>
+- <https://github.com/rby90/Project-Based-Tutorials-in-C>
+- <https://viewsourcecode.org/snaptoken/kilo/05.aTextEditor.html>
