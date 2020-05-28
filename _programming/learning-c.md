@@ -164,3 +164,4 @@ I've been aligning the asterisks to the left so far, but how does it work in thi
 - <https://github.com/glouw/gel/blob/master/main.c>
 - <https://github.com/rby90/Project-Based-Tutorials-in-C>
 - <https://viewsourcecode.org/snaptoken/kilo/05.aTextEditor.html>
+- <https://github.com/rxi/microui>
