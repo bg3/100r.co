@@ -335,16 +335,9 @@ int generate_page(FILE* out, page* p) {
 int generate_pages(page* pages, int page_count) {
   int n = 0;
   for (int i = 0; i < page_count; i++) {
-    /*
-    size_t filename_length = strlen(entry->d_name) + strlen(source_directory);
-    char filename[filename_length + 1];
-    strcpy(filename, source_directory);
-    strcat(filename, entry->d_name);
-    */
-    char* fn;
-    asprintf(&fn, "../%s.html", pages[i].filename);
+   char* fn;
+    asprintf(&fn, "../site/%s.html", pages[i].filename);
     FILE* out = fopen(fn, "w");
-    //  fprintf(out, "%s\n", pages[i].title);
     n += generate_page(out, &pages[i]);
    }
   return n;
@@ -355,7 +348,7 @@ void generate_index(page* pages, int page_count) {
   html_header(out, "Park Imminent");
   html_title(out, "Park Imminent");
   for (int i = 0; i < page_count; i++) {
-    fprintf(out, "<a href=\"%s.html\">%s</a></br>\n", pages[i].filename, pages[i].title);
+    fprintf(out, "<a href=\"./site/%s.html\">%s</a></br>\n", pages[i].filename, pages[i].title);
   }
   html_footer(out);
 }
@@ -394,7 +387,7 @@ void parse_file(FILE* file, page** p_pages, int* page_count) {
 
 int main() {
 
-  char* source_directory = ".";
+  char* source_directory = "../data/";
   DIR* dir = opendir(source_directory);
 
   struct dirent* entry;
@@ -410,8 +403,12 @@ int main() {
         entry->d_name[entry->d_namlen - 2] == 'p' &&
         entry->d_name[entry->d_namlen - 1] == 'i') {
       files++;
+      size_t filename_length = strlen(entry->d_name) + strlen(source_directory);
+      char filename[filename_length + 1];
+      strcpy(filename, source_directory);
+      strcat(filename, entry->d_name);
       printf("Processing file %3d: %s\n", files, entry->d_name);
-      FILE* f = fopen(entry->d_name, "r");
+      FILE* f = fopen(filename, "r");
       printf("num pages: %d\n", num_pages);
       parse_file(f, &raw_pages, &num_pages);
     }

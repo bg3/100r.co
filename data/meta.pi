@@ -29,3 +29,8 @@ Meta\About the site
 >   font-size: 1rem;
 >   line-height: 1.4;
 > }
+
+Meta\Site to-do list
+
+* Erase \site directory when generating
+* Create nested navigation
