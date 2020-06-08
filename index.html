@@ -1,55 +1,34 @@
----
-title: Park Imminent
-layout: index
-fg: "#111111"
-bg: "#fffff9"
-linkhover: "#fe8268"
-link: "#111111"
-banner:
-bannerbg: "#000000"
-bannerfg: "#d1d4cd"
----
-{% if page.banner %}
-<div class="banner">{{ page.banner }}</div>
-{% endif %}
-<table>
-  <tr>
-    <th class="td-collection">Section</th>
-    <th>Title</th>
-    <th class="td-update">Updated</th>
-    <th class="td-date">Published</th>
-  <tr>
-  {% assign cols = site.collections | where_exp:"collection", "collection.label != 'posts'" %}
-  {% for collection in cols %}
-    {% assign sorted_col = site[collection.label] | sort: 'update' | reverse %}
-    {% for item in sorted_col %}
-      {%   assign updated = site.time | date: '%s' %}
-      {% if item.update %}
-        {%  assign updated = item.update | date: '%s' %}
-      {% endif %}
-      {%   assign published = item.date | date: '%s' %}
-      {%   assign secondsSince = updated | minus: published %}
-      {%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60 %}
-      {%   assign daysSince = hoursSince | divided_by: 24 %}
-    <tr>
-      <td class="td-collection">
-        {% if forloop.first %}
-          {{ collection.title }}
-        {% endif %}
-      </td>
-      <td class="td-title">
-        {% if daysSince <= 30 and daysSince >= -1  %}<strong>{% endif %}
-          <a class="truncate" href="{{ item.url }}">{{ item.title }}</a>
-        {% if daysSince <= 30 %}</strong>{% endif %}
-      </td>
-      <td class="td-update">
-        {{ item.update | date: "%d-%m-%Y" }}
-      </td>
-      <td class="td-date">
-        {{ item.date | date: "%d-%m-%Y" }}
-      </td>
-    </tr>
-        {% endfor %}
-  {% endfor %}
-</table>
-<a href='https://webring.xxiivv.com/#random' target='_blank'><img class="webring" alt="Webring symbol" src='https://webring.xxiivv.com/icon.black.svg'/></a>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Park Imminent</title>
+</head>
+<body style="background-color: #fffff9">
+<h1>Park Imminent</h1>
+<a href="miscellaneouslinks-to-read-list.html">Miscellaneous\Links (to read list)</a></br>
+<a href="miscellaneousbike.html">Miscellaneous\Bike</a></br>
+<a href="miscellaneousorganisation-method.html">Miscellaneous\Organisation method</a></br>
+<a href="miscellaneousreading-list.html">Miscellaneous\Reading list</a></br>
+<a href="miscellaneoustime-tracking.html">Miscellaneous\Time tracking</a></br>
+<a href="recipescorn-congee.html">Recipes\Corn congee</a></br>
+<a href="recipesto-try.html">Recipes\To try</a></br>
+<a href="recipeslemon-cake.html">Recipes\Lemon cake</a></br>
+<a href="recipesoatmeal-biscuits.html">Recipes\Oatmeal biscuits</a></br>
+<a href="recipespeanut-butter-biscuits.html">Recipes\Peanut butter biscuits</a></br>
+<a href="recipespretzel-dogs.html">Recipes\Pretzel dogs</a></br>
+<a href="recipesroast-tomato-soup.html">Recipes\Roast tomato soup</a></br>
+<a href="recipessoba-buckwheat-noodles.html">Recipes\Soba (buckwheat noodles)</a></br>
+<a href="languagejapanese-calendar.html">Language\Japanese calendar</a></br>
+<a href="languageusing-a-macbook-japanese-keyboard.html">Language\Using a MacBook Japanese keyboard</a></br>
+<a href="metaabout-the-site.html">Meta\About the site</a></br>
+<a href="sailingcavalier-32.html">Sailing\Cavalier 32</a></br>
+<a href="sailingbukh-dv20-me-diesel-engine.html">Sailing\Bukh DV20 ME diesel engine</a></br>
+<a href="sailinglogs.html">Sailing\Logs</a></br>
+<a href="sailingmooring.html">Sailing\Mooring</a></br>
+<a href="sailingboat-history.html">Sailing\Boat history</a></br>
+<a href="programminglearning-c.html">Programming\Learning C</a></br>
+<a href="gamestinder.html">Games\Tinder</a></br>
+<a href="gamesfoul-airs.html">Games\Foul Airs</a></br>
+<a href="programmingpipi.html">Programming\Pipi</a></br>
+</body>
+</html>

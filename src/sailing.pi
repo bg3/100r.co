@@ -1,0 +1,210 @@
+Sailing\Cavalier 32
+' date: 2019-12-14
+' update: 2020-02-01
+
++ 44 Our boat, a 1984 Cavalier 32
+
+  Currently named 'Free Spirit'.
+
+= To do
+
+* replace fuel stop solenoid with cable
+* replace prop anode
+* clean foreward hatch handle buildup
+* replace seals on foreward hatch
+* find source of leak in galley
+* clean quarter berth locker
+
+  AU WWA 12333 4A B4
+
+  country "waterways authority"
+  (manufacturer no longer in business)
+
+  2007-10-23 07-065 Replacement anode part is BLA 191482 (1" shaft)
+
+  2008-04-16 N301 Fuel filter should be checked and drained regularly. Tank may need to be cleaned
+
+  The first project for the boat was replacing the mooring lines, done.
+  Next are 1) replace the prop anode, 2) get the sitting water out of the bilge, 3) clean the head lines, 4) map out the electrical and plumbing systems, 5) map and replace the running rigging.
+
+= To read
+  <https://we.riseup.net/assets/268677/sailfarm.pdf>
+
+Sailing\Bukh DV20 ME diesel engine
+' date: 2020-01-13
+' update: 2020-03-15
+
+= Troubleshooting
+- Can't stop engine
+  Unlike a petrol engine, a diesel engine does not require electrical ignition for combustion. The compressed air in a diesel engine reaches a temperature high enough to ignite the fuel.
+  This means that once it's running, it's pretty easy to keep the engine running - it only needs fuel and air.
+  Removing the fuel line from the intake pump will *eventually* cause the engine to stop, after it's exhausted the fuel left in the pump and lines.
+  Removing the air supply could be used if the engine is getting fuel from somewhere else (e.g. leaking oil).
+  *Possible causes: faulty key switch, faulty fuel stop solenoid.*
+= Component details
+- Key switch
+  The key has 5 positions:
+* **a** Off position (insert and remove key)
+* **b** Warning and instrument lamps only (use once started)
+* **c** Thermostart (pre-heats air intake... about 15-30 seconds?)
+* **d** Start
+* **e** Engine stop
+
++ 001 Diagram of key positions
+
+  The starter should not be used for more than 10 secs, without a rest of at least 30 seconds.
+  The switch should not be left in the stop position (**e**) because the stop solenoid draws a lot of current and will be damaged. The Bukh manual states that the alarm functions are tested in position position e, not sure what that means... the alarm sounds in position e and... b or c?
+  The thermostart heats an electric coil in the air inlet manifold which then ignites fuel, so that the air intake is preheated.
+
+- Fuel stop solenoid
+
+  Stop magnet
+  Make BOSCH type 0330 101 024
+  Voltage 12 volt
+  In case of defects on the stop solenoid, which cannot be repaired, the stop solenoid must be replaced. When mounting a new stop solenoid observe the following:
+# Tighten the four fixing screws A evenly. At the slightest misalignment due to the tightening the stop solenoid will not work.
+# The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as on the stop solenoid previously used.
+  This is done easiest by dismounting the stop solenoid together with the cover C.
+
+" Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam. from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
+
+  Or this...
+  https://www.youtube.com/watch?v=5u5fLYRtiKQ
+
+= Replacement parts
+
+- Oil
+  Morris Lubricants: I would recommend a product now called Golden Film SAE 30 for this application which is slightly thicker but will give you an API of CC.
+
+  Bukh: the engine and gearbox any 15W40 mineral oil that is suitable for heavy duty diesel engines will be fine.
+
+  https://forums.ybw.com/index.php?threads/bukh-dv20-diesel-sulphur-engine-oil-all-very-confusing.463716/
+  https://www.canalworld.net/forums/index.php?/topic/77731-correct-oil-for-bukh-engines/
+
+- Fuel stop solenoid
+  BUKH Stop Solenoid. BOSCH 0 330 101 024
+  Diesel Parts Direct: £80.14
+  Amazon: £118.59
+  T.Norris: £298.00
+
+= References
+  http://bukh.co.uk/wp-content/uploads/sites/8/2016/09/Owners-Handbook-BUKH-DV-10-20-ME.pdf
+  https://www.youtube.com/watch?v=M-BkJYN-xvQ
+  https://www.seabreeze.com.au/forums/Sailing/General/Cant-stop
+  https://forums.ybw.com/index.php?threads/bukh-stop-solenoid-it-pays-to-shop-around.492152/
+
+Sailing\Logs
+' date: 2019-12-14
+' update: 2020-01-14
+
+  I haven't really started working on these properly, just testing out what I want to keep online and how.
+
+= SHIP'S LOG
+> DATE         ORIGIN        DEST.       TIME            DISTANCE   WEATHER                     COMMENTS
+> -----------------------------------------------------------------------------------------------------
+> 2019-12-14   Sandringham   Docklands   10:30 to 13:15     12 nm   Seas 1m, subsiding later.   Motor.
+> 2020-12-12   Docklands     Docklands   ~12:00 to 16:00     0 nm   Cloudy, light wind.         Did not start. :(
+
+= PERSONAL LOG
+> DATE         COMMENTS
+> ------------------------------------------------------------------------------------------------------
+> 2019-12-14   First sailing in our yacht. Sandringham to Docklands. Arrived in the middle of a speech by Lisa Blair. Met Dan, won a trip on Lisa's yacht next week, went for dinner: us three, Lisa and Tom (Corsair, Southport).
+> 2019-12-16   Visited yacht around 7pm to fit new mooring lines. Met Lisa and Mark who are in opposite berth.
+> 2019-12-21   Dan, Sarah and I went sailing on Lisa's yacht. Winds were 25+ kts, she decided it was too rough to take us out into the bay. We sailed up and back the port entry a few times.
+
+= ENGINEERING AND MAINTENANCE
+> DATE         TYPE         COST   DETAIL
+> -----------------------------------------------------------------------------------------------------
+> 2020-01-12   OBS/TODO            Thought engine was not going into gear, opened up to investigate.
+>                                  Turned out to be the switch on the throttle not pressed in properly.
+>                                  Somehow broke ignition cylinder and couldn't turn engine off!
+>                                  Tried to kink fuel line, but that didn't seem to work (maybe didn't wait long enough).
+>                                  Had to pull out fuel line entirely - engine ran for another 15 mins!
+>                                  Now need to prime the engine and replace the ignition cylinder!
+> 2019-12-16   APPL.               Switched worn lines that came with boat for new mooring lines: 16mm by 10m.
+>              NOTE                10m line is too short for spring lines.
+>                                  Test: lifted rear port shackle using shock cord to reduce rattle.
+>                                  Test: tied shock cord b/w mainsheet and toerail to stop sliding in wind.
+>              IDEA/TODO           Cut wooden block to fit between traveller pieces and stop sliding.
+>                                  Sprayed lubricant on squealing companionway hatch. Did not fix - interior.
+>              IDEA/TODO           Remove companionway roof and lubricate interior.
+>                                  Improve bilge drainage!
+>                                  Replace prop anode.
+>              notes               <https://newwiremarine.com/how-to/wiring-a-boat/>
+> 2019-12-14   IDEA/TODO
+
+= EXPENSES
+> DATE         VENDOR         COST   DETAIL
+> -----------------------------------------------------------------------------------------------------
+> 2019-12-16   WHITWORTH'S   279.60   4 x 16mm, 10m TEXTECH double-braid nylon docking line
+>                             12.50    WD-40 silicone lubricant spray 300g
+>                             14.95 ?  4mm, 20m TEXTECH black shock cord
+>                              4.95    floating key ring
+
+Sailing\Mooring
+' date: 2019-12-16
+
+  Diameter for 32ft ~ 16mm
+  <https://www.whitsundaydiscountmarine.com.au/buying/better-boating-guides/choosing-the-correct-dock-line/>
+  <https://www.ropeinc.com/choosingdockline.html>
+
+= Length
+  Bow and stern lines ~ 2/3 of boat length: 21-22 ft.
+  Spring lines ~ same length as boat: 32 ft.
+
+  Ropeinc site above suggests that 12-strand is not as strong as double braid, and that coloured line is not as strong as white. Nylon is good because it has stretch.
+
+  **2019-12-16: bought 4 x 16mm, 10m lines. Should have got two of them half as long again, because our boat doesn't have midship cleats... so the springers have to lead back to the fore and aft.**
+
+= Purpose of lines
+  from <https://www.animatedknots.com/boating-knots>
+
+  Breast Lines prevent rotation and should run roughly at 90o to the dock. To gain length, they should be led from the farthest part of the boat: the bow itself (or the outer hull of a catamaran) and from the far quarter of the stern.
+
+  Spring Lines prevent fore and aft movement and should run nearly parallel to the dock and may cross each other to obtain an optimal lie.
+
+= Other
+
+  Double all lines with high winds (50 kt +)
+
+  The 'cleat' on our foredeck is actually called a Samson post, although perhaps not a true one? Guess it's because needs to be strong to hold the anchor line?
+  Seems like midship cleats might be worth it.
+  <https://www.thehulltruth.com/boating-forum/770980-how-tie-off-post-cleat.html>
+
+= Springing on/off
+
+  <https://www.yachtingmonthly.com/sailing-skills/springing-on-and-off-29899>
+
+Sailing\Boat history
+' date: 2019-12-16
+
+> | **Date**   | **Type** | **Description** | **Source** | **Amount AUD** |
+> | 2018-02-09 | SURVEY  | Restricted waters only. | Jeff Casely, Blue Marine | |
+> | 2017-04-04 | QUOTE   | Rigging, furling jib, fibreglass, etc. repairs | Stephan, Tidal Marine and Dive quote #205 |
+> | 2012-12-20 | SURVEY  |  | B.E. Dark, Maritek Pty Ltd. | |
+> | 2009-04-24 | INVOICE | Club Marine (65K/10M/20K, 500 ex) comprehensive | Policy V178254, exp. 2009-03-10 | 876.60 |
+> | 2008-04-16 | INVOICE | FF5040 Fuel filter short Bosch 2002, R12T fuel filter, labour | Miller Marine, Langwarrin, #N301| 155.65 |
+> | 2008-03-20 | INVOICE | Club Marine (65K/10M/20K, 500 ex) comprehensive | Policy V178254, exp. 2009-03-26 | 864.60 |
+> | 2007-10-23 | INVOICE | Custom prop anode + inst., repair shower supply pump and bilge pump, 4 crumps, 1 anode prop nut shaft 3/4 unc (BLA 191482), Fuseholder 3AG 3a, 2 position switch | e-sea Marine Electronics, Brighton, #07-065 | 929.48 |
+> | 2007-03-26 | INVOICE | Club Marine (65K/10M/20K, 500 ex) comprehensive | Policy V178254, exp. 2008-03-26 | 860.50 |
+> | 2007-03-26 | INVOICE | Club Marine (65K/0/0, 1000 ex) transit cover | Policy V178253, exp. 2008-04-26 | 206.25 |
+> | 2007-06-25 | INVOICE | Uniden 5W VHF marine handheld radio | Rope & Marine Supplies SA inv 37556 | 204.00 |
+> | 2007-04-23 | INVOICE | ? | Whitworth's, Elizabeth Street, #241945 | 75.87 |
+> | 2007-04-18 | INVOICE | Abus 30mm digital padlock, 2x keys cut | Anytime Locksmiths, #10,049,039 | $31.50 |
+> | 2007-04-17 | INVOICE | 20L fuel jerry can, 10cm funnel, 1L Rimula X DSL | Super Cheap Auto, Mentone, #316951000220214 | 43.98 |
+> | 2007-04-15 | INVOICE | 1L Chemtech Diesel Power, 2 x 92ml Inox battery conditioner, 6 amp Calibre battery charger | Super Cheap Auto, Mentone, #316931000219910 | 120.96 |
+> | 2007-04-15 | INVOICE | Fruit Tingles, 102 piece wall mount tool kit, yellow sponge | Super Cheap Auto, Mentone, #316919000219770 | 53.58 |
+> | 2007-04-17 | INVOICE | Funnel flexible with strainer, black | Autobarn receipt 22 | 7.99 |
+> | 2007-04-05 | INVOICE | Transport from River Quays to Sandringham | Southern Cross Boat Transport inv #13272 | 1,980.00 |
+> | 2007-04-04 | INVOICE | Tri-colour/anchor nav light | The Yacht Shop Australia, #008072 | 150.00 |
+> | 2007-03-28 | INVOICE | Rig out and strip for transport | Sydney Rigging Specialists inv 00014344 | 371.25 |
+> | 2007-03-15 | SALE | Purchased from MF | Sale invoice/receipt | 65,000.00 |
+> | 2007-03-14 | SALE | Purchased from MF | CP, Club Marine insurance app (2007-03-21) | 65,000.00 |
+> | 2007-03-13 | | CP applied to SYC to register yacht and transfer SM sail number. | | |
+> | 2007-02-07 | NOTE | Available for sale | SB, email enquiry to David Bray Yachts | 69,000.00 |
+> | 2007-02-15 | SURVEY | | Stephen Charles Gale | ? |
+> | 2003       | NOTE | ? Engine overhaul | CP, Club Marine insurance app (2007-03-21) | |
+> | 2003-02-05 | NOTE | Named Crystal Dreaming | Survey (2003-02-05) | |
+> | 2003-02-05 | VALUATION |  | Survey (2003-02-05) | 75,000.00 |
+> | 2003-02-05 | SURVEY | | Peter K. Southwell, Navatair Pty Ltd | 423.00 |
+> | 2002       | | ? New rigging | CP, Club Marine insurance app (2007-03-21) | |

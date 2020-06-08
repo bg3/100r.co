@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programming\Pipi</title>
+</head>
+<body style="background-color: #fffff9">
+<h1>Programming\Pipi</h1>
+<p>Pipi is a very simple static site generator written in C. It was used to generate this site.</p>
+<h2>Making Pipi</h2>
+<p>A static site generator seemed like a useful and simple choice for my first C project. I really didn't know a lot of C when I started it, and what I did know I was unsure of. I had read two thirds of Modern C and another few chapters of Head First C. Everything else I searched for help with or read the man pages as I went.</p>
+<p>I plan to return to this in a year and comment on my approach and implementation.</p>
+<h3>1 Read one file and write to another</h3>
+<p>Read a hardcoded file line by line, use the first character of each line to determine how it should be converted to HTML and write that to a hard coded output file. This was surprisingly easy.</p>
+<table>
+<tr><td>1st char </td><td> Line is... </td></tr><tr><td>=        </td><td> Heading    </td></tr><tr><td>-        </td><td> Subheading </td></tr><tr><td></td><td> Paragraph, with _italics_ and *bold* </td></tr><tr><td>"        </td><td> Quote      </td></tr><tr><td>+        </td><td> ID for an image file, followed by a caption </td></tr><tr><td>>        </td><td> Code       </td></tr><tr><td>#        </td><td> Numbered list </td></tr><tr><td>*        </td><td> Bulleted list </td></tr><tr><td>`        </td><td> Comment (blank lines are also ignored) </td></tr><tr><td></td><td>        </td></tr><tr><td>(other)  </td><td> New page (text is the page title) </td></tr></table>
+<h3>2 Adjusting buffer</h3>
+<p>The biggest problem with 1 was that the lines were actually limited to 80 chars because of the buffer I was using. So new paragraph elements got created where they shouldn't. So, I found out how to adjust the buffer size as needed. This is probably the first time I ran into something that is just not an issue in more modern languages. It took me a while to understand the examples I read.</p>
+<h3>3 Reading into structs</h3>
+<p>Instead of reading and converting the site on the fly, I created structs representing a line and a page, then read the data into these. A series of these pages makes up the raw site data. This took a little while just to understand how and when to use * and & or neither, I am not nearly comfortable with it and sometimes had to try one then the other, looking at the error messages from the compiler to work out what was going on. I also wished for the ability to inspect the structs in memory (a debugger of some kind) at this point - but resolved it before I needed it.</p>
+<p>Once I had the site read into the structs, I was quickly able to iterate through them and print each line (not converted to HTML) to stdout.</p>
+<h3>4 Multiple output files</h3>
+<p>It was very easy to generate multiple pages from a single input file now, just opened a file each time I was iterating through a new page, then pass it to the function that printed each line.</p>
+<p></p>
+<h3>5 What next?</h3>
+<p>Sometimes I get stuck not because I don't know what to do next, but because I can't decide which step to take next:</p>
+<p style="color: #ef5541">add bold/italic styling</p>
+<p style="color: #ef5541">create filenames based on the page titles (they're currently just a number)</p>
+<p style="color: #ef5541">parse and generate tables, numbered lists and bullets</p>
+<p style="color: #ef5541">generate some site navigation (might involve an initial pass to understand site structure, then to generate and add to pages)</p>
+<p>Although it seems the hardest of the four, I think I'll try to do the navigation next.</p>
+<p>(when I came back to this the next day, I changed my mind and decided to do the filename thing, because the existing code is making filenames based on the number of lines looped through, so different filenames get created each time and now I have a folder full of 0.html, 34.html, 35.html, 37.html).</p>
+<p>Other ideas:</p>
+<p style="color: #ef5541">handle invalid lines</p>
+<p style="color: #ef5541">page navigation - generate a table of contents based on the headings in the page. </p>
+<h3>6.1 Creating sensible filenames</h3>
+<p>I want to convert the page title into a filename. Replace spaces with dashes, remove other non-printing characters.</p>
+<p>Maybe I can just remove any characters except for alphanumerics and -. Should probably store the filename with the page struct too. I'll need it later when I generate links.</p>
+<blockquote>How should I compare size_t (a string length) to an index iterating through the string? Should I make the index size_t? Should I cast it? How do I handle errors?</blockquote>
+<h3>6.2 Improving sensible filenames</h3>
+<p>I want to remove the double dashes from the filenames, and maybe investigate why the section below is getting an extra a on the end - am I reading past the end of a string.</p>
+<p>First idea for removing the double dashes is just to keep a flag indicating whether the previous character written was a dash, and if so don't write subsequent dashes. Once I write a non-dash character, then reset the flag.</p>
+<p>This actually turned out really easy to implement. Working out the extra a was a bit harder and I have run into a segmentation fault... looks like I am over-reading memory somehow... it seems related to line 51 in this file... perhaps the space for the struct or one of the strings overflows there?</p>
+<p>Also rerunning the file multiple times gives slightly different results.</p>
+<p>Yes - filename bug was due to writing the \0 for the filename one character ahead of where I was supposed to in string_to_filename(). Somehow, fixing this bug also fixed the segmentation fault issue... for now.</p>
+<h3>6.3 More ideas</h3>
+<p style="color: #ef5541">sections and subsections can be pages of their own, if they are defined and have content.</p>
+<p style="color: #ef5541">multiple input files</p>
+<p style="color: #ef5541">navigation between pages, rather than within a page</p>
+<h3>6.4 Started tables</h3>
+<p>Got a basic table with only a single column/td being generated. Turned out to be easier than I thought. Dan suggested a _block-mode_ which would work for numbered and ordered lists too.</p>
+<p>Next step is to split out each line by it's internal pipe characters, work out how many columns the table should have. May also need special handling for when a table has missing cells - use colspan to fill the remainder?</p>
+<p>First row sets the number of columns. |s in succession like || indicates a colspan. A space in between would indicate an empty table instead.</p>
+<p>If a subsequent row has more |s, indicating more columns than the original row, then the excess is placed in the last column as per the number of rows specified in the first row.</p>
+<h3>7.1 More tables</h3>
+<p>Implemented a clumsy table splitting, but it worked first try. Now I need to handle exceptions - when there are more columns in the header than the following rows, or less.</p>
+<table>
+<tr><td>1st char </td><td> Line is... </td><td> More </td></tr><tr><td>=        </td><td> Heading    </td><td> adfs </td></tr><tr><td>-        </td><td> Subheading </td><td>  adfg </td></tr><tr><td></td><td> Paragraph, with _italics_ and *bold* </td><td> daf  </td></tr><tr><td>"        </td><td> Quote      </td><td> af </td></tr></table>
+<p>*More ideas:*</p>
+<p style="color: #ef5541">need to handle other encodings - Japanese characters aren't printing correctly</p>
+<p style="color: #ef5541">need to convert the brackets around <tags> so they aren't converted into html.</p>
+<p>After adding the test table above, I started getting segmentation errors again. I removed the tables and still got the issue, so this is caused by  something else.</p>
+<h3>8.1 Multiple input files</h3>
+<p>Time to take a break from tables. They work well enough, just don't handle errors very well. :) I think I will try to handle multiple input files.</p>
+<p>First look for all .pi files in current directory - turned out to be pretty easy.</p>
+<p>Might stop here and convert my existing site into pipi!</p>
+<h3>9 Converting the old site to Pipi</h3>
+<p>Just a cut and paste exercise, then change the Markdown into my own formatting. It will also be good for pointing out errors in my generator.</p>
+<h3>10 A little refactoring</h3>
+<p>Tried to separate some of the code into separate functions and ran into a segfault I couldn't figure out. That lead to trying to install gdb, which required a codesigning tutorial.</p>
+<p>https://sourceware.org/gdb/wiki/PermissionsDarwin</p>
+<p>And ultimately using lldb to debug the error anyway. It was because I was passing a pointer (page*) to a function instead of a double pointer (page**). Because things are passed by value, I had to pass a reference to my pages 'array' instead of the array...</p>
+<h3>11.1 Basic index page</h3>
+<p>Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy. </p>
+<h3>11.2 Put files in subfolders</h3>
+<p>Need to split the title/filename up based on \ characters as though they were directories.</p>
+<p></p>
+</body>
+</html>
