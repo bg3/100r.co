@@ -2,7 +2,7 @@ body {
   background-color: #d1d1d1;
   width: 40em;
   max-width: 100%;
-  margin: 5em auto auto 5em;
+  margin: 5em auto 5em 5em;
 }
 
 p {
@@ -16,4 +16,13 @@ h1 span {
   /* background-color: #ef5541; */
   padding: 0.1em;
   line-height: 1.5;
+}
+
+h1 {
+  font-family: serif;
+  font-size: 2.0em;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  padding-bottom: 1em;
+  line-height: 0.8em;
 }
