@@ -362,7 +362,7 @@ int generate_pages(page* pages, int page_count) {
 void generate_index(page* pages, int page_count) {
   FILE* out = fopen("../index.html", "w");
   html_header(out, "Park Imminent");
-  html_title(out, "Park Imminent");
+  html_title(out, "Park</br> Imminent");
   for (int i = 0; i < page_count; i++) {
     fprintf(out, "<a href=\"./site/%s.html\">%s</a></br>\n", pages[i].filename, pages[i].title);
   }
