@@ -36,6 +36,7 @@ typedef struct line line;
 struct page {
   char*   title;
   char*   filename;
+  char*   category;
   page*   parent;
   line*   lines;
   int     numlines;
@@ -115,11 +116,11 @@ int string_to_filename(char* str, char* fn) {
 /* html output */
 
 void html_header(FILE* f, char line[]) {
-  fprintf(f, "<!DOCTYPE html>\n<html>\n<head>\n<title>%s</title>\n</head>\n<body style=\"background-color: #fffff9\">\n", line);
+  fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\"> </head>\n <body>\n", line);
 }
 
 void html_title(FILE* f, char line[]) {
-  fprintf(f, "<h1>%s</h1>\n", line);
+  fprintf(f, "<h1><span>%s</span></h1>\n", line);
 }
 
 void html_footer(FILE* f) {
@@ -215,8 +216,6 @@ void html_table_row(FILE* f, char text[], int cols) {
 void html_table_end(FILE *f) {
   fprintf(f, "</table>\n");
 }
-
-
 
 void html_img(FILE* f, char text[]) {
   int image_number;

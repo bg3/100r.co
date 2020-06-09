@@ -101,11 +101,9 @@ Programming\Pipi
   Might stop here and convert my existing site into pipi!
 
 - 9 Converting the old site to Pipi
-
   Just a cut and paste exercise, then change the Markdown into my own formatting. It will also be good for pointing out errors in my generator.
 
 - 10 A little refactoring
-
   Tried to separate some of the code into separate functions and ran into a segfault I couldn't figure out. That lead to trying to install gdb, which required a codesigning tutorial.
 
   https://sourceware.org/gdb/wiki/PermissionsDarwin
@@ -113,10 +111,10 @@ Programming\Pipi
   And ultimately using lldb to debug the error anyway. It was because I was passing a pointer (page*) to a function instead of a double pointer (page**). Because things are passed by value, I had to pass a reference to my pages 'array' instead of the array...
 
 - 11.1 Basic index page
-
   Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy. 
 
 - 11.2 Put files in subfolders
-
   Need to split the title/filename up based on \ characters as though they were directories.
-  
+  On second though, all the files can just have unique names and go in the same subfolder. The site nav will still use the 'folders' though.
+  So the next step is to create some sort of hierarchical structure. A page has a parent and children. A page may have content, or it may only be defined as a category.
+  If a page has content and is a category with children, how to show the navigation and content together?

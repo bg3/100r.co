@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Programming\Pipi</title>
-</head>
-<body style="background-color: #fffff9">
-<h1>Programming\Pipi</h1>
+ <html lang="en">
+ <head>
+ <title>Programming\Pipi</title>
+ <link rel="stylesheet" type="text/css" href="/style.css"> </head>
+ <body>
+<h1><span>Programming\Pipi</span></h1>
 <p>Pipi is a very simple static site generator written in C. It was used to generate this site.</p>
 <h2>Making Pipi</h2>
 <p>A static site generator seemed like a useful and simple choice for my first C project. I really didn't know a lot of C when I started it, and what I did know I was unsure of. I had read two thirds of Modern C and another few chapters of Head First C. Everything else I searched for help with or read the man pages as I went.</p>
@@ -73,6 +73,8 @@
 <p>Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy. </p>
 <h3>11.2 Put files in subfolders</h3>
 <p>Need to split the title/filename up based on \ characters as though they were directories.</p>
-<p></p>
+<p>On second though, all the files can just have unique names and go in the same subfolder. The site nav will still use the 'folders' though.</p>
+<p>So the next step is to create some sort of hierarchical structure. A page has a parent and children. A page may have content, or it may only be defined as a category.</p>
+<p>If a page has content and is a category with children, how to show the navigation and content together?</p>
 </body>
 </html>

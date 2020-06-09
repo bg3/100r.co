@@ -50,7 +50,7 @@ Sailing\Bukh DV20 ME diesel engine
 * **d** Start
 * **e** Engine stop
 
-+ 001 Diagram of key positions
++ 1 Diagram of key positions
 
   The starter should not be used for more than 10 secs, without a rest of at least 30 seconds.
   The switch should not be left in the stop position (**e**) because the stop solenoid draws a lot of current and will be damaged. The Bukh manual states that the alarm functions are tested in position position e, not sure what that means... the alarm sounds in position e and... b or c?
