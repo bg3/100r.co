@@ -36,7 +36,7 @@ typedef struct line line;
 struct page {
   char*   title;
   char*   filename;
-  char*   category;
+  char*   section;
   page*   parent;
   line*   lines;
   int     numlines;
@@ -231,6 +231,23 @@ void unhandled_line(FILE* f, char text[]) {
   fprintf(f, "<p style=\"color: #ef5541\">%s</p>\n", text);
 }
 
+char* remove_section_from_title(char* section, char* title) {
+  char* split_point;
+  split_point = strchr(title, '\\');
+  if (split_point) {
+    printf("\nTitle\t(%s)\n", split_point + 1);
+    printf("Split\t[%ld]\n", split_point - title);
+    section = realloc(section, sizeof(char) * (split_point - title));
+    memcpy(section, title, split_point - title);
+    section[split_point - title] = '\0';
+    title = split_point + 1;
+    printf("TitleE\t%s\n", title);
+    printf("SectionE\t%s\n", section);
+    
+  }
+  return title;
+}
+     
 
 int remove_char(char* str, char c) {
    int removed = 0;
@@ -366,15 +383,20 @@ void parse_file(FILE* file, page** p_pages, int* page_count) {
     if (rune == '\n') {
       continue;
     } else if (!strchr(PI_RUNES, rune)) {
+      /* must be the title of a new page */
       *page_count = *page_count + 1;
       *p_pages = realloc(*p_pages, sizeof(page) * *page_count);
 
       int len = (int) strlen(rawline) + 1;
+      char* section = NULL;
+      rawline = remove_section_from_title(section, rawline); 
+      printf("SectionP\t%s\n", section);
+      printf("RawlineP\t%s\n", rawline);
       char* fn = (char*) malloc(len * sizeof(char));
       string_to_filename(rawline, fn);
       page* p = *p_pages;
       int address = *page_count - 1;
-      p[address] = (page) { .title = rawline, .filename = fn, .parent = NULL, .lines = NULL, .numlines = 0 };
+      p[address] = (page) { .title = rawline, .section = section, .filename = fn, .parent = NULL, .lines = NULL, .numlines = 0 };
     } else {
       line l = { .type = rune, .text = text };
       addLineToPage(l, *p_pages + *page_count - 1);
