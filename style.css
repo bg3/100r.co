@@ -43,6 +43,8 @@ nav h2 {
 nav h2 a {
   text-decoration: none;
   background-color: inherit;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 a {
