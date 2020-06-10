@@ -23,15 +23,27 @@
 <p></p>
 <h3>5 What next?</h3>
 <p>Sometimes I get stuck not because I don't know what to do next, but because I can't decide which step to take next:</p>
-<p style="color: #ef5541">add bold/italic styling</p>
-<p style="color: #ef5541">create filenames based on the page titles (they're currently just a number)</p>
-<p style="color: #ef5541">parse and generate tables, numbered lists and bullets</p>
-<p style="color: #ef5541">generate some site navigation (might involve an initial pass to understand site structure, then to generate and add to pages)</p>
+<ul>
+<li>add bold/italic styling</li>
+</ul>
+<ul>
+<li>create filenames based on the page titles (they're currently just a number)</li>
+</ul>
+<ul>
+<li>parse and generate tables, numbered lists and bullets</li>
+</ul>
+<ul>
+<li>generate some site navigation (might involve an initial pass to understand site structure, then to generate and add to pages)</li>
+</ul>
 <p>Although it seems the hardest of the four, I think I'll try to do the navigation next.</p>
 <p>(when I came back to this the next day, I changed my mind and decided to do the filename thing, because the existing code is making filenames based on the number of lines looped through, so different filenames get created each time and now I have a folder full of 0.html, 34.html, 35.html, 37.html).</p>
 <p>Other ideas:</p>
-<p style="color: #ef5541">handle invalid lines</p>
-<p style="color: #ef5541">page navigation - generate a table of contents based on the headings in the page. </p>
+<ul>
+<li>handle invalid lines</li>
+</ul>
+<ul>
+<li>page navigation - generate a table of contents based on the headings in the page. </li>
+</ul>
 <h3>6.1 Creating sensible filenames</h3>
 <p>I want to convert the page title into a filename. Replace spaces with dashes, remove other non-printing characters.</p>
 <p>Maybe I can just remove any characters except for alphanumerics and -. Should probably store the filename with the page struct too. I'll need it later when I generate links.</p>
@@ -43,9 +55,15 @@
 <p>Also rerunning the file multiple times gives slightly different results.</p>
 <p>Yes - filename bug was due to writing the \0 for the filename one character ahead of where I was supposed to in string_to_filename(). Somehow, fixing this bug also fixed the segmentation fault issue... for now.</p>
 <h3>6.3 More ideas</h3>
-<p style="color: #ef5541">sections and subsections can be pages of their own, if they are defined and have content.</p>
-<p style="color: #ef5541">multiple input files</p>
-<p style="color: #ef5541">navigation between pages, rather than within a page</p>
+<ul>
+<li>sections and subsections can be pages of their own, if they are defined and have content.</li>
+</ul>
+<ul>
+<li>multiple input files</li>
+</ul>
+<ul>
+<li>navigation between pages, rather than within a page</li>
+</ul>
 <h3>6.4 Started tables</h3>
 <p>Got a basic table with only a single column/td being generated. Turned out to be easier than I thought. Dan suggested a _block-mode_ which would work for numbered and ordered lists too.</p>
 <p>Next step is to split out each line by it's internal pipe characters, work out how many columns the table should have. May also need special handling for when a table has missing cells - use colspan to fill the remainder?</p>
@@ -56,8 +74,12 @@
 <table>
 <tr><td>1st char </td><td> Line is... </td><td> More </td></tr><tr><td>=        </td><td> Heading    </td><td> adfs </td></tr><tr><td>-        </td><td> Subheading </td><td>  adfg </td></tr><tr><td></td><td> Paragraph, with _italics_ and *bold* </td><td> daf  </td></tr><tr><td>"        </td><td> Quote      </td><td> af </td></tr></table>
 <p>*More ideas:*</p>
-<p style="color: #ef5541">need to handle other encodings - Japanese characters aren't printing correctly</p>
-<p style="color: #ef5541">need to convert the brackets around <tags> so they aren't converted into html.</p>
+<ul>
+<li>need to handle other encodings - Japanese characters aren't printing correctly</li>
+</ul>
+<ul>
+<li>need to convert the brackets around <tags> so they aren't converted into html.</li>
+</ul>
 <p>After adding the test table above, I started getting segmentation errors again. I removed the tables and still got the issue, so this is caused by  something else.</p>
 <h3>8.1 Multiple input files</h3>
 <p>Time to take a break from tables. They work well enough, just don't handle errors very well. :) I think I will try to handle multiple input files.</p>
@@ -76,5 +98,26 @@
 <p>On second though, all the files can just have unique names and go in the same subfolder. The site nav will still use the 'folders' though.</p>
 <p>So the next step is to create some sort of hierarchical structure. A page has a parent and children. A page may have content, or it may only be defined as a category.</p>
 <p>If a page has content and is a category with children, how to show the navigation and content together?</p>
+<h3>11.3 CSS</h3>
+<p>I split the page title out from the subfolder (which I'm calling section for now). Haven't done anything with the section value yet. Instead I made a basic index page and then did a little bit of CSS. I'd like to keep it all basic HTML elements if I can, no ids or classes.</p>
+<h3>12 More 'block mode' parsing</h3>
+<p>I'll try to implement ordered/unordered lists and /pre> blocks now. Shouldn't be too hard compared to tables.</p>
+<pre><code>Multiple lines of code?
+Should be treated
+As blocks too.
+</code></pre>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<ul>
+<li>Item A</li>
+</ul>
+<ul>
+<li>Item X</li>
+</ul>
+<ul>
+<li>A very long paragraph, the quick brown fox jumped over the lazy dog. She sells seashells by the seashore. Pack my liquor jugs into six boxes or something.</li>
 </body>
 </html>

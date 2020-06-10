@@ -40,3 +40,10 @@ Meta\Site to-do list
 * Add some horizontal rules
 * Add a banner
 * Order posts by date
+* Escape HTML characters (e.g. typing <pre> in a data file should not create a pre element).
+* Don't trim spaces from code blocks
+
+- Done
+* Ordered lists
+* Unordered lists
+* Code blocks

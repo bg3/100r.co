@@ -24,39 +24,45 @@
 <h3>10.2 Pointers and structures</h3>
 <p>I have struggled a bit with this section and will need to return to it.</p>
 <p>This talks about destroying a struct. I know C has some memory management, have heard of malloc before. But up to and including this point it hasn't been mentioned.</p>
-<pre>void rat_destroy(rat* rp) {</pre>
-<pre>if (rp) *rp = (rat){ 0 };</pre>
-<pre>}</pre>
+<pre><code>void rat_destroy(rat* rp) {
+if (rp) *rp = (rat){ 0 };
+}
+</code></pre>
 <p>Why was this function defined to accept rat (ratio) structs as well as pointers?</p>
-<pre>rat* rat_rma(rat* rp, rat x, rat y) {</pre>
-<pre>return rat_sumup(rp, rat_get_prod(x, y));</pre>
-<pre>}</pre>
+<pre><code>rat* rat_rma(rat* rp, rat x, rat y) {
+return rat_sumup(rp, rat_get_prod(x, y));
+}
+</code></pre>
 <p>This section in one explanation also puzzled me, I couldn't work out what the second line was doing... assigning the result of toto_get somehow?</p>
 <p>It's not doing anything. It's a declaration of a function... struct toto\* is the return type.</p>
-<pre>/* forward declaration of struct toto */</pre>
-<pre>struct toto;</pre>
-<pre>struct toto* toto_get(void);</pre>
-<pre>void toto_destroy(struct toto*);</pre>
-<pre>void toto_doit(struct toto*, unsigned);</pre>
+<pre><code>/* forward declaration of struct toto */
+struct toto;
+struct toto* toto_get(void);
+void toto_destroy(struct toto*);
+void toto_doit(struct toto*, unsigned);
+</code></pre>
 <h3>10.3 Pointers and arrays</h3>
 <p>This is interesting. Pointers and arrays can be accessed interchangeably.</p>
 <p>So these are equivalent:</p>
-<pre>A[i]</pre>
-<pre>*(A+i)</pre>
+<pre><code>A[i]
+*(A+i)
+</code></pre>
 <p>And so are these:</p>
-<pre>A[m][n]</pre>
-<pre>(*A)[n]</pre>
+<pre><code>A[m][n]
+(*A)[n]
+</code></pre>
 <h3>11.4 Function Pointers</h3>
-<pre>typedef void atexit_function(void);</pre>
-<pre>// Two equivalent definitions of the same type, which hides a pointer</pre>
-<pre>typedef atexit_function* atexit_function_pointer;</pre>
-<pre>typedef void (*atexit_function_pointer)(void);</pre>
-<pre>// Five equivalent declarations for the same function</pre>
-<pre>void atexit(void f(void));</pre>
-<pre>void atexit(void (*f)(void));</pre>
-<pre>void atexit(atexit_function f);</pre>
-<pre>void atexit(atexit_function* f);</pre>
-<pre>void atexit(atexit_function_pointer f);</pre>
+<pre><code>typedef void atexit_function(void);
+// Two equivalent definitions of the same type, which hides a pointer
+typedef atexit_function* atexit_function_pointer;
+typedef void (*atexit_function_pointer)(void);
+// Five equivalent declarations for the same function
+void atexit(void f(void));
+void atexit(void (*f)(void));
+void atexit(atexit_function f);
+void atexit(atexit_function* f);
+void atexit(atexit_function_pointer f);
+</code></pre>
 <p>I'm not sure what's happening here. p146.</p>
 <p>I understand the idea, but not the syntax.</p>
 <h3>12.2 Unions</h3>
@@ -69,33 +75,70 @@
 <h3>1 May 2020</h3>
 <p>I can follow along with how this program works. The tutorial is very clearly written. If I was to start on something of my own however, I don't know when and how to use all the memory allocation functions as well as many other parts of the standard libraries.</p>
 <p>I will keep a list of some important ones to review, that I may have difficulty searching for later due to not knowing how to describe them. I will need to look back over the parts of the tutorial I have already covered.</p>
-<p style="color: #ef5541">memmove - this is like memcpy but safe to use when src and dest arrays overlap. Why use memcpy at all then? [link](https://flak.tedunangst.com/post/memcpy-vs-memmove)</p>
-<p style="color: #ef5541">free</p>
-<p style="color: #ef5541">malloc</p>
+<ul>
+<li>memmove - this is like memcpy but safe to use when src and dest arrays overlap. Why use memcpy at all then? [link](https://flak.tedunangst.com/post/memcpy-vs-memmove)</li>
+</ul>
+<ul>
+<li>free</li>
+</ul>
+<ul>
+<li>malloc</li>
+</ul>
 <h3>2 May 2020</h3>
 <p>I take another detour and start trying to write something of my own. Beginning with [Advent of Code 2015](https://adventofcode.com/2015). I complete the first day's exercises, but decide to refine the answer so it reads the data from an input file instead of a literal. First roadblock... reading from a file. Safely.</p>
 <p>I will continue with the text editor for the moment. I notice I have been typing in some parts of the code for this editor without really thinking about how they work. I will make more of an effort to understand each part.</p>
 <h3>3 May 2020</h3>
-<pre>E.cx = match - row->render;</pre>
+<pre><code>E.cx = match - row->render;
+</code></pre>
 <blockquote>Otherwise, we loop through all the rows of the file. We use strstr() to check if query is a substring of the current row. It returns NULL if there is no match, otherwise it returns a pointer to the matching substring. To convert that into an index that we can set E.cx to, we subtract the row->render pointer from the match pointer, since match is a pointer into the row->render string.</blockquote>
 <p>I do not understand how this pointer subtraction works.</p>
-<pre>char *editorPrompt(char* prompt, void (*callback)(char*, int));</pre>
+<pre><code>char *editorPrompt(char* prompt, void (*callback)(char*, int));
+</code></pre>
 <p>I've been aligning the asterisks to the left so far, but how does it work in this case? ```(* callback)```?</p>
 <h2>Miscellaneous notes (these will be removed or merged into sections above)</h2>
-<p style="color: #ef5541">[Ask HN: How do I learn C properly?](https://news.ycombinator.com/item?id=22519876)</p>
-<p style="color: #ef5541">[To become a good C programmer](http://fabiensanglard.net/c/)</p>
-<p style="color: #ef5541">[How to C in 2016](https://matt.sh/howto-c)</p>
-<p style="color: #ef5541">[A Ray Tracer](https://www.purplealienplanet.com/node/20)</p>
-<p style="color: #ef5541">[Elite - The New Kind source](https://github.com/fesh0r/newkind)</p>
-<p style="color: #ef5541">[Raylib](https://www.raylib.com)</p>
-<p style="color: #ef5541">[Expert C Programming](https://www.amazon.com.au/Expert-Programming-Peter-van-Linden/dp/0131774298)</p>
-<p style="color: #ef5541"><https://en.cppreference.com/w/c></p>
-<p style="color: #ef5541"><http://buildyourownlisp.com></p>
-<p style="color: #ef5541">[ ] Learn how to use lldb</p>
-<p style="color: #ef5541">[ ] https://github.com/glouw/gel/blob/master/main.c</p>
-<p style="color: #ef5541"><https://github.com/glouw/gel/blob/master/main.c></p>
-<p style="color: #ef5541"><https://github.com/rby90/Project-Based-Tutorials-in-C></p>
-<p style="color: #ef5541"><https://viewsourcecode.org/snaptoken/kilo/05.aTextEditor.html></p>
-<p style="color: #ef5541"><https://github.com/rxi/microui></p>
+<ul>
+<li>[Ask HN: How do I learn C properly?](https://news.ycombinator.com/item?id=22519876)</li>
+</ul>
+<ul>
+<li>[To become a good C programmer](http://fabiensanglard.net/c/)</li>
+</ul>
+<ul>
+<li>[How to C in 2016](https://matt.sh/howto-c)</li>
+</ul>
+<ul>
+<li>[A Ray Tracer](https://www.purplealienplanet.com/node/20)</li>
+</ul>
+<ul>
+<li>[Elite - The New Kind source](https://github.com/fesh0r/newkind)</li>
+</ul>
+<ul>
+<li>[Raylib](https://www.raylib.com)</li>
+</ul>
+<ul>
+<li>[Expert C Programming](https://www.amazon.com.au/Expert-Programming-Peter-van-Linden/dp/0131774298)</li>
+</ul>
+<ul>
+<li><https://en.cppreference.com/w/c></li>
+</ul>
+<ul>
+<li><http://buildyourownlisp.com></li>
+</ul>
+<ul>
+<li>[ ] Learn how to use lldb</li>
+</ul>
+<ul>
+<li>[ ] https://github.com/glouw/gel/blob/master/main.c</li>
+</ul>
+<ul>
+<li><https://github.com/glouw/gel/blob/master/main.c></li>
+</ul>
+<ul>
+<li><https://github.com/rby90/Project-Based-Tutorials-in-C></li>
+</ul>
+<ul>
+<li><https://viewsourcecode.org/snaptoken/kilo/05.aTextEditor.html></li>
+</ul>
+<ul>
+<li><https://github.com/rxi/microui></li>
 </body>
 </html>

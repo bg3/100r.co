@@ -123,4 +123,16 @@ Programming\Pipi
   I split the page title out from the subfolder (which I'm calling section for now). Haven't done anything with the section value yet. Instead I made a basic index page and then did a little bit of CSS. I'd like to keep it all basic HTML elements if I can, no ids or classes.
 
 - 12 More 'block mode' parsing
-  I'll try to implement ordered/unordered lists and <pre> blocks now. Shouldn't be too hard compared to tables.
+  I'll try to implement ordered/unordered lists and /pre> blocks now. Shouldn't be too hard compared to tables.
+
+> Multiple lines of code?
+> Should be treated
+> As blocks too.
+
+# Item 1
+# Item 2
+# Item 3
+
+* Item A
+* Item X
+* A very long paragraph, the quick brown fox jumped over the lazy dog. She sells seashells by the seashore. Pack my liquor jugs into six boxes or something.

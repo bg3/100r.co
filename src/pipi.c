@@ -23,10 +23,12 @@
 #define PI_HEADING    '='
 #define PI_SUBHEADING '-'
 #define PI_CODE       '>'
-#define PI_NUMBERED   '#'
-#define PI_BULLETED   '*'
-#define PI_COMMENT    '\''
+#define PI_ORDERED    '#'
+#define PI_UNORDERED  '*'
 #define PI_TABLE      '|'
+#define PI_COMMENT    '\''
+
+typedef enum { OFF, TABLE, CODE, ORDERED, UNORDERED } block_mode;
 
 /* structs */
 
@@ -147,10 +149,6 @@ void html_subheading(FILE* f, char text[]) {
   fprintf(f, "<h3>%s</h3>\n", text);
 }
 
-void html_code(FILE* f, char text[]) {
-  fprintf(f, "<pre><code>%s</code></pre>\n", text);
-}
-
 /* HTML table */
 
 int count_table_columns(char header_row[]) {
@@ -217,8 +215,37 @@ void html_table_row(FILE* f, char text[], int cols) {
   fprintf(f, "</tr>");
 }
 
-void html_table_end(FILE *f) {
+void html_table_end(FILE* f) {
   fprintf(f, "</table>\n");
+}
+
+
+void html_ordered_list_start(FILE* f) {
+  fprintf(f, "<ol>\n");
+}
+
+void html_unordered_list_start(FILE* f) {
+  fprintf(f, "<ul>\n");
+}
+
+void html_list_item(FILE* f, char* text) {
+  fprintf(f, "<li>%s</li>\n", text);
+}
+
+void html_ordered_list_end(FILE* f) {
+  fprintf(f, "</ol>\n");
+}
+
+void html_unordered_list_end(FILE* f) {
+  fprintf(f, "</ul>\n");
+}
+
+void html_code_start(FILE* f, char* text) {
+  fprintf(f, "<pre><code>%s\n", text);
+}
+
+void html_code_end(FILE* f) {
+  fprintf(f, "</code></pre>\n");
 }
 
 void html_img(FILE* f, char text[]) {
@@ -303,17 +330,33 @@ int generate_page(FILE* out, page* p) {
   html_banner(out);
   html_title(out, p->title);
 
-  int table_mode = 0; /* later on, make this block mode and use enum to indicate which type */
+  block_mode mode = OFF;
+
   int table_cols = 0;
   int n = 0;
   for (int j = 0; j < p->numlines; j++) {
     line l = p->lines[j];
     n++;
 
-    if (table_mode && l.type != PI_TABLE) {
+    if (mode == TABLE && l.type != PI_TABLE) {
       html_table_end(out);
-      table_mode = 0;
+      mode = OFF;
       table_cols = 0;
+    }
+
+    if (mode == ORDERED && l.type != PI_ORDERED) {
+      html_ordered_list_end(out);
+      mode = OFF;
+    }
+
+    if (mode == UNORDERED && l.type != PI_ORDERED) {
+      html_unordered_list_end(out);
+      mode = OFF;
+    }
+
+    if (mode == CODE && l.type != PI_CODE) {
+      html_code_end(out);
+      mode = OFF;
     }
 
     switch(l.type) {
@@ -331,20 +374,39 @@ int generate_page(FILE* out, page* p) {
         break;
       case PI_COMMENT:
         continue;
-      case PI_CODE:
-        html_code(out, l.text);
-        break;
       case PI_IMAGE:
         html_img(out, l.text);
         break;
       case PI_TABLE:
-        if (!table_mode) {
-          table_mode = 1;
+        if (mode != TABLE) {
+          mode = TABLE;
           table_cols = count_table_columns(l.text);
           html_table_start(out);
         }
         html_table_row(out, l.text, table_cols);
         break;
+      case PI_ORDERED:
+        if (mode != ORDERED) {
+          mode = ORDERED;
+          html_ordered_list_start(out);
+        }
+        html_list_item(out, l.text);
+        break;
+      case PI_UNORDERED:
+        if (mode != UNORDERED) {
+          mode = UNORDERED;
+          html_unordered_list_start(out);
+        }
+        html_list_item(out, l.text);
+        break;
+      case PI_CODE:
+        if (mode != CODE) {
+          mode = CODE;
+          html_code_start(out, l.text);
+        } else {
+          fprintf(out, "%s\n", l.text);
+        }
+        break;     
       default:
         unhandled_line(out, l.text);
         break;
