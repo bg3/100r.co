@@ -9,7 +9,7 @@ u 2020-06-10
 
   I plan to return to this in a year and comment on my approach and implementation.
 
-- 1 Read one file and write to another
+- Read one file and write to another
   Read a hardcoded file line by line, use the first character of each line to determine how it should be converted to HTML and write that to a hard coded output file. This was surprisingly easy.
 
 | 1st char | Line is... |
@@ -25,18 +25,18 @@ u 2020-06-10
 | |        | Table      |
 | (other)  | New page (text is the page title) |
 
-- 2 Adjusting buffer
+- Adjusting buffer
   The biggest problem with 1 was that the lines were actually limited to 80 chars because of the buffer I was using. So new paragraph elements got created where they shouldn't. So, I found out how to adjust the buffer size as needed. This is probably the first time I ran into something that is just not an issue in more modern languages. It took me a while to understand the examples I read.
 
-- 3 Reading into structs
+- Reading into structs
   Instead of reading and converting the site on the fly, I created structs representing a line and a page, then read the data into these. A series of these pages makes up the raw site data. This took a little while just to understand how and when to use * and & or neither, I am not nearly comfortable with it and sometimes had to try one then the other, looking at the error messages from the compiler to work out what was going on. I also wished for the ability to inspect the structs in memory (a debugger of some kind) at this point - but resolved it before I needed it.
 
   Once I had the site read into the structs, I was quickly able to iterate through them and print each line (not converted to HTML) to stdout.
 
-- 4 Multiple output files
+- Multiple output files
   It was very easy to generate multiple pages from a single input file now, just opened a file each time I was iterating through a new page, then pass it to the function that printed each line.
   
-- 5 What next?
+- What next?
   Sometimes I get stuck not because I don't know what to do next, but because I can't decide which step to take next:
 * add bold/italic styling
 * create filenames based on the page titles (they're currently just a number)
@@ -51,13 +51,13 @@ u 2020-06-10
 * handle invalid lines
 * page navigation - generate a table of contents based on the headings in the page. 
 
-- 6.1 Creating sensible filenames
+- Creating sensible filenames
   I want to convert the page title into a filename. Replace spaces with dashes, remove other non-printing characters.
   Maybe I can just remove any characters except for alphanumerics and -. Should probably store the filename with the page struct too. I'll need it later when I generate links.
 
 " How should I compare size_t (a string length) to an index iterating through the string? Should I make the index size_t? Should I cast it? How do I handle errors?
 
-- 6.2 Improving sensible filenames
+- Improving sensible filenames
   I want to remove the double dashes from the filenames, and maybe investigate why the section below is getting an extra a on the end - am I reading past the end of a string.
 
   First idea for removing the double dashes is just to keep a flag indicating whether the previous character written was a dash, and if so don't write subsequent dashes. Once I write a non-dash character, then reset the flag.
@@ -67,12 +67,12 @@ u 2020-06-10
 
   Yes - filename bug was due to writing the \0 for the filename one character ahead of where I was supposed to in string_to_filename(). Somehow, fixing this bug also fixed the segmentation fault issue... for now.
 
-- 6.3 More ideas
+- More ideas
 * sections and subsections can be pages of their own, if they are defined and have content.
 * multiple input files
 * navigation between pages, rather than within a page
 
-- 6.4 Started tables
+- Started tables
   Got a basic table with only a single column/td being generated. Turned out to be easier than I thought. Dan suggested a _block-mode_ which would work for numbered and ordered lists too.
 
   Next step is to split out each line by it's internal pipe characters, work out how many columns the table should have. May also need special handling for when a table has missing cells - use colspan to fill the remainder?
@@ -80,7 +80,7 @@ u 2020-06-10
   First row sets the number of columns. |s in succession like || indicates a colspan. A space in between would indicate an empty table instead.
   If a subsequent row has more |s, indicating more columns than the original row, then the excess is placed in the last column as per the number of rows specified in the first row.
 
-- 7.1 More tables
+- More tables
 
   Implemented a clumsy table splitting, but it worked first try. Now I need to handle exceptions - when there are more columns in the header than the following rows, or less.
 
@@ -96,36 +96,36 @@ u 2020-06-10
 
   After adding the test table above, I started getting segmentation errors again. I removed the tables and still got the issue, so this is caused by  something else.
 
-- 8.1 Multiple input files
+- Multiple input files
   Time to take a break from tables. They work well enough, just don't handle errors very well. :) I think I will try to handle multiple input files.
 
   First look for all .pi files in current directory - turned out to be pretty easy.
 
   Might stop here and convert my existing site into pipi!
 
-- 9 Converting the old site to Pipi
+- Converting the old site to Pipi
   Just a cut and paste exercise, then change the Markdown into my own formatting. It will also be good for pointing out errors in my generator.
 
-- 10 A little refactoring
+- A little refactoring
   Tried to separate some of the code into separate functions and ran into a segfault I couldn't figure out. That lead to trying to install gdb, which required a codesigning tutorial.
 
   https://sourceware.org/gdb/wiki/PermissionsDarwin
 
   And ultimately using lldb to debug the error anyway. It was because I was passing a pointer (page*) to a function instead of a double pointer (page**). Because things are passed by value, I had to pass a reference to my pages 'array' instead of the array...
 
-- 11.1 Basic index page
+- Basic index page
   Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy. 
 
-- 11.2 Put files in subfolders
+- Put files in subfolders
   Need to split the title/filename up based on \ characters as though they were directories.
   On second though, all the files can just have unique names and go in the same subfolder. The site nav will still use the 'folders' though.
   So the next step is to create some sort of hierarchical structure. A page has a parent and children. A page may have content, or it may only be defined as a category.
   If a page has content and is a category with children, how to show the navigation and content together?
 
-- 11.3 CSS
+- CSS
   I split the page title out from the subfolder (which I'm calling section for now). Haven't done anything with the section value yet. Instead I made a basic index page and then did a little bit of CSS. I'd like to keep it all basic HTML elements if I can, no ids or classes.
 
-- 12 More 'block mode' parsing
+- More 'block mode' parsing
   I'll try to implement ordered/unordered lists and /pre> blocks now. Shouldn't be too hard compared to tables.
 
 > Multiple lines of code?
