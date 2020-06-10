@@ -10,20 +10,39 @@ p {
 }
 /*
 h1 span {
-  /*color: #111111;*/
-  /*color: #fffff9;*/
-/*  background-color: #fffff9;*/
-  /* background-color: #ef5541; */
+  color: #111111;
+  color: #fffff9;
+  background-color: #fffff9;
+  background-color: #ef5541; 
   padding: 0.1em;
 }
 */
 
-h1 {
-  color: #ef5541;
+nav h1 {
+  color: #111111;
   font-family: serif;
   font-size: 2.0em;
   font-weight: bold;
   letter-spacing: -0.05em;
   padding-bottom: 1em;
   line-height: 0.8em;
+}
+
+nav h2 {
+  color: #fffff9;
+  font-family: serif;
+  font-size: 1.0em;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  padding-bottom: 1em;
+  line-height: 0.8em;
+}
+
+nav h2 a {
+  color: #fffff9;
+  font-decoration: none;
+}
+
+a {
+  color: #ef5541;\
 }

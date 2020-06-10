@@ -119,8 +119,12 @@ void html_header(FILE* f, char line[]) {
   fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\"> </head>\n <body>\n", line);
 }
 
+void html_banner(FILE* f) {
+  fprintf(f, "<nav><h2><a href=\"/index.html\">Park</br>Imminent</a></h2></nav>");
+}
+
 void html_title(FILE* f, char line[]) {
-  fprintf(f, "<h1><span>%s</span></h1>\n", line);
+  fprintf(f, "<h1>%s</h1>\n", line);
 }
 
 void html_footer(FILE* f) {
@@ -296,6 +300,7 @@ void addLineToPage(line l, page* p) {
 
 int generate_page(FILE* out, page* p) {
   html_header(out, p->title);
+  html_banner(out);
   html_title(out, p->title);
   int table_mode = 0; /* later on, make this block mode and use enum to indicate which type */
   int table_cols = 0;
@@ -362,10 +367,12 @@ int generate_pages(page* pages, int page_count) {
 void generate_index(page* pages, int page_count) {
   FILE* out = fopen("../index.html", "w");
   html_header(out, "Park Imminent");
-  html_title(out, "Park</br> Imminent");
+  fprintf(out, "<nav><h1>Park</br>Imminent</br></h1></nav>");
+  fprintf(out, "<ul>");
   for (int i = 0; i < page_count; i++) {
-    fprintf(out, "<a href=\"./site/%s.html\">%s</a></br>\n", pages[i].filename, pages[i].title);
+    fprintf(out, "<li><a href=\"./site/%s.html\">%s</a></li>\n", pages[i].filename, pages[i].title);
   }
+  fprintf(out, "</ul>");
   html_footer(out);
 }
     
