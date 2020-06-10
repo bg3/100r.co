@@ -39,6 +39,8 @@ struct page {
   char*   title;
   char*   filename;
   char*   section;
+  char*   created;
+  char*   updated;
   page*   parent;
   line*   lines;
   int     numlines;
@@ -240,8 +242,8 @@ void html_unordered_list_end(FILE* f) {
   fprintf(f, "</ul>\n");
 }
 
-void html_code_start(FILE* f, char* text) {
-  fprintf(f, "<pre><code>%s\n", text);
+void html_code_start(FILE* f) {
+  fprintf(f, "<pre><code>\n");
 }
 
 void html_code_end(FILE* f) {
@@ -402,10 +404,9 @@ int generate_page(FILE* out, page* p) {
       case PI_CODE:
         if (mode != CODE) {
           mode = CODE;
-          html_code_start(out, l.text);
-        } else {
-          fprintf(out, "%s\n", l.text);
+          html_code_start(out);
         }
+        fprintf(out, "%s\n", l.text);
         break;     
       default:
         unhandled_line(out, l.text);
