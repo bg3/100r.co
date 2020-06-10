@@ -116,11 +116,11 @@ int string_to_filename(char* str, char* fn) {
 /* html output */
 
 void html_header(FILE* f, char line[]) {
-  fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\"> </head>\n <body>\n", line);
+  fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\"> </head>\n <body>\n", line);
 }
 
 void html_banner(FILE* f) {
-  fprintf(f, "<nav><h2><a href=\"/index.html\">Park</br>Imminent</a></h2></nav>");
+  fprintf(f, "<header><h2><a href=\"/index.html\">Park</br>Imminent</a></h2></header>");
 }
 
 void html_title(FILE* f, char line[]) {
@@ -148,7 +148,7 @@ void html_subheading(FILE* f, char text[]) {
 }
 
 void html_code(FILE* f, char text[]) {
-  fprintf(f, "<pre>%s</pre>\n", text);
+  fprintf(f, "<pre><code>%s</code></pre>\n", text);
 }
 
 /* HTML table */
@@ -232,21 +232,21 @@ void html_img(FILE* f, char text[]) {
 }
 
 void unhandled_line(FILE* f, char text[]) {
-  fprintf(f, "<p style=\"color: #ef5541\">%s</p>\n", text);
+  fprintf(f, "<p style=\"background-color: #ef5541; color: #111111\">%s</p>\n", text);
 }
 
 char* remove_section_from_title(char* section, char* title) {
   char* split_point;
   split_point = strchr(title, '\\');
   if (split_point) {
-    printf("\nTitle\t(%s)\n", split_point + 1);
-    printf("Split\t[%ld]\n", split_point - title);
+//    printf("\nTitle\t(%s)\n", split_point + 1);
+//    printf("Split\t[%ld]\n", split_point - title);
     section = realloc(section, sizeof(char) * (split_point - title));
     memcpy(section, title, split_point - title);
     section[split_point - title] = '\0';
     title = split_point + 1;
-    printf("TitleE\t%s\n", title);
-    printf("SectionE\t%s\n", section);
+//    printf("TitleE\t%s\n", title);
+//    printf("SectionE\t%s\n", section);
     
   }
   return title;
@@ -302,6 +302,7 @@ int generate_page(FILE* out, page* p) {
   html_header(out, p->title);
   html_banner(out);
   html_title(out, p->title);
+
   int table_mode = 0; /* later on, make this block mode and use enum to indicate which type */
   int table_cols = 0;
   int n = 0;
@@ -367,7 +368,7 @@ int generate_pages(page* pages, int page_count) {
 void generate_index(page* pages, int page_count) {
   FILE* out = fopen("../index.html", "w");
   html_header(out, "Park Imminent");
-  fprintf(out, "<nav><h1>Park</br>Imminent</br></h1></nav>");
+  fprintf(out, "<header><h1>Park</br>Imminent</br></h1></header>");
   fprintf(out, "<ul>");
   for (int i = 0; i < page_count; i++) {
     fprintf(out, "<li><a href=\"./site/%s.html\">%s</a></li>\n", pages[i].filename, pages[i].title);

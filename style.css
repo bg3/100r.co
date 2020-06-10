@@ -5,19 +5,41 @@ body {
   width: 40em;
   max-width: 100%;
   margin: 2em auto 5em auto;
+  line-height: 1.5;
 }
 
 p {
-  line-height: 1.5;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1em 2em;
+  font-style: italic;
+}
+
+pre {
+  background-color: #d1d1d1;
+  padding: 1em;
 }
 
 h1 {
   font-size: 3em;
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin-bottom: 0.5em;
+}
+
 /* Park Imminent wordmark */
 
-nav h1 {
+header h1 {
   font-family: serif;
   font-size: 2.0em;
   font-weight: bold;
@@ -26,7 +48,7 @@ nav h1 {
   line-height: 0.8em;
 }
 
-nav h2 {
+header h2 {
   font-family: serif;
   font-size: 1.2em;
   font-weight: bold;
@@ -35,12 +57,14 @@ nav h2 {
   line-height: 0.8em;
 }
 
-nav h2 a {
+header h2 a {
   text-decoration: none;
   background-color: inherit;
   padding-left: 0em;
   padding-right: 0em;
 }
+
+/* links */
 
 a {
   color: #111111;
