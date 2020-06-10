@@ -1,6 +1,6 @@
 body {
   color: #111111;
-  background-color: #d1d1d1;
+  background-color: #f7ffff;
   width: 40em;
   max-width: 100%;
   margin: 5em auto 5em 5em;
@@ -18,6 +18,10 @@ h1 span {
   padding: 0.1em;
 }
 */
+
+nav {
+  background-color: #d1d1d1;
+}
 
 nav h1 {
   color: #111111;
@@ -49,7 +53,7 @@ nav h2 a {
 
 a {
   color: #111111;
-  background-color: #fffff9;
+  background-color: #f7ffff;
   padding-left: 0.2em;
   padding-right: 0.2em;
   text-decoration: none;
