@@ -48,4 +48,11 @@ nav h2 a {
 a {
   color: #111111;
   background-color: #fffff9;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  text-decoration: none;
+}
+
+a:anylink {
+  text-decoration: none;
 }
