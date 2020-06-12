@@ -1,6 +1,6 @@
 Programming\Pipi
-d 2020-06-10
-u 2020-06-10
+  d 2020-06-10
+  u 2020-06-10
 
   Pipi is a very simple static site generator written in C. It was used to generate this site.
 
