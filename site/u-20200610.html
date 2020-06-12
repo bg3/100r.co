@@ -20,7 +20,6 @@
 <p>Once I had the site read into the structs, I was quickly able to iterate through them and print each line (not converted to HTML) to stdout.</p>
 <h3>Multiple output files</h3>
 <p>It was very easy to generate multiple pages from a single input file now, just opened a file each time I was iterating through a new page, then pass it to the function that printed each line.</p>
-<p></p>
 <h3>What next?</h3>
 <p>Sometimes I get stuck not because I don't know what to do next, but because I can't decide which step to take next:</p>
 <ul>
@@ -42,7 +41,7 @@
 <li>handle invalid lines</li>
 </ul>
 <ul>
-<li>page navigation - generate a table of contents based on the headings in the page. </li>
+<li>page navigation - generate a table of contents based on the headings in the page.</li>
 </ul>
 <h3>Creating sensible filenames</h3>
 <p>I want to convert the page title into a filename. Replace spaces with dashes, remove other non-printing characters.</p>
@@ -89,10 +88,10 @@
 <p>Just a cut and paste exercise, then change the Markdown into my own formatting. It will also be good for pointing out errors in my generator.</p>
 <h3>A little refactoring</h3>
 <p>Tried to separate some of the code into separate functions and ran into a segfault I couldn't figure out. That lead to trying to install gdb, which required a codesigning tutorial.</p>
-<p>https://sourceware.org/gdb/wiki/PermissionsDarwin</p>
+<p><a href="https://sourceware.org/gdb/wiki/PermissionsDarwin">Permissions for GDB</a></p>
 <p>And ultimately using lldb to debug the error anyway. It was because I was passing a pointer (page*) to a function instead of a double pointer (page**). Because things are passed by value, I had to pass a reference to my pages 'array' instead of the array...</p>
 <h3>Basic index page</h3>
-<p>Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy. </p>
+<p>Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy.</p>
 <h3>Put files in subfolders</h3>
 <p>Need to split the title/filename up based on \ characters as though they were directories.</p>
 <p>On second though, all the files can just have unique names and go in the same subfolder. The site nav will still use the 'folders' though.</p>

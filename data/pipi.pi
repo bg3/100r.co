@@ -35,7 +35,7 @@ u 2020-06-10
 
 - Multiple output files
   It was very easy to generate multiple pages from a single input file now, just opened a file each time I was iterating through a new page, then pass it to the function that printed each line.
-  
+
 - What next?
   Sometimes I get stuck not because I don't know what to do next, but because I can't decide which step to take next:
 * add bold/italic styling
@@ -49,7 +49,7 @@ u 2020-06-10
 
   Other ideas:
 * handle invalid lines
-* page navigation - generate a table of contents based on the headings in the page. 
+* page navigation - generate a table of contents based on the headings in the page.
 
 - Creating sensible filenames
   I want to convert the page title into a filename. Replace spaces with dashes, remove other non-printing characters.
@@ -109,12 +109,12 @@ u 2020-06-10
 - A little refactoring
   Tried to separate some of the code into separate functions and ran into a segfault I couldn't figure out. That lead to trying to install gdb, which required a codesigning tutorial.
 
-  https://sourceware.org/gdb/wiki/PermissionsDarwin
+  :: Permissions for GDB: https://sourceware.org/gdb/wiki/PermissionsDarwin
 
   And ultimately using lldb to debug the error anyway. It was because I was passing a pointer (page*) to a function instead of a double pointer (page**). Because things are passed by value, I had to pass a reference to my pages 'array' instead of the array...
 
 - Basic index page
-  Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy. 
+  Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy.
 
 - Put files in subfolders
   Need to split the title/filename up based on \ characters as though they were directories.

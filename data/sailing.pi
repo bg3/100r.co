@@ -28,7 +28,7 @@ Sailing\Cavalier 32
   Next are 1) replace the prop anode, 2) get the sitting water out of the bilge, 3) clean the head lines, 4) map out the electrical and plumbing systems, 5) map and replace the running rigging.
 
 = To read
-  <https://we.riseup.net/assets/268677/sailfarm.pdf>
+  :: Sail Farming: https://we.riseup.net/assets/268677/sailfarm.pdf
 
 Sailing\Bukh DV20 ME diesel engine
 ' date: 2020-01-13
@@ -66,10 +66,9 @@ Sailing\Bukh DV20 ME diesel engine
 # The stop button, which is actuated by the stop solenoid, determines the maximum position of the fuel pump control rod. Therefore, it is necessary to check that the distance X, which is adjustable by the nut a, is the same as on the stop solenoid previously used.
   This is done easiest by dismounting the stop solenoid together with the cover C.
 
-" Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam. from [here](https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/)
+" Also be very careful removing the old one as you need the measurement from the end of the control rod to the base of the adjusting nut to set the new one. Be very careful fitting the new one as any misalignment when tightening the 4 locating screws will cause the unit to jam. from :: here: https://forums.ybw.com/index.php?threads/bukh-solenoid.331375/
 
-  Or this...
-  https://www.youtube.com/watch?v=5u5fLYRtiKQ
+  Or :: this: https://www.youtube.com/watch?v=5u5fLYRtiKQ ...
 
 = Replacement parts
 
@@ -78,8 +77,8 @@ Sailing\Bukh DV20 ME diesel engine
 
   Bukh: the engine and gearbox any 15W40 mineral oil that is suitable for heavy duty diesel engines will be fine.
 
-  https://forums.ybw.com/index.php?threads/bukh-dv20-diesel-sulphur-engine-oil-all-very-confusing.463716/
-  https://www.canalworld.net/forums/index.php?/topic/77731-correct-oil-for-bukh-engines/
+  :: YBW: https://forums.ybw.com/index.php?threads/bukh-dv20-diesel-sulphur-engine-oil-all-very-confusing.463716/
+  :: Canal World: https://www.canalworld.net/forums/index.php?/topic/77731-correct-oil-for-bukh-engines/
 
 - Fuel stop solenoid
   BUKH Stop Solenoid. BOSCH 0 330 101 024
@@ -157,7 +156,7 @@ Sailing\Mooring
   **2019-12-16: bought 4 x 16mm, 10m lines. Should have got two of them half as long again, because our boat doesn't have midship cleats... so the springers have to lead back to the fore and aft.**
 
 = Purpose of lines
-  from <https://www.animatedknots.com/boating-knots>
+  from :: Animated Knots: https://www.animatedknots.com/boating-knots
 
   Breast Lines prevent rotation and should run roughly at 90o to the dock. To gain length, they should be led from the farthest part of the boat: the bow itself (or the outer hull of a catamaran) and from the far quarter of the stern.
 
@@ -169,7 +168,7 @@ Sailing\Mooring
 
   The 'cleat' on our foredeck is actually called a Samson post, although perhaps not a true one? Guess it's because needs to be strong to hold the anchor line?
   Seems like midship cleats might be worth it.
-  <https://www.thehulltruth.com/boating-forum/770980-how-tie-off-post-cleat.html>
+  :: From here: https://www.thehulltruth.com/boating-forum/770980-how-tie-off-post-cleat.html
 
 = Springing on/off
 

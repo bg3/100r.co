@@ -120,7 +120,7 @@ int string_to_filename(char* str, char* fn) {
 /* html output */
 
 void html_header(FILE* f, char line[]) {
-  fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\"> </head>\n <body>\n", line);
+  fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\"> </head>\n <body>\n", line);
 }
 
 void html_banner(FILE* f) {
@@ -250,11 +250,61 @@ void html_code_end(FILE* f) {
   fprintf(f, "</code></pre>\n");
 }
 
+char* convert_links(char* raw) {
+  /* :: Link text: http://wwww.xyz.html */
+  /* ::: http:///www.xyz.txt for no text. */
+  char* current = raw;
+  for ( ; *current != '\0'; current++) {
+    if (current[0] == ':' && current[1] == ':') {
+      if (current[2] == ':') {
+        current += 4;
+        printf("OO");
+        // link only, no link text
+      } else {
+        char* link_start = current;
+        char* text_start = current + 3;
+        char* text_end = text_start;
+        while (*text_end != '\0' && *text_end != ':')
+          text_end++;
+
+        char* url_start = text_end + 2;
+        char* url_end = url_start;
+        while (*url_end != '\0' && *url_end != ' ')
+          url_end++;
+
+        char text[text_end - text_start + 1];
+        char url[url_end - url_start + 1];
+
+        strncpy(text, text_start, text_end - text_start + 1);
+        text[text_end - text_start] = '\0';
+
+        strncpy(url, url_start, url_end - url_start + 1);
+        url[url_end - url_start] = '\0';
+
+        size_t link_len = strlen(text) + strlen(url) + 15;
+        char link[link_len];
+        sprintf(link, "<a href=\"%s\">%s</a>", url, text);
+
+        size_t pre = link_start - raw;
+        size_t end = strlen(url_end + 1);
+        char* replacement_string = malloc(pre + link_len + end + 1);
+        strncpy(replacement_string, raw, pre);
+        strcat(replacement_string, link);
+        strcat(replacement_string, url_end + 1);
+        raw = replacement_string;
+        current = raw;
+      }
+    }
+  }
+  return raw;
+}
+
+
 void html_img(FILE* f, char text[]) {
   int image_number;
   int n;
   //  need to check if sscanf failed - n would be uniitialised otherwise.
-  //  also, figcaption seems outdated.
+  //  also, figcaption may not be well supported....
   sscanf(text, "%i %n", &image_number, &n);
   char* caption = text+n;
   fprintf(f, "<figure>\n<img src=\"..\\img\\%i.png\" />\n<figcaption>%s</figcaption>\n</figure>\n", image_number, caption);
@@ -361,6 +411,8 @@ int generate_page(FILE* out, page* p) {
       mode = OFF;
     }
 
+    l.text = convert_links(l.text);
+
     switch(l.type) {
       case PI_PARAGRAPH:
         html_para(out, l.text);
@@ -461,8 +513,6 @@ void parse_file(FILE* file, page** p_pages, int* page_count) {
       int len = (int) strlen(rawline) + 1;
       char* section = NULL;
       rawline = remove_section_from_title(section, rawline); 
-      printf("SectionP\t%s\n", section);
-      printf("RawlineP\t%s\n", rawline);
       char* fn = (char*) malloc(len * sizeof(char));
       string_to_filename(rawline, fn);
       page* p = *p_pages;
@@ -499,9 +549,7 @@ int main() {
       char filename[filename_length + 1];
       strcpy(filename, source_directory);
       strcat(filename, entry->d_name);
-      printf("Processing file %3d: %s\n", files, entry->d_name);
       FILE* f = fopen(filename, "r");
-      printf("num pages: %d\n", num_pages);
       parse_file(f, &raw_pages, &num_pages);
     }
   }
