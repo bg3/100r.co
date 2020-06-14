@@ -2,11 +2,9 @@
  <html lang="en">
  <head>
  <title>Pipi</title>
- <link rel="stylesheet" type="text/css" href="../style.css"> </head>
+ <link rel="stylesheet" type="text/css" href="/style.css"> </head>
  <body>
 <header><h2><a href="/index.html">Park</br>Imminent</a></h2></header><h1>Pipi</h1>
-<p>d 2020-06-10</p>
-<p>u 2020-06-10</p>
 <p>Pipi is a very simple static site generator written in C. It was used to generate this site.</p>
 <h2>Making Pipi</h2>
 <p>A static site generator seemed like a useful and simple choice for my first C project. I really didn't know a lot of C when I started it, and what I did know I was unsure of. I had read two thirds of Modern C and another few chapters of Head First C. Everything else I searched for help with or read the man pages as I went.</p>
@@ -26,14 +24,8 @@
 <p>Sometimes I get stuck not because I don't know what to do next, but because I can't decide which step to take next:</p>
 <ul>
 <li>add bold/italic styling</li>
-</ul>
-<ul>
 <li>create filenames based on the page titles (they're currently just a number)</li>
-</ul>
-<ul>
 <li>parse and generate tables, numbered lists and bullets</li>
-</ul>
-<ul>
 <li>generate some site navigation (might involve an initial pass to understand site structure, then to generate and add to pages)</li>
 </ul>
 <p>Although it seems the hardest of the four, I think I'll try to do the navigation next.</p>
@@ -41,8 +33,6 @@
 <p>Other ideas:</p>
 <ul>
 <li>handle invalid lines</li>
-</ul>
-<ul>
 <li>page navigation - generate a table of contents based on the headings in the page.</li>
 </ul>
 <h3>Creating sensible filenames</h3>
@@ -58,11 +48,7 @@
 <h3>More ideas</h3>
 <ul>
 <li>sections and subsections can be pages of their own, if they are defined and have content.</li>
-</ul>
-<ul>
 <li>multiple input files</li>
-</ul>
-<ul>
 <li>navigation between pages, rather than within a page</li>
 </ul>
 <h3>Started tables</h3>
@@ -77,8 +63,6 @@
 <p>*More ideas:*</p>
 <ul>
 <li>need to handle other encodings - Japanese characters aren't printing correctly</li>
-</ul>
-<ul>
 <li>need to convert the brackets around <tags> so they aren't converted into html.</li>
 </ul>
 <p>After adding the test table above, I started getting segmentation errors again. I removed the tables and still got the issue, so this is caused by  something else.</p>
@@ -103,8 +87,7 @@
 <p>I split the page title out from the subfolder (which I'm calling section for now). Haven't done anything with the section value yet. Instead I made a basic index page and then did a little bit of CSS. I'd like to keep it all basic HTML elements if I can, no ids or classes.</p>
 <h3>More 'block mode' parsing</h3>
 <p>I'll try to implement ordered/unordered lists and /pre> blocks now. Shouldn't be too hard compared to tables.</p>
-<pre><code>
-Multiple lines of code?
+<pre><code>Multiple lines of code?
 Should be treated
 As blocks too.
 </code></pre>
@@ -115,11 +98,21 @@ As blocks too.
 </ol>
 <ul>
 <li>Item A</li>
-</ul>
-<ul>
 <li>Item X</li>
-</ul>
-<ul>
 <li>A very long paragraph, the quick brown fox jumped over the lazy dog. She sells seashells by the seashore. Pack my liquor jugs into six boxes or something.</li>
+</ul>
+<h3>Dates</h3>
+<p>I'll add a new rune that specifies when a page is created.</p>
+<pre><code>/ yyyy-mm-dd, yyyy-mm-dd
+</code></pre>
+<p>The first date specifies the date the piece was written. The second the date the piece was updated. The second is optional.</p>
+<p>If this rune appears multiple times in a page, later appearances will overwrite the previous ones.</p>
+<p>_pages_ should be sorted based on the created date (or updated, if present) and displayed in order from newest to oldest. Updated posts should be marked accordingly.</p>
+<p>So:</p>
+<ol>
+<li>parse dates</li>
+<li>sort pages</li>
+<li>update the index page</li>
+<li>style the page</li>
 </body>
 </html>

@@ -1,5 +1,5 @@
 Language\Japanese calendar
-' date: 2020-01-21, update: 20-03-13
+/ 2020-01-21, 2020-03-13
   I received a tear-off Japanese calendar as a gift. Aside from horological symbols and other arcana, each day has a short saying at the bottom. I've started translating these as reading practice.
 
   I haven't studied Japanese long and some of them are quite obtuse - corrections are welcome.
@@ -266,6 +266,9 @@ Language\Japanese calendar
   Ask fisherman about the sea.
 
 Language\Using a MacBook Japanese keyboard
+/ 2020-06-14
+' DRAFT
+
 = Switching from alphanumeric to romaji/kana
 
 = Kana mode

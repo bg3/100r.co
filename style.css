@@ -84,3 +84,27 @@ a {
 a:anylink {
   text-decoration: none;
 }
+
+.index_by_date {
+  list-style: none;
+  padding: 0;
+}
+
+.index_by_date h2 {
+  font-size: 1.0em;
+  display: inline;
+  font-weight: normal;
+}
+
+.index_by_date li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index_by_date time {
+  display: inline;
+  margin-left: auto;
+}
+
+
+

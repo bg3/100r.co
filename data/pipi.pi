@@ -1,6 +1,5 @@
 Programming\Pipi
-  d 2020-06-10
-  u 2020-06-10
+/ 2020-06-10, 2020-06-10
 
   Pipi is a very simple static site generator written in C. It was used to generate this site.
 
@@ -139,3 +138,16 @@ Programming\Pipi
 * Item A
 * Item X
 * A very long paragraph, the quick brown fox jumped over the lazy dog. She sells seashells by the seashore. Pack my liquor jugs into six boxes or something.
+
+- Dates
+  I'll add a new rune that specifies when a page is created.
+> / yyyy-mm-dd, yyyy-mm-dd
+  The first date specifies the date the piece was written. The second the date the piece was updated. The second is optional.
+  If this rune appears multiple times in a page, later appearances will overwrite the previous ones.
+  _pages_ should be sorted based on the created date (or updated, if present) and displayed in order from newest to oldest. Updated posts should be marked accordingly.
+  So:
+# parse dates
+# sort pages
+# update the index page
+# style the page
+

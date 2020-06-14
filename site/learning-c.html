@@ -2,7 +2,7 @@
  <html lang="en">
  <head>
  <title>Learning C</title>
- <link rel="stylesheet" type="text/css" href="../style.css"> </head>
+ <link rel="stylesheet" type="text/css" href="/style.css"> </head>
  <body>
 <header><h2><a href="/index.html">Park</br>Imminent</a></h2></header><h1>Learning C</h1>
 <p>This page is a journal of my efforts to learn C. It details the resources I used, what I learned from them and whether I would recommend them. Most recent entries are towards the bottom.</p>
@@ -24,21 +24,18 @@
 <h3>10.2 Pointers and structures</h3>
 <p>I have struggled a bit with this section and will need to return to it.</p>
 <p>This talks about destroying a struct. I know C has some memory management, have heard of malloc before. But up to and including this point it hasn't been mentioned.</p>
-<pre><code>
-void rat_destroy(rat* rp) {
+<pre><code>void rat_destroy(rat* rp) {
 if (rp) *rp = (rat){ 0 };
 }
 </code></pre>
 <p>Why was this function defined to accept rat (ratio) structs as well as pointers?</p>
-<pre><code>
-rat* rat_rma(rat* rp, rat x, rat y) {
+<pre><code>rat* rat_rma(rat* rp, rat x, rat y) {
 return rat_sumup(rp, rat_get_prod(x, y));
 }
 </code></pre>
 <p>This section in one explanation also puzzled me, I couldn't work out what the second line was doing... assigning the result of toto_get somehow?</p>
 <p>It's not doing anything. It's a declaration of a function... struct toto\* is the return type.</p>
-<pre><code>
-/* forward declaration of struct toto */
+<pre><code>/* forward declaration of struct toto */
 struct toto;
 struct toto* toto_get(void);
 void toto_destroy(struct toto*);
@@ -47,18 +44,15 @@ void toto_doit(struct toto*, unsigned);
 <h3>10.3 Pointers and arrays</h3>
 <p>This is interesting. Pointers and arrays can be accessed interchangeably.</p>
 <p>So these are equivalent:</p>
-<pre><code>
-A[i]
+<pre><code>A[i]
 *(A+i)
 </code></pre>
 <p>And so are these:</p>
-<pre><code>
-A[m][n]
+<pre><code>A[m][n]
 (*A)[n]
 </code></pre>
 <h3>11.4 Function Pointers</h3>
-<pre><code>
-typedef void atexit_function(void);
+<pre><code>typedef void atexit_function(void);
 // Two equivalent definitions of the same type, which hides a pointer
 typedef atexit_function* atexit_function_pointer;
 typedef void (*atexit_function_pointer)(void);
@@ -83,70 +77,36 @@ void atexit(atexit_function_pointer f);
 <p>I will keep a list of some important ones to review, that I may have difficulty searching for later due to not knowing how to describe them. I will need to look back over the parts of the tutorial I have already covered.</p>
 <ul>
 <li>memmove - this is like memcpy but safe to use when src and dest arrays overlap. Why use memcpy at all then? <a href="https://flak.tedunangst.com/post/memcpy-vs-memmove">link</a></li>
-</ul>
-<ul>
 <li>free</li>
-</ul>
-<ul>
 <li>malloc</li>
 </ul>
 <h3>2 May 2020</h3>
 <p>I take another detour and start trying to write something of my own. Beginning with <a href="https://adventofcode.com/2015.">Advent of Code 2015</a>I complete the first day's exercises, but decide to refine the answer so it reads the data from an input file instead of a literal. First roadblock... reading from a file. Safely.</p>
 <p>I will continue with the text editor for the moment. I notice I have been typing in some parts of the code for this editor without really thinking about how they work. I will make more of an effort to understand each part.</p>
 <h3>3 May 2020</h3>
-<pre><code>
-E.cx = match - row->render;
+<pre><code>E.cx = match - row->render;
 </code></pre>
 <blockquote>Otherwise, we loop through all the rows of the file. We use strstr() to check if query is a substring of the current row. It returns NULL if there is no match, otherwise it returns a pointer to the matching substring. To convert that into an index that we can set E.cx to, we subtract the row->render pointer from the match pointer, since match is a pointer into the row->render string.</blockquote>
 <p>I do not understand how this pointer subtraction works.</p>
-<pre><code>
-char *editorPrompt(char* prompt, void (*callback)(char*, int));
+<pre><code>char *editorPrompt(char* prompt, void (*callback)(char*, int));
 </code></pre>
 <p>I've been aligning the asterisks to the left so far, but how does it work in this case? ```(* callback)```?</p>
 <h2>Miscellaneous notes (these will be removed or merged into sections above)</h2>
 <ul>
 <li><a href="How">Ask HN</a>do I learn C properly?: https://news.ycombinator.com/item?id=22519876</li>
-</ul>
-<ul>
 <li><a href="http://fabiensanglard.net/c/">To become a good C programmer</a></li>
-</ul>
-<ul>
 <li><a href="https://matt.sh/howto-c">How to C in 2016</a></li>
-</ul>
-<ul>
 <li><a href="https://www.purplealienplanet.com/node/20">A Ray Tracer</a></li>
-</ul>
-<ul>
 <li><a href="https://github.com/fesh0r/newkind">Elite - The New Kind source</a></li>
-</ul>
-<ul>
 <li><a href="https://www.raylib.com">Raylib</a></li>
-</ul>
-<ul>
 <li><a href="https://www.amazon.com.au/Expert-Programming-Peter-van-Linden/dp/0131774298">Expert C Programming</a></li>
-</ul>
-<ul>
 <li><a href="https://en.cppreference.com/w/c">C reference</a></li>
-</ul>
-<ul>
 <li><a href="http://buildyourownlisp.com">build your own lisp</a></li>
-</ul>
-<ul>
 <li>Learn how to use lldb</li>
-</ul>
-<ul>
 <li><a href="https://github.com/glouw/gel/blob/master/main.">gel?</a></li>
-</ul>
-<ul>
 <li><a href="https://github.com/glouw/gel/blob/master/main.c">gel.c?</a></li>
-</ul>
-<ul>
 <li><a href="https://github.com/rby90/Project-Based-Tutorials-in-C">Project based tutorials in C</a></li>
-</ul>
-<ul>
 <li><a href="https://viewsourcecode.org/snaptoken/kilo/05.aTextEditor.html">kilo text editor</a></li>
-</ul>
-<ul>
 <li><a href="https://github.com/rxi/microui">microui</a></li>
 </body>
 </html>

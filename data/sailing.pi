@@ -1,6 +1,5 @@
 Sailing\Cavalier 32
-' date: 2019-12-14
-' update: 2020-02-01
+/ 2019-12-14, 2020-02-01
 
 + 44 Our boat, a 1984 Cavalier 32
 
@@ -31,8 +30,7 @@ Sailing\Cavalier 32
   :: Sail Farming: https://we.riseup.net/assets/268677/sailfarm.pdf
 
 Sailing\Bukh DV20 ME diesel engine
-' date: 2020-01-13
-' update: 2020-03-15
+/ 2020-01-13, 2020-03-15
 
 = Troubleshooting
 - Can't stop engine
@@ -93,8 +91,7 @@ Sailing\Bukh DV20 ME diesel engine
   https://forums.ybw.com/index.php?threads/bukh-stop-solenoid-it-pays-to-shop-around.492152/
 
 Sailing\Logs
-' date: 2019-12-14
-' update: 2020-01-14
+/ 2019-12-14, 2020-01-14
 
   I haven't really started working on these properly, just testing out what I want to keep online and how.
 
@@ -141,7 +138,7 @@ Sailing\Logs
 >                              4.95    floating key ring
 
 Sailing\Mooring
-' date: 2019-12-16
+/ 2019-12-16
 
   Diameter for 32ft ~ 16mm
   <https://www.whitsundaydiscountmarine.com.au/buying/better-boating-guides/choosing-the-correct-dock-line/>
@@ -175,7 +172,7 @@ Sailing\Mooring
   <https://www.yachtingmonthly.com/sailing-skills/springing-on-and-off-29899>
 
 Sailing\Boat history
-' date: 2019-12-16
+/ 2019-12-16
 
 > | **Date**   | **Type** | **Description** | **Source** | **Amount AUD** |
 > | 2018-02-09 | SURVEY  | Restricted waters only. | Jeff Casely, Blue Marine | |
