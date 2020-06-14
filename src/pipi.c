@@ -62,7 +62,6 @@ struct line {
   char* text;
 };
 
-
 int string_to_filename(char* str, char* fn) {
   int i = 0;
   int last_char_was_dash = 0;
@@ -91,6 +90,7 @@ int string_to_filename(char* str, char* fn) {
 /* html output */
 
 #ifdef LOCAL_BUILD
+
   void html_header(FILE* f, char line[]) {
     fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\"> </head>\n <body>\n", line);
   }
@@ -98,6 +98,7 @@ int string_to_filename(char* str, char* fn) {
   void html_header(FILE* f, char line[]) {
     fprintf(f, "<!DOCTYPE html>\n <html lang=\"en\">\n <head>\n <title>%s</title>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\"> </head>\n <body>\n", line);
   }
+
 #endif
 
 void html_banner(FILE* f) {
@@ -295,15 +296,10 @@ char* remove_section_from_title(char* section, char* title) {
   char* split_point;
   split_point = strchr(title, '\\');
   if (split_point) {
-//    printf("\nTitle\t(%s)\n", split_point + 1);
-//    printf("Split\t[%ld]\n", split_point - title);
     section = realloc(section, sizeof(char) * (split_point - title));
     memcpy(section, title, split_point - title);
     section[split_point - title] = '\0';
     title = split_point + 1;
-//    printf("TitleE\t%s\n", title);
-//    printf("SectionE\t%s\n", section);
-    
   }
   return title;
 }
@@ -520,10 +516,9 @@ void generate_index(page* pages, int page_count) {
   fprintf(out, "<ul class=\"index_by_date\">");
   for (int i = 0; i < page_count; i++) {
     if (pages[i].updated == NULL) {
-      fprintf(out, "<li><a href=\"./site/%s.html\"><h2>%s</h2></a><time>%d-%02d-%02d</time></li>\n", pages[i].filename, pages[i].title, pages[i].created->year, pages[i].created->month, pages[i].created->day);
+      fprintf(out, "<li><h2><a href=\"./site/%s.html\">%s</a></h2><h3>%s</h3><time>%d-%02d-%02d</time></li>\n", pages[i].filename, pages[i].title, pages[i].section, pages[i].created->year, pages[i].created->month, pages[i].created->day);
     } else {
-      /* TODO only show updated text if the update was in the last month? */
-      fprintf(out, "<li><a href=\"./site/%s.html\"><h2>%s (updated)</h2></a><time>%d-%02d-%02d</time></li>\n", pages[i].filename, pages[i].title, pages[i].updated->year, pages[i].updated->month, pages[i].updated->day);
+      fprintf(out, "<li><h2><a href=\"./site/%s.html\">%s <em>(updated)</em></a></h2><h3>%s</h3><time>%d-%02d-%02d</time></li>\n", pages[i].filename, pages[i].title, pages[i].section, pages[i].updated->year, pages[i].updated->month, pages[i].updated->day);
     }
   }
   fprintf(out, "</ul>");
@@ -549,7 +544,7 @@ void parse_file(FILE* file, page** p_pages, int* page_count) {
       *p_pages = realloc(*p_pages, sizeof(page) * *page_count);
 
       int len = (int) strlen(rawline) + 1;
-      char* section = NULL;
+      char* section = malloc(1);
       rawline = remove_section_from_title(section, rawline); 
       char* fn = (char*) malloc(len * sizeof(char));
       string_to_filename(rawline, fn);
