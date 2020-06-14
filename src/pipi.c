@@ -410,6 +410,7 @@ int generate_page(FILE* out, page* p) {
   html_header(out, p->title);
   html_banner(out);
   html_title(out, p->title);
+  html_para(out, p->section);
 
   block_mode mode = OFF;
 
