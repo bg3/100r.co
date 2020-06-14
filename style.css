@@ -90,21 +90,37 @@ a:anylink {
   padding: 0;
 }
 
+.index_by_date li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .index_by_date h2 {
   font-size: 1.0em;
   display: inline;
   font-weight: normal;
-}
+  flex: 0 60%;
+  margin: 0;
+  padding: 0;
+} 
 
-.index_by_date li {
-  display: flex;
-  justify-content: space-between;
+.index_by_date h3 {
+  color: #d1d1d1;
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+  display: inline;
+  font-weight: normal;
+  flex: 0 20%;
 }
 
 .index_by_date time {
+  color: #d1d1d1;
+  flex: 0 20%;
+  padding: 0;
+  margin: 0;
   display: inline;
-  margin-left: auto;
 }
-
 
 
