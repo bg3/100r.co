@@ -1,5 +1,5 @@
 /*  Pipi
- *  Static site generator for Park Imminent.
+ *  Static site generator for Park Imminent
  *  B. Grayland
  *  2020/05/10
  */
@@ -47,14 +47,15 @@ struct date {
 };
 
 struct page {
-  char*   title;
-  char*   filename;
-  char*   section;
-  date*   created;
-  date*   updated;
-  page*   parent;
-  line*   lines;
-  int     numlines;
+  char* title;
+  char* filename;
+  char* section;
+  char* sectionfilename;
+  date* created;
+  date* updated;
+  page* parent;
+  line* lines;
+  int   numlines;
 };
 
 struct line {
@@ -86,8 +87,6 @@ int string_to_filename(char* str, char* fn) {
   fn[i] = '\0';
   return i;
 }
-
-/* html output */
 
 #ifdef LOCAL_BUILD
 
@@ -236,8 +235,7 @@ char* convert_links(char* raw) {
     if (current[0] == ':' && current[1] == ':') {
       if (current[2] == ':') {
         current += 4;
-        printf("OO");
-        // link only, no link text
+        printf("convert_links: link with no link text found, currently unhandled.");
       } else {
         char* link_start = current;
         char* text_start = current + 3;
@@ -513,16 +511,43 @@ int generate_pages(page* pages, int page_count) {
 void generate_index(page* pages, int page_count) {
   FILE* out = fopen("../index.html", "w");
   html_header(out, "Park Imminent");
+
   fprintf(out, "<header><h1>Park</br>Imminent</br></h1></header>");
+
   fprintf(out, "<ul class=\"index_by_date\">");
   for (int i = 0; i < page_count; i++) {
     if (pages[i].updated == NULL) {
-      fprintf(out, "<li><h2><a href=\"./site/%s.html\">%s</a></h2><h3>%s</h3><time>%d-%02d-%02d</time></li>\n", pages[i].filename, pages[i].title, pages[i].section, pages[i].created->year, pages[i].created->month, pages[i].created->day);
+      fprintf(out, 
+              "<li>\n"
+              "  <h2><a href=\"./site/%s.html\">%s</a></h2>\n"
+              "  <h3><a href=\"./site/%s.html\">%s</a></h3>\n"
+              "  <time>%d-%02d-%02d</time>\n"
+              "</li>\n",
+              pages[i].filename,
+              pages[i].title,
+              pages[i].sectionfilename,
+              pages[i].section,
+              pages[i].created->year,
+              pages[i].created->month, 
+              pages[i].created->day);
     } else {
-      fprintf(out, "<li><h2><a href=\"./site/%s.html\">%s <em>(updated)</em></a></h2><h3>%s</h3><time>%d-%02d-%02d</time></li>\n", pages[i].filename, pages[i].title, pages[i].section, pages[i].updated->year, pages[i].updated->month, pages[i].updated->day);
+      fprintf(out,
+              "<li>\n"
+              "  <h2><a href=\"./site/%s.html\">%s <em>(updated)</em></a></h2>\n"
+              "  <h3><a href=\"./site/%s.html\">%s</a></h3>\n"
+              "  <time>%d-%02d-%02d</time>\n"
+              "</li>\n",
+              pages[i].filename,
+              pages[i].title,
+              pages[i].sectionfilename,
+              pages[i].section,
+              pages[i].updated->year,
+              pages[i].updated->month,
+              pages[i].updated->day);
     }
   }
   fprintf(out, "</ul>");
+
   html_footer(out);
 }
     
@@ -549,9 +574,11 @@ void parse_file(FILE* file, page** p_pages, int* page_count) {
       rawline = remove_section_from_title(section, rawline); 
       char* fn = (char*) malloc(len * sizeof(char));
       string_to_filename(rawline, fn);
+      char* sectionfn = (char*) malloc(strlen(section) * sizeof(char));
+      string_to_filename(section, sectionfn);
       page* p = *p_pages;
       int address = *page_count - 1;
-      p[address] = (page) { .title = rawline, .section = section, .filename = fn, .parent = NULL, .lines = NULL, .numlines = 0 };
+      p[address] = (page) { .title = rawline, .section = section, .filename = fn, .sectionfilename = sectionfn, .parent = NULL, .lines = NULL, .numlines = 0 };
     } else if (rune == PI_DATE) {
       parse_date(text, *p_pages + *page_count - 1); 
     } else {

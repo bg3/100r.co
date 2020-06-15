@@ -115,5 +115,11 @@ As blocks too.
 <li>sort pages</li>
 <li>update the index page</li>
 <li>style the page</li>
+</ol>
+<h3>Sections</h3>
+<p>Adding the dates wasn't too bad. I ran into some segfaults but quickly fixed them. One thing I need to understand better is when I need to malloc and free. I think I need to allocate memory on the heap when I am going to use the value non-locally, passing to another function? It seems like I'm doing a lot of building and creating strings.</p>
+<p>Anyway, on to sections. Each page can have a section as part of it's title, e.g. Programming\Pipi. The section gets cut off and displayed on the index page. I want sections to have their own mini-index page, with all pages in that section.</p>
+<p>I guess it's similar to the index page generation, only this time I have to test each page before I add it. Perhaps I can write a more generic function - generate index and pass an optional section value. That doesn't sound too difficult.</p>
+<p>Although... I have to get a list of all the sections I want to generate pages for as well. Should I create a list when I'm parsing the source data, or generate the indexes afterwards and maintain a list of sections I have already generated?</p>
 </body>
 </html>

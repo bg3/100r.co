@@ -88,6 +88,7 @@ a:anylink {
 .index_by_date {
   list-style: none;
   padding: 0;
+  line-height: 1.8;
 }
 
 .index_by_date li {
@@ -122,5 +123,4 @@ a:anylink {
   margin: 0;
   display: inline;
 }
-
 

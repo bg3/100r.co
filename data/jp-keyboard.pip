@@ -1,0 +1,18 @@
+Language\Using a MacBook Japanese keyboard
+/ 2020-06-14
+' DRAFT
+
+= Switching from alphanumeric to romaji/kana
+  The key on the right side of the space bar (かな) will switch into hiragana entry mode. The key on the left side (英数) will switch back to the last used alphanumeric mode. This might be the romaji mode, or another input source.
+
+  If you are using romaji mode, then the keys will match what you see on the keyboard. The left and top characters on the keyboard show what you type in romaji mode, the bottom and right characters show hiragana/katakana mode. Kinda...
+
+= Kana mode
+
+  In order to type using the kana that are printed on the keys, you will need to change the input settings to use kana mode.
+
+= Hard to type characters
+- Tilde
+- Backtick
+
+= Using romaji vs your local keyboard layout
