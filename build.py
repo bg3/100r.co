@@ -155,7 +155,7 @@ def generate_page(subject, journal_entries, codex_entries):
     f = open(output_path, 'w')
 
     f.write("<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<title>Park Imminent: {}</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/style.css\">\n\t</head>\n<body>\n".format(subject))
-    f.write('<header>\n\t<a href=\"../index.html\">Park Imminent</a>\n</header>\n')
+    f.write('<header>\n\t<a href=\"https://parkimminent.com\">Park Imminent</a>\n</header>\n')
     t = trail(codex_entries, subject)
     f.write('<main><p class="breadcrumb">')
     while t:
@@ -231,7 +231,7 @@ def generate_index(subjects, journal_entries, entries):
 
     f = open(output_path, 'w')
     f.write("<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<title>Park Imminent</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">\n\t</head>\n<body>\n")
-    f.write('<header>\n\t<a href=\"index.html\">Park Imminent</a>\n</header>\n')
+    f.write('<header>\n\t<a href=\"https://parkimminent.com\">Park Imminent</a>\n</header>\n')
 
     # if not journal_entries == []:
     #     for entry in journal_entries:
