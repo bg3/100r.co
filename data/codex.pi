@@ -1,0 +1,412 @@
+--  comments
+--
+
+index
+  NAME: Park Imminent
+  PARENT:
+  BODY
+
+to-do
+  NAME: To do list
+  PARENT: pipi
+  BODY
+    <h2>Notes</h2>
+    <p>Camera images are: 3216 × 2136 = 1608 x 1068 = 804 x 534... should just go with 1.5 x 1</p>
+    <h2>To do</h2>
+    <ul>
+      <li>show recent (based on journal) on index page</li>
+      <ul>
+        <li>top X items</li>
+        <li>show the last journaled date</li>
+        <li>I think it's currently just showing the most top codex items?</li>
+      </ul>
+      <li>projects can have a long and a short name, e.g. The Land of Make Believe and minecraft</li>
+      <li>show remaining pages arranged by parent, with top 5 for each and more link</li>
+      <li>work out image styling - perhaps a full width and non-full (maybe centre the non-full?)</li>
+      <li>work out how to show tree, or some sort of nav to parent in the pages</li>
+      <li>if image is less than 100% width, then change the left margin to 0 instead of -8.</li>
+      <li>hide journal entries header if there are no journal entries</li>
+
+    </ul>
+    <h2>Done</h2>
+    <ul>
+      <li>show children on page</li>
+    </ul>
+
+    <h2>Abandoned</h2>
+    <ul>
+      <li>Show partial tree for nav - direct parents, and siblings of parent.</li>
+    </ul>
+
+unwritten
+  NAME: Unwritten codex entries
+  PARENT: index
+  BODY
+    <p>These subjects appear in journal entries, but nothing is written about them yet.</p>
+
+pipi
+  NAME: pipi
+  PARENT: index
+  BODY
+    <h2>TEST</h2>
+    <p>I am <i>Yul</i>, the Honest Worm.</p>
+    <p>Behold my passage. <a href="ponyo.html">Behold</a> my vast displacement, my ponderous strength, my great and coiling length, my folded jaws and curled wings. Behold the hiving cities symbiotic with my flesh. I am fecund, Aurash. I am at the beginning and end of lives.</p>
+    <p>Behold Eir, and Xol, and Ur, and Akka. The Virtuous Worms. Look upon us, and know that We are go[o]d.</p>
+
+crkbd
+  NAME: Corne keyboard
+  PARENT: index
+  BODY
+    <p>The Corne keyboard (crkbd) is a 40% mechanical keyboard designed by foostan. I am using the [[qgmlwb]] keyboard layout.
+    <h2>Build notes</h2>
+    <p>Add these - someone on Merveilles asked.</p>
+
+qgmlwb
+  NAME: QGMLWB
+  PARENT : crkbd
+  BODY
+    <b>Describe the layout.</b>
+
+jub-jub
+    NAME: Jub-jub
+    PARENT: qgmlwb
+    BODY
+      <b>Describe the layout.</b>
+
+food
+  NAME: Food
+  PARENT: index
+  BODY
+
+melbourne-vegan
+  NAME: Vegan food in Melbourne
+  PARENT: food
+  BODY
+    <h2>Snacks/sweets</h2>
+    <ul>
+      <li>Pat & Stick's Vegan Caramel Pecan (this is the greatest)</li>
+      <li>Hey Tiger Fairy Bread milk chocolate (this is also the best)</li>
+    </ul>
+    <h2>Alcohol</h2>
+    <ul>
+      <li>3 Ravens 'New World' IPA</li>
+    </ul>
+    <h2>Restaurants</h2>
+
+---------------
+--  RECIPES  --
+---------------
+
+recipes
+  NAME: Recipes
+  PARENT : food
+  BODY
+    <p>This is a collection of recipes I like to cook. They are all vegan.</p>
+
+boat
+  NAME: Boat
+  PARENT: index
+  BODY
+
+boat-names
+  NAME: Boat names
+  PARENT: boat
+  BODY
+    <h2>A list of possible names for our boat.</h2>
+    <figure><img src="../media/img/44.png"><figcaption>The Boat Currently Known as Free Spirit</figcaption></figure>
+    <ul>
+      <li>Ponyo</li>
+      <li>Gon</li>
+      <li>Lantern</li>
+      <li>Selkie</li>
+      <li>Sun Arrow</li>
+      <li>Ceres</li>
+      <li>Ossolisk</li>
+      <li>Bandit</li>
+      <li>Tetra</li>
+      <li>Tasma</li>
+      <li>Rogue</li>
+      <li>Zeal</li>
+    </ul>
+
+house
+  NAME: The House That Jack Built
+  PARENT : index
+  BODY
+    <p>by Richard Egan</p>
+    <p>Most of the articles in [[Vienna]] to date [[http://www.something.com]] dealt with a specific power, placing an emphasis on its opening moves. These openings are indeed one of the most crucial parts of the game, yet perhaps the attention paid them has obscured the importance of the very next stage of the game itself a watershed - the 1901 building session. Admittedly much of the strategy discussion has been aimed at allowing for a country to secure the maximum number of builds, but of course not all seven countries can gain all possible builds, and contests develop over key centres like Belgium and Greece. By 1902, as a direct consequence of this, an ascendancy will have been established by the powers which have achieved control of such centres as these: the neutral centres were obviously included with the specific intention of fuelling the wrangles between players, to cause friction which might flare into conflict, to be the subject of diplomacy, and to attract units away from the concentrated home centres. [[ponyo Vienna]] to date [[http://www.something.com.au were...]] Those powers which sit on "extra" or "bonus" supply centres in Autumn 1901, which have achieved more than their "expected" number of builds (four for Austria, England, Italy and Turkey; five for France and Germany and five or six for Russia) will be perceived as the more successful both in terms of their strategy and their diplomacy. Those falling below what might have been expected of them will be perceived the weaker.</p>
+    <figure><img src="../media/img/codex/4.jpg" class="small"><figcaption>Morang Gang</figcaption></figure>
+    <p>Yet achieving the most builds by no means equates with real strength in a game such as Diplomacy. The two are related but do not always go hand in hand. Once a hierarchy of sorts is established, players will be influenced as to where to place their allegiance by the "scale of threat" presented by rivals as much as by running with the winning pack. The choice has to be made between taking the "easy option", attacking the weaker powers in the hope of securing more builds to make oneself the stronger to resist potential enemies, and taking the "tough option" and teaming up with the weak to cut the strong down to seize. Here, a power with, say, six units may look the stronger on the board, but in letter-writing circles he will become a dangerous menace, one to be resisted before he runs away with the game, and any potential allies will want some measure of "equality" - they will expect the bigger partner to hold back in the following turn(s) to allow them to catch up.</p>
+    <figure><img src="../media/img/codex/1.jpg"><figcaption>New rope for the sheets, colour coded</figcaption></figure>
+    <p>Already, the 1901 builds have influenced the course of the game, even before they are brought into action with the Spring l902 moves - Alfred Mahan -would have approved of a game like Diplomacy, where the "fleet (or army) in being" is as potent a factor in conditioning responses as a unit operation. Yet even so, one would not want to encourage such a threat to develop - overcoming a six-unit Germany, for example, can be a mammoth and very distracting task, and could argue that as much emphasis ought to be placed upon depriving a rival of builds as is placed upon securing them for oneself. As France, for example, you might-just as well make sure no-one else can get Belgium if you cannot get it for yourself: to offer support for an ally is a sensible and friendly gesture, but one has to be certain of his intentions before conceding this. Why is he not supporting you -instead?</p>
+    <figure><img src="../media/img/codex/6.jpg"><figcaption>Morang Gang</figcaption></figure>
+    <p>Such an attitude may appear selfish if you allow it, but the "build factor" is so essential to the balance of power within the game that to be duped, to be the gullible fool who helps everyone but himself, can be to ensure that you are the first out to the early bath. You are not going to win any real, permanent allies if you are prepared to concede them nothing, and give and take is the sine qua non of an alliance, but once you have given him that centre, you are going to be hard pressed to get it back - even if it is on the doorstep of your own home centres. Here, your presentation is all-important, and you have to appear reasonable so that your "ally" does not resent your unwillingness to help and so looks elsewhere - indeed, so that one is persuaded that you have as much right to the centre as he does, so why not "leave it till later". Once you have restricted a rivals options for expansion, you are halfway to defeating him. Even if he is your ally, you have done something to check any grandiose plans he may have had for you, and forced him to work on consolidating the alliance he will consequently depend on all the more both for security and future expansion. Yet where denying centres works best is when they are denied to opponents. Without builds a power is without strategic flexibility: limit the builds, and you limit that flexibility.</p>
+    <p>Nowhere in the game will this be as keenly appreciated as in England ,where the 1901 adjustments are seen as the first option for France and Germany to build fleets for the taking of the only island on the board. To stop them building is as secure a short-term objective for England as is snatching the fifth supply centre.</p>
+    <figure><img src="../media/img/codex/32.jpg"><figcaption>Maximum Chips</figcaption></figure>
+    <p>Moreover, the psychological effects of standing-off another player when he was hoping for extra builds can be a powerful weapon in your diplomatic arsenal. Everybody, after all, is after builds, and in 1901 these will usually be from neutral centres - with the notable exception of the Austro-Italian struggle, few players do actively seek other home centres in 1901: a France which gets into the Channel in 1901 will invariably use the fleet to bear on Belgium rather than bother with London. Inevitably, the English player will be more concerned with losing that home centre, and will backtrack and use a unit to cover his home centre. This consideration lies behind advice that caution be used in opening moves, with a mind to security as well as gaining centres - and in this example the English player would doubtless consider himself better off had he ordered A(Lpl)-Yor rather than A(Lpl)-Edi. Home centres are perceived as being more important than neutral centres - obviously you cannot build in a neutral centre, and thus home centres gain precedence, so that when planning ones strategy for securing 1901 builds, care should be taken to ensure that the "homeland" is amply protected - in the final analysis, as we have seen, it is more important than foreign expansion.</p>
+    <p>Of course, the balance between risk and security is what determines a player's style: the neutral centres are a lure with their promises of builds, and how others respond - and how you yourself respond - can be a give-away as to intentions and habits. If this is interpreted, it can allow for anticipation and out-manoeuvring: a cautious player who defends his home centres rather than go all-out for builds will probably make a less treacherous ally, but might be difficult to stab if you have to eliminate him later in the game. A player who takes a lot of risks and stakes all or nothing can be far easier to eliminate, but might make a good ally for that very reason in the sort-term. Then again, if you are not the sort of player who likes to stab anyone, you will be looking for an ally who plays the same sort of game as yourself. As yourself: what would you do if you were Italy with a F(ION) at the end of Spring 1901 and an Austrian offer of support into Greece?</p>
+    <figure><img src="../media/img/codex/7.png" class="small"><figcaption>Poster for a game night</figcaption></figure>
+    <p>This applies as much to your choice of builds as to openings - your builds can strengthen your case against one particular power, or increase your options. It is here that provisional build lists enter the picture - it is quite legitimate for you to outline a series of contingencies for your builds (e.g. build F(Ank) if Russia occupies BLA etc.) More than one player has forgotten to make his 1901 builds conditional and has then found himself unable to defend against an attack from an unexpected quarter.</p>
+    <p>Earlier it was inferred that builds were essential to strategic flexibility: obviously a power with six units is going to have more options than one with only three. Yet this is not all - the nature and placing of these units can say a lot about your intentions. England, for example, will keep a keen eye on what France and Germany builds: F(Bre) of F(Kie) will inevitably worry him, whereas F(Mar) is probably meant to get round the Piedmont bottleneck and F(Ber) is almost certainly aimed at Sweden or St.Petersburg. Then again, due to the lack of relevant coastal supply centres, fleets in Marseilles and Berlin, if coupled with fleets in Brest and Kiel, suggest a total commitment against England. After builds such as these there can hardly be any going back - the units have to be put to use after all, or else the builds will be wasted. For this reason Autumn/Winter can be more decisive than Spring.</p>
+    <figure><img src="../media/img/codex/8.png" class="small"><figcaption>Castlevania</figcaption></figure>
+    <p>Given this, it should be possible to plot the intentions of other powers simply by looking at their builds. For their own convenience, most GMs list builds on the Winter adjustments in the order of precedence listed by the player, so that even where two or more builds are gained, it should be possible to determione which was the first choice, second choice etc. To interpret builds, a projection such as this could be used:</p>
+
+corn-congee
+  NAME: Corn congee
+  PARENT: recipes
+  BODY
+    <p>If you've had a bad experience with congee or the idea of savoury rice porridge doesn't sound appealing, I implore you to reconsider - it's such a satisfying dish. This recipe is from <i>Smith & Deli-cious</i> by Mo Wyse and Shannon Martinez.
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 tbsp vegetable oil</li>
+      <li>1 tsp sesame oil, plus extra to garnish</li>
+      <li>4 large spring onions, white and green parts, finely sliced, plus extra to garnish</li>
+      <li>2 garlic cloves, minced</li>
+      <li>20 g ginger, peeled and julienned</li>
+      <li>1 star anise</li>
+      <li>420 g tin of creamed corn</li>
+      <li>150 g jasmine rice</li>
+      <li>3 tbsp Shaoxing wine or dry sherry</li>
+      <li>1 tbsp light soy sauce</li>
+      <li>1 litre vegetable or chicken stock</li>
+      <li>freshly sliced chilli or chilli oil, to garnish</li>
+      <li>pickled Chinese mushrooms, to garnish</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Heat both oils in a saucepan over a medium heat. Sweat off the spring onion, garlic and ginger until soft, then add the star anise. Cook for another minute, then add the corn, stir again and cook for another 2 minutes.</p>
+    <p>Add the rice and stir to coat. Add the wine and soy sauce and cook out for 30 seconds. Pour the stock over the rice and bring to a simmer. Reduce he heat to low and cook, stirring regularly to avoid the rice sticking for 45 minutes to 1 hour, or until the rice is very soft and beginning to fall apart. Add a little extra stock if needed during cooking. Remove the star anise.</p>
+    <p>Garnish with extra sliced spring onion and a drizzle of sesame oil. If you like it hot, add some fresh chilli or chilli oil.</p>
+
+soba
+  NAME: Soba (buckwheat noodles)
+  PARENT : recipes
+  BODY
+    <h2>Ingredients</h2>
+    <p>The weights here are relative to the water - e.g. if you have 100g of water, then you need 160g of buckwheat flour and 40g of wheat flour.</p>
+    <ul>
+      <li>160 % buckwheat flour</li>
+      <li>40 % wheat flour</li>
+      <li>100 % water</li>
+      <li>tapioca flour</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Mix flours and water in bowl with your fingers until a stiff crumbly dough is formed. Knead until smooth then turn out onto a surface that has been lightly dusted with tapioca flour. Shape into a cone then press down so you have a thick coin with a flat bottom.</p>
+    <p>Use a rolling pin to roll into a flat sheet, longer in one direction than the other. Dust the top with more tapioca flour and then fold the sheet in half across its width. Dust the top with tapioca flour and fold again.</p>
+    <p>Use a sharp knife to cut the folded sheet into folded noodles.</p>
+    <p>Have a large bowl of iced water ready.</p>
+    <p>To cook, drop the noodles into a pot of rapidly boiling water for 60 seconds. Might need a little longer if your noodles are thick.</p>
+    <p>Lift them out (using a strainer or cooking chopsticks) and drop them into the iced water.</p>
+    <p>Serve with kombu dashi (a broth), soy, sliced spring onions and shichimi togarashi (a pepper/spice mix)... or whatever you like.</p>
+
+roast-tomato-soup
+  NAME: Roast tomato soup
+  PARENT: recipes
+  BODY
+    <p>This recipe is by Donna Hay.</p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>12 large vine-ripened tomatoes (2kg)</li>
+      <li>1 whole garlic head, unpeeled</li>
+      <li>2 tbsp olive oil</li>
+      <li>3 cups chicken stock (750mL)</li>
+      <li>2-3 tsp sugar</li>
+      <li>salt and black pepper</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Preheat the oven to 180°C (350°F). Place the tomatoes (halved) and garlic on two baking trays lined with non-stick baking paper. Drizzle with olive oil and sprinkle with salt and pepper. Bake for 40 minutes or until very soft. Allow to cool slightly.</p>
+    <p>Squeeze the garlic flesh from its skin and process in a blender with the tomatoes and any juice from the baking trays in two batches until smooth. Cook the tomato mixture, stock and sugar in a saucepan over medium heat for 6 minutes, stirring occasionally.</p>
+    <p>Serves 4–6.</p>
+
+peanut-butter-biscuits
+  NAME: Peanut butter biscuits
+  PARENT: recipes
+  BODY
+    <h2>Ingredients</h2>
+    <ul>
+      <li>200 g sugar</li>
+      <li>110 g butter</li>
+      <li>250 g peanut butter</li>
+      <li>1 tbsp vanilla essence</li>
+      <li>190 g plain flour</li>
+      <li>1 tsp baking soda</li>
+      <li>1 tsp baking powder</li>
+      <li>0.5 tsp salt</li>
+      <li>1 tsp soy milk</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Preheat oven to 190°C or 180°C fan forced.</p>
+    <p>Cream butter and sugar, then mix in peanut butter and vanilla essence. Add remaining ingredients, mix and shape into small balls. Press with fork.</p>
+    <p>Bake for 15 minutes.</p>
+
+zeruda-no-densetsu
+  NAME: ゼルダの伝説
+  PARENT : index
+  BODY
+    <p>A Japanese to English translation of Link's Awakening for Nintendo Switch. Might need to do some table markup for this one.</p>
+    <table>
+      <tr><td>ORIGINAL</td><td>NOTES</td><td>ENGLISH</td></tr>
+      <tr><td>ゼルダの伝説</td><td>伝説 = せんせつ</td><td>The Legend of Zelda</td></tr>
+      <tr><td>夢をみる島</td><td>夢 = ゆめ</br>島 = しま</td><td>Dreaming Island</td></tr>
+      <tr><td>ノーマルモード</td><td></td><td>Normal mode</td></tr>
+      <tr><td>辛口モード</td><td></td><td>Dry Mode</td></tr>
+    <tr><td colspan="3"><h2>TARIN and MARIN's HOUSE</h2></td></tr>
+      <tr><td>マリン：あっ！　気がついたのね！　よかった</td><td>気がついた - noticed</td><td>Marin: Oh! You came to! That's good.</td></tr>
+      <tr><td>もうダメかと思った……</td><td></td><td>I thought it might be no good.</td></tr>
+      <tr><td>こわい夢を見ていたみたい……　ひどき　うなされていたよ</td><td>みたい　means "look like", an appearance.</br>酷い = ひどき terrible</br>魘される = うなされる</td><td>It looked like you were having a scary dream. You were having a terrible nightmare!</td></tr>
+    </table>
+
+oatmeal-biscuits
+  NAME: Oatmeal biscuits
+  PARENT: recipes
+  BODY
+    <p>from Loving It Vegan
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1.5 cups rolled oats</li>
+      <li>1 cup plain flour</li>
+      <li>1 cup dried coconut</li>
+      <li>1 tsp bicarb soda</li>
+      <li>0.5 tsp salt</li>
+      <li>1 tsp cinnamon</li>
+      <li>1 cup brown sugar</li>
+      <li>0.5 cup butter</li>
+      <li>3 tbsp golden syrup</li>
+      <li>1 tsp vanilla extract</li>
+      <li>1 tbsp soy milk</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Preheat oven to 180°C.</p>
+    <p>Mix oats, flour, coconut, bicarb, salt and cinnamon together. Cream butter and sugar then add golden syrup and vanilla. Combine with dry ingredients. Mix in soy milk, shape into 16 large balls.</p>
+    <p>Bake for 15 minutes or until edges crisp.</p>
+
+lemon-cake
+  NAME: Lemon cake
+  PARENT: recipes
+  BODY
+    <p>from BBC Good Food
+    <h2>Ingredients</h2>
+    <ul>
+      <li>100 ml vegetable oil
+      <li>275 g self raising flour
+      <li>200 g golden caster sugar
+      <li>1 tsp baking powder
+      <li>1/2 lemon, juiced
+      <li>1/2 lemon, zested
+    </ul>
+    <h3>Icing</h3>
+    <ul>
+      <li>150 g icing sugar
+      <li>1/2 lemon, juiced
+    </ul>
+    <h2>Method</h2>
+    <p>Heat oven to 200°C/180°C fan/gas 6. Oil a 1lb loaf tin and line it with baking parchment. Mix the flour, sugar, baking powder and lemon zest in a bowl. Add the oil, lemon juice and 170ml cold water, then mix until smooth.</p>
+    <p>Pour the mixture into the tin. Bake for 30 mins or until a skewer comes out clean. Cool in the tin for 10 mins, then remove and transfer the cake to a wire rack to cool fully.</p>
+    <p>For the icing, sieve the icing sugar into a bowl. Mix in just enough lemon juice to make an icing thick enough to pour over the loaf (if you make the icing too thin, it will just run off the cake).</p>
+    <h2>Notes</h2>
+    <p>I used 3/4 self raising cake flour, 1/4 self raising flour.</p>
+
+pretzel-dogs
+  NAME: Pretzel dogs
+  PARENT: recipes
+  BODY
+    <p>from _Bake & Destroy_ by Natalie Slater</p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1.5 cups warm water</li>
+      <li>1 tbsp sugar</li>
+      <li>2 tsp salt</li>
+      <li>2.25 tbsp active dry yeast</li>
+      <li>4.5 cups plain flour</li>
+      <li>2 tbsp vegan butter, melted</li>
+      <li>12 veggie hot dogs</li>
+      <li>1 cup warm water</li>
+      <li>1 tbsp vegan butter, melted</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Combine the water, sugar and kosher salt in the bowl of a stand mixer and sprinkle yeast on top. Allow to sit for 5 minutes, or until the mixture begins to foam.</p>
+    <p>Add the flour and margarine and, using the dough hook attachment, mix on low speed until well combined.</p>
+    <p>Change to medium speed and knead until the dough is smooth and pulls away from the side of the bowl, 4 to 5 minutes.</p>
+    <p>Remove the dough from the bowl, clean the bowl and then oil it well with vegetable oil.</p>
+    <p>Return the dough to the bowl, cover with plastic wrap and set in a warm place for 50 to 55 minutes, or until the dough has doubled in size.</p>
+    <p>Preheat your oven to 220°C. Once the dough has risen, pinch off golf-ball-sized pieces and roll them into 12-inch ropes. You might want to flour your hands and the surface you're rolling on because this dough is sticky.</p>
+    <p>Wrap each veggie dog in the dough and place on a parchment paper-lined cookie sheet.</p>
+    <p>Mix warm water and baking soda together. Brush each wrapped dog with this mixture and then bake for 10 minutes, or until golden brown.</p>
+    <p>Brush each baked dog with melted margarine and sprinkle with kosher salt.</p>
+
+reading-list
+  NAME: Reading list
+  PARENT: index
+  BODY
+    <h2>2020</h2>
+    <h3>Fall of Hyperion, Dan Simmons</h3>
+    <p>The stories set up in the first book were so intriguing, it was probably impossible for this book to be anything but a disappointment. I would highly recommend reading Hyperion and then leaving the rest to wonder.</p>
+    <h3>Tropic of Capricorn, Henry Miller</h3>
+    <p>Alternates in a wandering stream of consciousness between character vignettes and navel gazing. There are some inspired moments in this book but on the whole it comes across as misogynistic and vain.</p>
+    <h3>How Everything Can Collapse, Pablo Servigne & Raphaël Stevens, translated from French by Andrew Brown</h3>
+    <p>I am aware, concerned and somewhat active with regards to climate change, that we are approaching or perhaps past a point of no return. This book has persuaded me that there are other such calamitous limits - loss of biodiversity, peak phosphorous and oil, ocean acidification, economic collapse and so on. The presence of multiple factors, which are all interdependent, combined with the nature of such systems to fail suddenly rather than gradually, leads to the conclusion that collapse is inevitable and near. A transition will probably not be possible. This sounds terrible, but the authors are trying to look forward in a realistic and positive direction. Our ways of life will change, but they could be for the better if we start acting to build local and community resilience now.</p>
+    <h3>How to Read a Book, Mortimer Adler</h3>
+
+fennel-rice
+  NAME: Fennel rice
+  PARENT : recipes
+  BODY
+    <p>From the NYT</p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1/4 cup extra virgin olive oil</li>
+      <li>1 medium onion, chopped</li>
+      <li>2 garlic cloves, minced</li>
+      <li>2 medium fennel bulbs, trimed, cored and diced small</li>
+      <li>salt to taste</li>
+      <li>1 cup long grain rice, or coarse bulgur</li>
+      <li>2 1/2 cups water</li>
+      <li>1/4 cup chopped fresh parsley</li>
+      <li>1/4 cup chopped fresh dill</li>
+      <li>freshly ground pepper</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Heat 3 tablespoons of olive oil over medium heat in a pan or wide lidded saucepan. Add onion and cook, stirring often, until tender, about 5 minutes. Add garlic and stir until fragrant, about 30 seconds. Stir in fennel, add a generous pinch of salt and cook, stirring often, until fennel has wilted and softened (about 8 minutes). Stir in rice or bulgur to coat with olive oil.</p>
+    <p>Add water, salt, pepper, parsley and dill and bring to a boil. Reduce heat to low, cover and simmer until rice or bulgur is soft and liquid absorbed (i.e. normal absorption cooking time for the rice). Remove from heat, uncover and place a towl across the top of the pan. Return lid and let sit for 10 minutes. Serve hot, with the remaining olive oil drizzled over the top.</p>
+
+black-pepper-tofu
+  NAME: Black pepper tofu
+  PARENT: recipes
+  BODY
+    <p>[[https://ottolenghi.co.uk/recipes/black-pepper-tofu-a This recipe]] is from Yotam Ottolenghi's Plenty. It is <em>very</em> peppery.<p>
+    <figure><img src="../media/img/codex/3.jpg" class="wide"></figure>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>800g firm tofu</li>
+      <li>vegetable oil for frying</li>
+      <li>cornflour to dust the tofu</li>
+      <li>150g butter</li>
+      <li>12 small shallots (350g in total), thinly sliced</li>
+      <li>8 fresh red chillies (fairly mild ones), thinly sliced</li>
+      <li>12 garlic cloves, crushed</li>
+      <li>3 tbsp chopped fresh root ginger</li>
+      <li>3 tbsp sweet soy sauce (kecap manis)</li>
+      <li>3 tbsp light soy sauce</li>
+      <li>4 tsp dark soy sauce</li>
+      <li>2 tbsp caster sugar</li>
+      <li>5 tbsp coarsely crushed black peppercorns (use a pestle and mortar or a spice grinder)</li>
+      <li>16 small and thin spring onions, cut into 3cm segments</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Start with the tofu. Pour enough oil into a large frying pan or wok to come 5mm up the sides and heat. Cut the tofu into large cubes, about 3 x 2cm. Toss them in some cornflour and shake off the excess, then add to the hot oil. (You’ll need to fry the tofu pieces in a few batches so they don’t stew in the pan.) Fry, turning them around as you go, until they are golden all over and have a thin crust. As they are cooked, transfer them onto kitchen paper.</p>
+    <p>Remove the oil and any sediment from the pan, then put the butter inside and melt it. Add the shallots, chillies, garlic and ginger. Sauté on low to medium heat for about 15 minutes, stirring occasionally, until the ingredients have turned shiny and are totally soft. Next, add the soy sauces and sugar and stir, then add the crushed black pepper.</p>
+    <p>Add the tofu to warm it up in the sauce for about a minute. Finally, stir in the spring onions. Serve hot, with steamed rice.</p>
+
+test-2
+  NAME: Principles of cooking
+  PARENT: food
+  BODY
+
+test-3
+  NAME: Another cooking page
+  PARENT: test-2
+  BODY
+
+test-4
+  NAME: A Deeply Nested Page
+  PARENT: black-pepper-tofu
+  BODY

@@ -1,125 +1,18 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
- <title>Pipi</title>
- <link rel="stylesheet" type="text/css" href="/style.css"> </head>
- <body>
-<header><h2><a href="/index.html">Park</br>Imminent</a></h2></header><h1>Pipi</h1>
-<p>Programming</p>
-<p>Pipi is a very simple static site generator written in C. It was used to generate this site.</p>
-<h2>Making Pipi</h2>
-<p>A static site generator seemed like a useful and simple choice for my first C project. I really didn't know a lot of C when I started it, and what I did know I was unsure of. I had read two thirds of Modern C and another few chapters of Head First C. Everything else I searched for help with or read the man pages as I went.</p>
-<p>I plan to return to this in a year and comment on my approach and implementation.</p>
-<h3>Read one file and write to another</h3>
-<p>Read a hardcoded file line by line, use the first character of each line to determine how it should be converted to HTML and write that to a hard coded output file. This was surprisingly easy.</p>
-<table>
-<tr><td>1st char </td><td> Line is... </td></tr><tr><td>=        </td><td> Heading    </td></tr><tr><td>-        </td><td> Subheading </td></tr><tr><td></td><td> Paragraph, with _italics_ and *bold* </td></tr><tr><td>"        </td><td> Quote      </td></tr><tr><td>+        </td><td> ID for an image file, followed by a caption </td></tr><tr><td>>        </td><td> Code       </td></tr><tr><td>#        </td><td> Numbered list </td></tr><tr><td>*        </td><td> Bulleted list </td></tr><tr><td>`        </td><td> Comment (blank lines are also ignored) </td></tr><tr><td></td><td>        </td></tr><tr><td>(other)  </td><td> New page (text is the page title) </td></tr></table>
-<h3>Adjusting buffer</h3>
-<p>The biggest problem with 1 was that the lines were actually limited to 80 chars because of the buffer I was using. So new paragraph elements got created where they shouldn't. So, I found out how to adjust the buffer size as needed. This is probably the first time I ran into something that is just not an issue in more modern languages. It took me a while to understand the examples I read.</p>
-<h3>Reading into structs</h3>
-<p>Instead of reading and converting the site on the fly, I created structs representing a line and a page, then read the data into these. A series of these pages makes up the raw site data. This took a little while just to understand how and when to use * and & or neither, I am not nearly comfortable with it and sometimes had to try one then the other, looking at the error messages from the compiler to work out what was going on. I also wished for the ability to inspect the structs in memory (a debugger of some kind) at this point - but resolved it before I needed it.</p>
-<p>Once I had the site read into the structs, I was quickly able to iterate through them and print each line (not converted to HTML) to stdout.</p>
-<h3>Multiple output files</h3>
-<p>It was very easy to generate multiple pages from a single input file now, just opened a file each time I was iterating through a new page, then pass it to the function that printed each line.</p>
-<h3>What next?</h3>
-<p>Sometimes I get stuck not because I don't know what to do next, but because I can't decide which step to take next:</p>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Park Imminent: pipi</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+<body>
+<header>
+	<a href="index.html">Park Imminent</a>
+</header>
+<main><p class="breadcrumb"></p><h1>pipi</h1><h2>TEST</h2><p>I am <i>Yul</i>, the Honest Worm.</p><p>Behold my passage. <a href="ponyo.html">Behold</a> my vast displacement, my ponderous strength, my great and coiling length, my folded jaws and curled wings. Behold the hiving cities symbiotic with my flesh. I am fecund, Aurash. I am at the beginning and end of lives.</p><p>Behold Eir, and Xol, and Ur, and Akka. The Virtuous Worms. Look upon us, and know that We are go[o]d.</p><h2><b>Journal entries</b></h2>
 <ul>
-<li>add bold/italic styling</li>
-<li>create filenames based on the page titles (they're currently just a number)</li>
-<li>parse and generate tables, numbered lists and bullets</li>
-<li>generate some site navigation (might involve an initial pass to understand site structure, then to generate and add to pages)</li>
-</ul>
-<p>Although it seems the hardest of the four, I think I'll try to do the navigation next.</p>
-<p>(when I came back to this the next day, I changed my mind and decided to do the filename thing, because the existing code is making filenames based on the number of lines looped through, so different filenames get created each time and now I have a folder full of 0.html, 34.html, 35.html, 37.html).</p>
-<p>Other ideas:</p>
-<ul>
-<li>handle invalid lines</li>
-<li>page navigation - generate a table of contents based on the headings in the page.</li>
-</ul>
-<h3>Creating sensible filenames</h3>
-<p>I want to convert the page title into a filename. Replace spaces with dashes, remove other non-printing characters.</p>
-<p>Maybe I can just remove any characters except for alphanumerics and -. Should probably store the filename with the page struct too. I'll need it later when I generate links.</p>
-<blockquote>How should I compare size_t (a string length) to an index iterating through the string? Should I make the index size_t? Should I cast it? How do I handle errors?</blockquote>
-<h3>Improving sensible filenames</h3>
-<p>I want to remove the double dashes from the filenames, and maybe investigate why the section below is getting an extra a on the end - am I reading past the end of a string.</p>
-<p>First idea for removing the double dashes is just to keep a flag indicating whether the previous character written was a dash, and if so don't write subsequent dashes. Once I write a non-dash character, then reset the flag.</p>
-<p>This actually turned out really easy to implement. Working out the extra a was a bit harder and I have run into a segmentation fault... looks like I am over-reading memory somehow... it seems related to line 51 in this file... perhaps the space for the struct or one of the strings overflows there?</p>
-<p>Also rerunning the file multiple times gives slightly different results.</p>
-<p>Yes - filename bug was due to writing the \0 for the filename one character ahead of where I was supposed to in string_to_filename(). Somehow, fixing this bug also fixed the segmentation fault issue... for now.</p>
-<h3>More ideas</h3>
-<ul>
-<li>sections and subsections can be pages of their own, if they are defined and have content.</li>
-<li>multiple input files</li>
-<li>navigation between pages, rather than within a page</li>
-</ul>
-<h3>Started tables</h3>
-<p>Got a basic table with only a single column/td being generated. Turned out to be easier than I thought. Dan suggested a _block-mode_ which would work for numbered and ordered lists too.</p>
-<p>Next step is to split out each line by it's internal pipe characters, work out how many columns the table should have. May also need special handling for when a table has missing cells - use colspan to fill the remainder?</p>
-<p>First row sets the number of columns. |s in succession like || indicates a colspan. A space in between would indicate an empty table instead.</p>
-<p>If a subsequent row has more |s, indicating more columns than the original row, then the excess is placed in the last column as per the number of rows specified in the first row.</p>
-<h3>More tables</h3>
-<p>Implemented a clumsy table splitting, but it worked first try. Now I need to handle exceptions - when there are more columns in the header than the following rows, or less.</p>
-<table>
-<tr><td>1st char </td><td> Line is... </td><td> More </td></tr><tr><td>=        </td><td> Heading    </td><td> adfs </td></tr><tr><td>-        </td><td> Subheading </td><td>  adfg </td></tr><tr><td></td><td> Paragraph, with _italics_ and *bold* </td><td> daf  </td></tr><tr><td>"        </td><td> Quote      </td><td> af </td></tr></table>
-<p>*More ideas:*</p>
-<ul>
-<li>need to handle other encodings - Japanese characters aren't printing correctly</li>
-<li>need to convert the brackets around <tags> so they aren't converted into html.</li>
-</ul>
-<p>After adding the test table above, I started getting segmentation errors again. I removed the tables and still got the issue, so this is caused by  something else.</p>
-<h3>Multiple input files</h3>
-<p>Time to take a break from tables. They work well enough, just don't handle errors very well. :) I think I will try to handle multiple input files.</p>
-<p>First look for all .pi files in current directory - turned out to be pretty easy.</p>
-<p>Might stop here and convert my existing site into pipi!</p>
-<h3>Converting the old site to Pipi</h3>
-<p>Just a cut and paste exercise, then change the Markdown into my own formatting. It will also be good for pointing out errors in my generator.</p>
-<h3>A little refactoring</h3>
-<p>Tried to separate some of the code into separate functions and ran into a segfault I couldn't figure out. That lead to trying to install gdb, which required a codesigning tutorial.</p>
-<p><a href="https://sourceware.org/gdb/wiki/PermissionsDarwin">Permissions for GDB</a></p>
-<p>And ultimately using lldb to debug the error anyway. It was because I was passing a pointer (page*) to a function instead of a double pointer (page**). Because things are passed by value, I had to pass a reference to my pages 'array' instead of the array...</p>
-<h3>Basic index page</h3>
-<p>Create an index page; for each page I create, list it on the index page with a link. Each page struct already has it's filename, so this should be pretty easy.</p>
-<h3>Put files in subfolders</h3>
-<p>Need to split the title/filename up based on \ characters as though they were directories.</p>
-<p>On second though, all the files can just have unique names and go in the same subfolder. The site nav will still use the 'folders' though.</p>
-<p>So the next step is to create some sort of hierarchical structure. A page has a parent and children. A page may have content, or it may only be defined as a category.</p>
-<p>If a page has content and is a category with children, how to show the navigation and content together?</p>
-<h3>CSS</h3>
-<p>I split the page title out from the subfolder (which I'm calling section for now). Haven't done anything with the section value yet. Instead I made a basic index page and then did a little bit of CSS. I'd like to keep it all basic HTML elements if I can, no ids or classes.</p>
-<h3>More 'block mode' parsing</h3>
-<p>I'll try to implement ordered/unordered lists and /pre> blocks now. Shouldn't be too hard compared to tables.</p>
-<pre><code>Multiple lines of code?
-Should be treated
-As blocks too.
-</code></pre>
-<ol>
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ol>
-<ul>
-<li>Item A</li>
-<li>Item X</li>
-<li>A very long paragraph, the quick brown fox jumped over the lazy dog. She sells seashells by the seashore. Pack my liquor jugs into six boxes or something.</li>
-</ul>
-<h3>Dates</h3>
-<p>I'll add a new rune that specifies when a page is created.</p>
-<pre><code>/ yyyy-mm-dd, yyyy-mm-dd
-</code></pre>
-<p>The first date specifies the date the piece was written. The second the date the piece was updated. The second is optional.</p>
-<p>If this rune appears multiple times in a page, later appearances will overwrite the previous ones.</p>
-<p>_pages_ should be sorted based on the created date (or updated, if present) and displayed in order from newest to oldest. Updated posts should be marked accordingly.</p>
-<p>So:</p>
-<ol>
-<li>parse dates</li>
-<li>sort pages</li>
-<li>update the index page</li>
-<li>style the page</li>
-</ol>
-<h3>Sections</h3>
-<p>Adding the dates wasn't too bad. I ran into some segfaults but quickly fixed them. One thing I need to understand better is when I need to malloc and free. I think I need to allocate memory on the heap when I am going to use the value non-locally, passing to another function? It seems like I'm doing a lot of building and creating strings.</p>
-<p>Anyway, on to sections. Each page can have a section as part of it's title, e.g. Programming\Pipi. The section gets cut off and displayed on the index page. I want sections to have their own mini-index page, with all pages in that section.</p>
-<p>I guess it's similar to the index page generation, only this time I have to test each page before I add it. Perhaps I can write a more generic function - generate index and pass an optional section value. That doesn't sound too difficult.</p>
-<p>Although... I have to get a list of all the sections I want to generate pages for as well. Should I create a list when I'm parsing the source data, or generate the indexes afterwards and maintain a list of sections I have already generated?</p>
-</body>
-</html>
+<li>201129 - (Pizza.)</li><li>201126 - (Watching Shut Up & Sit Down videos.)</li><li>201125 - (Getting through a lot of work.)</li><li>201124 - (Organised second tattoo.)</li><li>201123 - (Ordered lifejackets, EPIRB and splicing tools.)</li><li>201120 - (Got recursive table of contents generation working)</li><li>201119 - New rope for the sheets, colour coded (Using a real camera for the first time in years.)</li><li>201115 - (Boomerang Fu with Careys)</li><li>201111 - (Good meditation after some time.)</li><li>201110 - (Phone chat with mum about Len and childhood.)</li><li>201107 - (Sarah's birthday.)</li></ul>
+<h2><b>Child pages</b></h2>
+<ul class="nobullets">
+<li><a class="noborder" href="to-do.html">To do list</a></li></ul>
+</main></body>
