@@ -127,7 +127,7 @@ def parse_links(line, codex_entries):
             else:
                 text = link[0]
         else:
-            href = '{}.html'.format(link[0])
+            href = 'site/{}.html'.format(link[0])
             if link[0] in codex_entries:
                 if len(link) == 2:
                     text = link[1]
@@ -136,7 +136,7 @@ def parse_links(line, codex_entries):
             else:
                 print('Codex entry {} linked but not found.'.format(link[0]))
 
-        line = line[:start] + '<a href="{}">{}</a>'.format(href, text) + line[end+2:]
+        line = line[:start] + '<a href="site/{}">{}</a>'.format(href, text) + line[end+2:]
         return parse_links(line, codex_entries) # recursively parse the rest of the line
     else:
         return line
@@ -155,7 +155,7 @@ def generate_page(subject, journal_entries, codex_entries):
     f = open(output_path, 'w')
 
     f.write("<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<title>Park Imminent: {}</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/style.css\">\n\t</head>\n<body>\n".format(subject))
-    f.write('<header>\n\t<a href=\"index.html\">Park Imminent</a>\n</header>\n')
+    f.write('<header>\n\t<a href=\"../index.html\">Park Imminent</a>\n</header>\n')
     t = trail(codex_entries, subject)
     f.write('<main><p class="breadcrumb">')
     while t:
@@ -201,7 +201,7 @@ def generate_page(subject, journal_entries, codex_entries):
 
     if 'children' in codex_entries[subject]:
         f.write('<h2><b>Child pages</b></h2>\n')
-        recursive_tree(f, codex_entries, subject)
+        recursive_tree(f, codex_entries, subject, False)
 
     f.write('</main></body>')
     f.close()
@@ -214,20 +214,23 @@ def trail(entries, current):
         current = entries[current]['parent']
     return trail
 
-def recursive_tree(fp, entries, start):
+def recursive_tree(fp, entries, start, index):
     fp.write('<ul class="nobullets">\n')
     for entry in entries.values():
         if entry['parent'] == start:
-            fp.write('<li><a class="noborder" href="{}.html">{}</a></li>'.format(entry['id'], entry['name']))
+            if index:
+                fp.write('<li><a class="noborder" href="site/{}.html">{}</a></li>'.format(entry['id'], entry['name']))
+            else:
+                fp.write('<li><a class="noborder" href="../site/{}.html">{}</a></li>'.format(entry['id'], entry['name']))
             if 'children' in entry:
-                recursive_tree(fp, entries, entry['id'])
+                recursive_tree(fp, entries, entry['id'], index)
     fp.write('</ul>\n')
 
 def generate_index(subjects, journal_entries, entries):
-    output_path = os.path.join(OUTPUT_DIR, 'index.html')
+    output_path = os.path.join('.', 'index.html')
 
     f = open(output_path, 'w')
-    f.write("<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<title>Park Imminent</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/style.css\">\n\t</head>\n<body>\n")
+    f.write("<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<title>Park Imminent</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">\n\t</head>\n<body>\n")
     f.write('<header>\n\t<a href=\"index.html\">Park Imminent</a>\n</header>\n')
 
     # if not journal_entries == []:
@@ -244,12 +247,12 @@ def generate_index(subjects, journal_entries, entries):
     f.write('<ul class="nobullets">\n')
     for _ in range( NUM_RECENT_ITEMS):
         s = subjects.pop(0)
-        f.write('<li><a class="noborder" href=\"{}.html\">{}</a></li>'.format(entries[s]['id'], entries[s]['name']))
+        f.write('<li><a class="noborder" href=\"site/{}.html\">{}</a></li>'.format(entries[s]['id'], entries[s]['name']))
     f.write('</ul>\n')
 
     # TREE
     f.write('<h2>All</h2>')
-    recursive_tree(f, entries, 'index')
+    recursive_tree(f, entries, 'index', True)
 
 ### MAIN
 
