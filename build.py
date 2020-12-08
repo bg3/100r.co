@@ -127,7 +127,7 @@ def parse_links(line, codex_entries):
             else:
                 text = link[0]
         else:
-            href = 'site/{}.html'.format(link[0])
+            href = '{}.html'.format(link[0])
             if link[0] in codex_entries:
                 if len(link) == 2:
                     text = link[1]
