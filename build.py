@@ -113,7 +113,7 @@ def parse_links(line, codex_entries):
     start = line.find('[[')
     end = line.find(']]')
     if not (start == -1 or end == -1):
-        href = 'index.html'
+        href = '../index.html'
         text = '???'
 
         link = line[start+2:end]
@@ -136,7 +136,7 @@ def parse_links(line, codex_entries):
             else:
                 print('Codex entry {} linked but not found.'.format(link[0]))
 
-        line = line[:start] + '<a href="site/{}">{}</a>'.format(href, text) + line[end+2:]
+        line = line[:start] + '<a href="{}">{}</a>'.format(href, text) + line[end+2:]
         return parse_links(line, codex_entries) # recursively parse the rest of the line
     else:
         return line
