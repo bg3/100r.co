@@ -6,6 +6,22 @@ index
   PARENT:
   BODY
 
+programming
+  NAME: Programming
+  PARENT: index
+  BODY
+
+low-poly
+  NAME: Low poly 3D
+  PARENT: programming
+  BODY
+    <p>I love flat shaded and dithered early 3D graphics.</p>
+    <figure><img src="../media/img/codex/geograph-seal.jpg"><figcaption>Geograph Seal</figcaption></figure>
+    <figure><img src="../media/img/codex/zeewolf-2.jpg"><figcaption>Zeewolf 2</figcaption></figure>
+    <figure><img src="../media/img/codex/virus.jpg"><figcaption>Zarch/Virus (and <a href="https://www.sockmonsters.com/TheMakingOfZarch.html">making of</a>)</figcaption></figure>
+
+
+
 to-do
   NAME: To do list
   PARENT: pipi
@@ -396,17 +412,8 @@ black-pepper-tofu
     <p>Remove the oil and any sediment from the pan, then put the butter inside and melt it. Add the shallots, chillies, garlic and ginger. Sauté on low to medium heat for about 15 minutes, stirring occasionally, until the ingredients have turned shiny and are totally soft. Next, add the soy sauces and sugar and stir, then add the crushed black pepper.</p>
     <p>Add the tofu to warm it up in the sauce for about a minute. Finally, stir in the spring onions. Serve hot, with steamed rice.</p>
 
-test-2
-  NAME: Principles of cooking
-  PARENT: food
+programming-rules-of-thumb
+  NAME: Programming rules of thumb
+  PARENT: programming
   BODY
-
-test-3
-  NAME: Another cooking page
-  PARENT: test-2
-  BODY
-
-test-4
-  NAME: A Deeply Nested Page
-  PARENT: black-pepper-tofu
-  BODY
+    <p>Pay attention to when your solution computes something it doesn’t use. Often you can cut it out and get a better solution. <a href="https://hackernoon.com/google-interview-questions-deconstructed-the-knights-dialer-f780d516f029">The Knight's Dialer</a></p>
