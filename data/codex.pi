@@ -24,6 +24,20 @@ games
     <p>A PuzzleScript game I made at a contract job once. Not very interesting, but linked here for posterity.</p>
     <a href="https://www.puzzlescript.net/play.html?p=cdc7fd7a11ca2f5214ef68af1d5d6c00">Sign Off</a>
 
+alternative-computing
+  NAME: Alternative computing
+  PARENT: programming
+  BODY
+    <figure><img src="../media/img/codex/ebru-kurbak.jpg"><figcaption>[[https://www.stitchingworlds.net/speculation/the-embroidered-computer/ Embroidered computer]]</figcaption></figure>
+
+game-dev-links
+  NAME: Game programming links
+  PARENT: programming
+  BODY
+    <ul>
+      <li>[[https://asawicki.info/Mirror/Car%20Physics%20for%20Games/Car%20Physics%20for%20Games.html Car Physics for Games]]</li>
+    </ul>
+
 low-poly
   NAME: Low poly 3D
   PARENT: programming
@@ -31,7 +45,9 @@ low-poly
     <p>I love flat shaded and dithered early 3D graphics.</p>
     <figure><img src="../media/img/codex/geograph-seal.jpg"><figcaption>Geograph Seal</figcaption></figure>
     <figure><img src="../media/img/codex/zeewolf-2.jpg"><figcaption>Zeewolf 2</figcaption></figure>
-    <figure><img src="../media/img/codex/virus.jpg"><figcaption>Zarch/Virus (and <a href="https://www.sockmonsters.com/TheMakingOfZarch.html">making of</a>)</figcaption></figure>
+    <figure><img src="../media/img/codex/virus.jpg"><figcaption> [[https://www.sockmonsters.com/TheMakingOfZarch.html Zarch/Virus]]</figcaption></figure>
+    <figure><img src="../media/img/codex/superrt.jpg"><figcaption>[[https://www.shironekolabs.com/posts/superrt SuperRT]]</figcaption></figure>
+    <figure><img src="../media/img/codex/midwinter.jpg"><figcaption>[[https://www.youtube.com/watch?v=e30cbYtOfz8&feature=emb_title Midwinter]]</figcaption></figure>
 
 low-level
   NAME: Low level programming
