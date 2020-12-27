@@ -24,6 +24,16 @@ games
     <p>A PuzzleScript game I made at a contract job once. Not very interesting, but linked here for posterity.</p>
     <a href="https://www.puzzlescript.net/play.html?p=cdc7fd7a11ca2f5214ef68af1d5d6c00">Sign Off</a>
 
+links
+  NAMES: Links
+  PARENT: index
+  BODY
+    <p>Links to sites I continually revisit.</p>
+    <ul>
+      <li>[[http://www.autofish.net/index.html autofish - cly5m's site]]</li>
+      <li>[[http://www.androidarts.com Android Arts]]</li>
+    </ul>
+
 alternative-computing
   NAME: Alternative computing
   PARENT: programming
