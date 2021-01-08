@@ -496,3 +496,11 @@ programming-rules-of-thumb
   PARENT: programming
   BODY
     <p>Pay attention to when your solution computes something it doesn’t use. Often you can cut it out and get a better solution. <a href="https://hackernoon.com/google-interview-questions-deconstructed-the-knights-dialer-f780d516f029">The Knight's Dialer</a></p>
+
+spectrum-pi
+  NAME: Spectrum PI
+  PARENT: programming
+  BODY
+    <figure><img src="../media/img/codex/spectrum-pi.png" class="wide"></figure>
+    <p>A variant of the Spectrum ZX system font I created. The original has a light airy feel, but there are a few awkward characters and some that are hard to distinguish (WV). Some of its quirks (blocky X and period) are its best features though - it seems to me that the typeface was designed to leave a pixel border wherever possible... maybe for showing on inverted background.</p>
+    <p>You can download a copy as a [[https://www.parkimminent.com/media/bin/spectrum-pi.chr .chr file]] for [[https://wiki.xxiivv.com/site/nasu.html Nasu]].</p>
