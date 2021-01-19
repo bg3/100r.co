@@ -90,16 +90,8 @@ to-do
       <li>work out how to show tree, or some sort of nav to parent in the pages</li>
       <li>if image is less than 100% width, then change the left margin to 0 instead of -8.</li>
       <li>hide journal entries header if there are no journal entries</li>
-
-    </ul>
-    <h2>Done</h2>
-    <ul>
-      <li>show children on page</li>
-    </ul>
-
-    <h2>Abandoned</h2>
-    <ul>
-      <li>Show partial tree for nav - direct parents, and siblings of parent.</li>
+      <li>take photos of pottery and create a pottery page</li>
+      <li>add travel memories/writing + photos</li>
     </ul>
 
 unwritten
@@ -384,6 +376,8 @@ reading-list
   NAME: Reading list
   PARENT: index
   BODY
+    <h2>2021</h2>
+    <h3>How To Do Nothing, Jenny Odell</h3>
     <h2>2020</h2>
     <h3>Fall of Hyperion, Dan Simmons</h3>
     <p>The stories set up in the first book were so intriguing, it was probably impossible for this book to be anything but a disappointment. I would highly recommend reading Hyperion and then leaving the rest to wonder.</p>
@@ -504,3 +498,38 @@ spectrum-pi
     <figure><img src="../media/img/codex/spectrum-pi.png" class="wide"></figure>
     <p>This character set is based on the ZX Spectrum system font, but extended to cover the [[https://en.wikipedia.org/wiki/Code_page_437 ASCII OEM]] character set. The original Spectrum font has a light airy feel, but there are a few awkward characters and some that are hard to distinguish (e.g. W and V). Some of its quirks (blocky X and period) are what give the typeface its character, so I've left those unchanged.</p>
     <p>You can download a copy as a [[https://parkimminent.com/media/bin/spectrum-pi.chr .chr file]] for [[https://wiki.xxiivv.com/site/nasu.html Nasu]].</p>
+
+travel
+  NAME: Travel
+  PARENT: index
+  BODY
+
+japan
+  NAME: Japan
+  PARENT: travel
+  BODY
+
+germany
+  NAME: Germany
+  PARENT: travel
+  BODY
+
+sweden
+  NAME: Sweden
+  PARENT: travel
+  BODY
+
+italy
+  NAME: Italy
+  PARENT: travel
+  BODY
+
+usa
+  NAME: USA
+  PARENT: travel
+  BODY
+
+india
+  NAME: india
+  PARENT: travel
+  BODY
