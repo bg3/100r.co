@@ -105,20 +105,12 @@ crkbd
   PARENT: index
   BODY
     <p>The Corne keyboard (crkbd) is a 40% mechanical keyboard designed by foostan. I am using the [[qgmlwb]] keyboard layout.
-    <h2>Build notes</h2>
-    <p>Add these - someone on Merveilles asked.</p>
 
 qgmlwb
   NAME: QGMLWB
   PARENT : crkbd
   BODY
-    <b>Describe the layout.</b>
-
-jub-jub
-    NAME: Jub-jub
-    PARENT: qgmlwb
-    BODY
-      <b>Describe the layout.</b>
+    <p>To be updated.</p>
 
 food
   NAME: Food
