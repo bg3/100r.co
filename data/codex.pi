@@ -500,6 +500,14 @@ spectrum-pi
     <p>This character set is based on the ZX Spectrum system font, but extended to cover the [[https://en.wikipedia.org/wiki/Code_page_437 ASCII OEM]] character set. The original Spectrum font has a light airy feel, but there are a few awkward characters and some that are hard to distinguish (e.g. W and V). Some of its quirks (blocky X and period) are what give the typeface its character, so I've left those unchanged.</p>
     <p>You can download a copy as a [[https://parkimminent.com/media/bin/spectrum-pi.chr .chr file]] for [[https://wiki.xxiivv.com/site/nasu.html Nasu]].</p>
 
+nifty
+  NAME: Nifty
+  PARENT: programming
+  BODY
+    <figure><img src="../media/img/codex/nifty.png" class="wide"></figure>
+    <p>Nifty is a tiny paint tool that uses NES/[[https://wiki.xxiivv.com/site/nasu.html Nasu]] .chr files as paint brushes.</p>
+    <p>It is still in development but you can compile the [[https://github.com/bg3/nifty source]] yourself. Requires [[https://www.libsdl.org SDL]].</p>
+
 travel
   NAME: Travel
   PARENT: index
