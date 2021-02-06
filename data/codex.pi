@@ -478,6 +478,27 @@ black-pepper-tofu
     <p>Remove the oil and any sediment from the pan, then put the butter inside and melt it. Add the shallots, chillies, garlic and ginger. Sauté on low to medium heat for about 15 minutes, stirring occasionally, until the ingredients have turned shiny and are totally soft. Next, add the soy sauces and sugar and stir, then add the crushed black pepper.</p>
     <p>Add the tofu to warm it up in the sauce for about a minute. Finally, stir in the spring onions. Serve hot, with steamed rice.</p>
 
+chilli-oil
+  NAME: Chilli oil
+  PARENT: recipes
+  BODY
+    <p>This recipe is from [[https://omnivorescookbook.com/how-to-make-chili-oil/ Omnivore's Cookbook]].<p>
+    <figure><img src="../media/img/codex/chilli-oil.jpg" class="wide"></figure>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>4 tbsp Sichuan chilli flakes</li>
+      <li>2 tbsp five spice</li>
+      <li>3 tbsp toasted white sesame seeds</li>
+      <li>1 tsp ground Sichuan peppercorns</li>
+      <li>1 star anise</li>
+      <li>2 bay leaves</li>
+      <li>1 cup peanut or other vegetable oil</li>
+      <li>thin slice of fresh ginger</li>
+    </ul>
+    <h2>Method</h2>
+    <p>Place all ingredients in a heat proof bowl (not a thin ceramic or glass one). I place the bowl in the sink just in case of an accident. Add all the dry ingredients to the bowl. Heat the cup of oil with the ginger in it, until the ginger fries and turns golden brown - this is about 180-90 degrees.</p>
+    <p>Carefully pour the oil into the bowl over the spices and stir with a metal spoon. Once cool, remove the bay leaves and star anise, then store in a clean class jar or bottle. It will keep a long time in the fridge, or a few weeks at room temperature.</p>
+
 programming-rules-of-thumb
   NAME: Programming rules of thumb
   PARENT: programming
