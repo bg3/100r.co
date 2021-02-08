@@ -236,7 +236,7 @@ boat-names
   PARENT: sailing
   BODY
     <h2>A list of possible names for our boat.</h2>
-    <figure><img src="../media/codex/the-boat.png"><figcaption>The Boat Currently Known as Free Spirit</figcaption></figure>
+    <figure><img src="../media/img/codex/the-boat.png"><figcaption>The Boat Currently Known as Free Spirit</figcaption></figure>
     <ul>
       <li>Ponyo</li>
       <li>Gon</li>
