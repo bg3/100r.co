@@ -637,6 +637,100 @@ usa
   BODY
 
 india
-  NAME: india
+  NAME: India
   PARENT: travel
   BODY
+
+untested-recipes
+  NAME: Untested recipes
+  PARENT: recipes
+  BODY
+    <h2>Roast potatoes</h2>
+    <p>Marcus Wareing</p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>8 large King Edward potatoes, peeled and quartered</li>
+      <li>fine salt</li>
+      <li>100 mL vegetable oil</li>
+      <li>sea salt, to serve</li>
+     </ul>
+     <h2>Method</h2>
+     <p>Put potatoes in saucepan, cover with cold water and add 1.5 tsp of fine salt. Cover and bring to the boil over a high heat, then turn down to medium. Simmer gently for 15 minutes until the potatoes are almost quick - the tip of a small, sharp knife should go in easily without breaking the potato up.</p>
+     <p>Heat oven to 200 C (fan). Drain the potatoes and shake well, leaving them to dry out for a few minutes. Heat the oil in a roasting pan in the oven until very hot.</p>
+     <p>Place potatoes one by one into the oil. Season with a pinch of fine salt and turn until coated, then return the pan to the oven.</p>
+     <p>Roast the potatoes for 30-40 minutes, turning them every 10 minutes and sprinkling them with sea salt about halfway through when they're starting to colour.</p>
+     <p>Remove and drain on kitchen paper.</p>
+
+     <h2>Sweet pepper salad</h2>
+     <p>Marcus Wareing</p>
+     <h2>Ingredients</h2>
+     <ul>
+       <li>100 ml olive oil</li>
+       <li>4 red capsicums</li>
+       <li>4 yellow capsicums</li>
+       <li>1 small bunch of fresh thyme</li>
+       <li>2 red onions, thinly sliced</li>
+       <li>4 garlic cloves, thinly sliced</li>
+       <li>a handful of fresh basil leaves, thinly sliced</li>
+       <li>a handful of fresh marjoram leaves</li>
+     </ul>
+     <h2>Method</h2>
+     <p>Heat oven to 200 C (fan). Put 3 tbsp oil in a heavy roasting pan and place over high heat. When hot add capsicums, some of the thyme sprigs and salt and pepper. Fry for about 10 minutes until the capsicums are tinged brown on all sides. Put the pan in the oven and roast for 10 minutes then place peppers in a large bowl and cover to steam until cool.</p>
+     <p>Peel and cut into 5mm wide strips, removing seeds. Reserve juices.</p>
+     <p>Heat 2 tbsp oil in a frying pan, saute the garlic, onions and remaining thyme for a few minutes. Season with salt then cook until the onions are lightly coloured and softening. Remove thyme. Add peppers and seasoning, cook for 2 mins more. Transfer to a bowl, add juices and cool a little.</p>
+     <p>To serve, stir basil and marjoram through, drizzle with remaining oil and sprinkle with sea salt.</p>
+
+     <h2>Couscous with candied lemon</h2>
+     <p>Marcus Wareing</p>
+     <h2>Ingredients</h2>
+     <ul>
+       <li>200 g fine couscous</li>
+       <li>250 mL stock</li>
+       <li>75 g raisins</li>
+       <li>50-75 g shelled pistachios, toasted and roughly chopped</li>
+       <li>handful of roughly chopped coriander</li>
+       <li>splash of vinaigrette dressing</li>
+     </ul>
+     <h3>For the candied lemon</h3>
+     <ul>
+       <li>150 g caster sugar</li>
+       <li>1 small lemon, very thinly sliced and pips removed</li>
+     </ul>
+     <h2>Method</h2>
+     <ul>
+       <p>Candy the lemon: mix sugar with 150 mL cold water in a heavy saucepan and bring to boil over medium heat. Add lemon slices. Reduce heat to barest simmer and cook for 40-60 mins until the slices are soft and syrupy.</p>
+       <p>Put couscous in large bowl and whisk with the hot stock. Cover tightly and leave for at least 30 minutes, whisking several times. Put raisins in small bowl, cover with warm water and leave to soak.</p>
+       <p>Remove lemon slices, when cool enough to handle chop into small pieces. Drain the raisins and chop roughly.</p>
+       <p>Fluff up the couscous, add about 1/3 of the chopped lemon with the raisins and pistachios, mix well. Can warm at this stage in a bowl over simmering water. Stir through coriander and add more lemon + seasoning if desired.</p>
+     </ul>
+
+     <h2>Chilli beans</h2>
+     <p>Marcus Wareing</p>
+     <h2>Ingredients</h2>
+     <ul>
+       <li>50g red kidney beans, soaked in cold water overnight</li>
+       <li>50g dried green adzuki beans, soaked in cold water for a few hours</li>
+       <li>30g Puy lentils</li>
+       <li>5 tbsp olive oil</li>
+       <li>1 Spanish onion (yellow onion), finely chopped</li>
+       <li>2 red capsicums, finely chopped</li>
+       <li>2 hot red chillies, finely chopped</li>
+       <li>2 tsp chilli powder</li>
+       <li>2 garlic cloves, finely chopped</li>
+       <li>300g ripe tomatoes, peeled, deseeded and chopped (or 400g can of chopped tomatoes)</li>
+       <li>500mL tomato juice</li>
+       <li>leaves of 1 bunch of fresh coriander, roughly chopped</li>
+     </ul>
+     <h2>Method</h2>
+     <p>Blanch (bring to boil over high heat from cold, then drain under cold water immediately) the kidney beans, then return to pain with cold water and bring to a 10 minute rapid boil to make them easier to digest. Half cover the pan, turn down heat and simmer for 30-45 minutes.</p>
+     <p>Blanc adzuki beans and lentils separately, then bring both to the boil separately. Half cover and simmer until tender: 12-15 mins for the beans and 20-25 mins for the lentils. Drain and set aside.</p>
+     <p>Heat olive oil over medium heat and add onion, capsicum, chillies and garlic. Sprinkle in chilli powder and salt, cook for 5 mins to soften vegetables. Add tomatoes, beans, lentils and juice and stir to mix. Cover and simmer for 45-60 mins stirring occasionally.</p>
+     <p>Stir coriander into beans and season.</p>
+
+solar-computer
+  NAME: Solar computer
+  PARENT: programming
+  BODY
+  <blockquote>a processor formed in solid glass, that runs by reflecting and diffracting sunlight. perhaps it is formed by some wonderful undiscovered holographic principle, allowing them to be made from filtered sand on dunes and beaches with limited tools. its display is the same reflected/refracted light that runs through its circuits, lensed and projected onto dark walls and floors. programs and data are etched into pieces of glass or paper that block the light entering the data window.</blockquote>
+  <p>I wrote this in response to a question posted on the Merveilles Mastadon instance, without having any understanding of the principles required. Even giving it a little more thought I can see all sorts of complications: light coherence, loss of intensity, no idea of what scale this would/could be implemented at, how to move beyond combinational logic.</p>
+  <p>But let's collect some notes.</p>
