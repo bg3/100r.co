@@ -253,6 +253,8 @@ def generate_index(subjects, journal_entries, entries):
     # TREE
     f.write('<h2>All</h2>')
     recursive_tree(f, entries, 'index', True)
+    f.write('<a class=\"noborder\" href=\"http://webring.xxiivv.com/\"><img src=\"./media/img/ui/rotonde.svg\" width=\"30\" style=\"margin-top: 6em;\"></a>')
+    f.write('</body></html>')
 
 ### MAIN
 
