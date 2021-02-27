@@ -727,10 +727,15 @@ untested-recipes
      <p>Heat olive oil over medium heat and add onion, capsicum, chillies and garlic. Sprinkle in chilli powder and salt, cook for 5 mins to soften vegetables. Add tomatoes, beans, lentils and juice and stir to mix. Cover and simmer for 45-60 mins stirring occasionally.</p>
      <p>Stir coriander into beans and season.</p>
 
-solar-computer
-  NAME: Solar computer
+amulet-vm
+  NAME: Amulet VM
   PARENT: programming
-  BODY
-  <blockquote>a processor formed in solid glass, that runs by reflecting and diffracting sunlight. perhaps it is formed by some wonderful undiscovered holographic principle, allowing them to be made from filtered sand on dunes and beaches with limited tools. its display is the same reflected/refracted light that runs through its circuits, lensed and projected onto dark walls and floors. programs and data are etched into pieces of glass or paper that block the light entering the data window.</blockquote>
-  <p>I wrote this in response to a question posted on the Merveilles Mastadon instance, without having any understanding of the principles required. Even giving it a little more thought I can see all sorts of complications: light coherence, loss of intensity, no idea of what scale this would/could be implemented at, how to move beyond combinational logic.</p>
-  <p>But let's collect some notes.</p>
+  BODY:
+    <p>After making some very simple 4 and 8-bit processors in Logisim, I was getting frustrated at the difficulty of exploring processor designs - making changes required a lot of tedious rerouting and reconnecting and I wouldn't be sure an idea would even work. @neauoire had much better results starting with a VM, and so I decided to give it a try.</p>
+    <p>The design goal is to come up with a fairly simple, idiosyncratic machine that encourages low res 3D graphics. While a general purpose computer can obviously render 3D graphics, I wouldn't say it's encouraged by the design in the same way the NES encourages sprites and tilemaps. I'd also like to design the system so it's features and limitations lead to a distinctive and recognisable style.</p>
+    <h2>References</h2>
+    <ul>
+      <li>[[https://www.copetti.org/writings/consoles/ Architecture of Consoles, by Rodrigo Copetti]]</li>
+      <li>[[https://en.wikipedia.org/wiki/Original_Chip_Set Wikipedia: Amiga Original Chipset]]</li>
+      <li>[[https://fabiensanglard.net/another_world_polygons/ The Polygons of Another World, by Fabien Sanglard]]</li>
+    </ul>
