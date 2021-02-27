@@ -59,6 +59,7 @@ low-poly
     <figure><img src="../media/img/codex/superrt.jpg"><figcaption>[[https://www.shironekolabs.com/posts/superrt SuperRT]]</figcaption></figure>
     <figure><img src="../media/img/codex/midwinter.jpg"><figcaption>[[https://www.youtube.com/watch?v=e30cbYtOfz8&feature=emb_title Midwinter]]</figcaption></figure>
     <figure><img src="../media/img/codex/sunray-valley.gif"><figcaption>[[https://verysoftwares.itch.io/sunray-valley Sunray Valley]]</figcaption></figure>
+	<figure><img src="../media/img/codex/red-alarm.jpg"><figcaption>Red Alarm</figcaption></figure>
 
 low-level
   NAME: Low level programming
@@ -738,4 +739,5 @@ amulet-vm
       <li>[[https://www.copetti.org/writings/consoles/ Architecture of Consoles, by Rodrigo Copetti]]</li>
       <li>[[https://en.wikipedia.org/wiki/Original_Chip_Set Wikipedia: Amiga Original Chipset]]</li>
       <li>[[https://fabiensanglard.net/another_world_polygons/ The Polygons of Another World, by Fabien Sanglard]]</li>
+	  <li>[[http://hitmen.c02.at/files/docs/psx/gpu.txt PSX GPU info, maintained by doomed/padua]]
     </ul>
