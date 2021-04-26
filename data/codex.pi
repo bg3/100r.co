@@ -6,6 +6,32 @@ index
   PARENT:
   BODY
 
+testing
+    NAME: Test pages
+    PARENT: index
+    BODY
+
+test-page
+  NAME: And there's silver down below where the herring fishes go
+  PARENT: testing
+  BODY
+    <p>It is now 31/2 years since Richard Sharp documented the Austrian Hedgehog openings in Dolchsto? issue 47. Richard introduced it by explaining that because Austria had the worst record for early elimination, his first duty was therefore to defend himself.</p>
+    <p>This began an upsurge of Hedgehog openings and by the time that Richard's excellent book was published, his attitude had hardened so much that he dismissed other Austrian openings as "inadequate". Thus Hedgehog openings began to become the norm, rather than the exception.</p>
+    <p>Originally, I too was convinced that the Hedgehog was the answer to Austria's problems, but over the last two years or so I have become more and more disillusioned and I now consider that except for certain circumstances, it is a bad opening. For the benefit of novices, the Hedgehog is F(Tri)-Ven, A(Vie)-Gal, and A(Bud)-Rum (or more usually A(Bud)-Ser - the Southern hedgehog). The argument for these apparently violent openings is that they keep Russia out of Gal, completely stop Italy in his tracks if he tries for Tri (or spilt his armies if he tries A(Ven)-Tyr, A(Rom)-Ven), and virtually guarantee Austria retention of all home centres and one build in 1901.</p>
+    <p>My view is that if Austria is fairly sure that Italy and Russia will attack in Spring 1901 then the opening is warranted; however it will probably only prolong the agony unless Austria is able to split the alliance somehow. I believe that this is the only time the Hedgehog should be used - a desperate situation requiring drastic measures. Far better for Austria to try to convince them not to attack and make an opening that will result in Gre and Ser being taken in 1901 and this is not as difficult as some advocates of the Hedgehog make it out to be.</p>
+    <p>First of all Russia must be kept out of Gal and I think the best way is to seek German help on this point. Germany should be asked if he will order F(Kie)-Den, and in addition if he will tell Russia that he will be doing so and will stand the Russians out of Swe in the Autumn if a unit is moved to Gal in the spring. Most Germany's will be sympathetic to this approach for various reasons, and the request is not as outlandish as it may first appear. Germany should recognise that a successful Russian attack on Austria is bad news as a strong Russia invariably causes Germany problems in the middle game and this is one way to help to keep him down to a respectable size in 1901/2. Furthermore, although I believe that the fleet opening to Den is usually Germany's best option, it is not always desirable for Germany to stand Russia out of Swe in 1901. In fact, given Russian F(Swe) (and perhaps A(StP) or F(StP)nc English A(Nwy) or F(Nwy) and German F(Den) after the 1901 builds, Germany is in an interesting diplomatic position and will have earned Russian thanks by allowing him into Swe. So the German "threat" to Russia is powerful and yet not really sufficient to anger Russia and will most likely have the effect of pushing Russia into a war with Turkey which is all to Russia's advantage. It is by no means a certainty but the Austrian player should get a pretty clear idea of whether Gal is likely to be invaded by Russia from his diplomacy with both Russia and Germany.</p>
+    <p>The Italian problem is more difficult and much more dangerous. Italy has very little to lose and much to gain from attacking Austria. If he fails he can take Tunis and wait around for other offers which are almost certain to come his way. If he succeeds he is on his way to a good game. Consequently Italy should be encouraged to play a Lepanto opening, or perhaps even the Key Lepanto. (As Austria I don't like the Key Lepanto but it does have the merit that you know Italy will order to Tri so that you can take the appropriate defensive action!) If Italy doesn't bite at this bait, or if you suspect that he will still attack anyway, then Austria has to consider the moves of A(Rom)-Ven with A(Ven) to either Tri or Tyr. If Austria believes Russia will not be going to Gal then he has just one unit with which to defend against Italy and still take Ser and Gre. That unit is A(Vie). It then remains whether to order A(Vie)-Tyr or Tri and I believe the odds are in favour of the Austrian player.</p>
+    <p>Opening statistics show more Italian moves to Tyr than Tri, and some of the moves to Tri are as a pre-arranged Key Lepanto. SO an order to Tyr does look the best bet. Even better if Austria can persuade Germany to order A(Mun)-Tyr in a peace-keeping role, but experience shows that Germany usually has different and more pressing uses for A(Mun). Scrutiny of letters from Russia, Italy and Turkey may give some help in the decision between Tri/Tyr but it should be remembered that if Italy goes into Tri then an Austrian home centre is certain to be lost in 1901. However, if A(Vie) goes to Tri while Italy plays to Tyr and Ven, Italy only has a 50/50 chance of taking an Austrian centre.</p>
+    <p>If played successfully this Balkan Gambit (as Richard Sharp named it) either Tyrolian or Trieste variation, has the distinct advantage of keeping friendly with both Russia and Turkey until at least 1902 - plus the potential gain of two centres. Furthermore, if Italy does indeed play the Lepanto then Austria remains friendly with everyone. If things go wrong then I admit it can be difficult, but the skill comes in the diplomacy and the ability to recognise what is likely to happen.</p>
+    <p>The fallacy of the Hedgehog - as I see it - lies in the fact that Austria makes too many enemies and causes himself to be surrounded. But more important, the lone fleet is bottled up in Tri and not only does this deny Austria further fleet builds, it also denies him the important strategic position of F(Gre). This supply centre I consider to be one of the key centres on the board, bordering the important sea lanes of ION and AEG. I submit that it is Austria's prime duty to get the fleet to Gre, and if necessary to take risks to do so!</p>
+
+starflake
+  NAME: Starflake
+  PARENT: testing
+  BODY
+    <figure><img src="../media/img/codex/1big.jpg"><figcaption>[[https://www.stitchingworlds.net/speculation/the-embroidered-computer/ Embroidered computer]]</figcaption></figure>
+    <p>The Italian problem is more difficult and much more dangerous. Italy has very little to lose and much to gain from attacking Austria. If he fails he can take Tunis and wait around for other offers which are almost certain to come his way. If he succeeds he is on his way to a good game. Consequently Italy should be encouraged to play a Lepanto opening, or perhaps even the Key Lepanto. (As Austria I don't like the Key Lepanto but it does have the merit that you know Italy will order to Tri so that you can take the appropriate defensive action!) If Italy doesn't bite at this bait, or if you suspect that he will still attack anyway, then Austria has to consider the moves of A(Rom)-Ven with A(Ven) to either Tri or Tyr. If Austria believes Russia will not be going to Gal then he has just one unit with which to defend against Italy and still take Ser and Gre. That unit is A(Vie). It then remains whether to order A(Vie)-Tyr or Tri and I believe the odds are in favour of the Austrian player.</p>
+
 programming
   NAME: Programming
   PARENT: index
@@ -741,3 +767,22 @@ amulet-vm
       <li>[[https://fabiensanglard.net/another_world_polygons/ The Polygons of Another World, by Fabien Sanglard]]</li>
 	  <li>[[http://hitmen.c02.at/files/docs/psx/gpu.txt PSX GPU info, maintained by doomed/padua]]
     </ul>
+
+tomato-relish
+  NAME: Tomato relish
+  PARENT: recipes
+  BODY
+  	<figure><img src="../media/img/codex/tomato-relish.png" class="wide"><figcaption>Mum's original recipe</figcaption></figure>
+	<h2>Ingredients</h2>
+	<ul>
+		<li>5 lb tomatoes</li>
+		<li>2 lb onions</li>
+		<li>1 lb sugar</li>
+		<li>1 tbsp curry powder</li>
+		<li>1 1/2 tbsp mustard powder</li>
+		<li>2 tbsp flour</li>
+		<li>2-3 tbsp salt</li>
+		<li>brown vinegar</li>
+	</ul>
+	<h2>Method</h2>
+	<p>Chop onions finely. Put tomatoes, onions + sugar in a preserving pan, cover with vinegar. Boil 3/4 hour then mix powders + flour together with a little water and add to pan and boil a few minutes longer.</p>
