@@ -8,7 +8,7 @@ m4_define(.:_h1:.,.:<h1>$1</h1>:.)m4_dnl
 m4_define(.:_h2:.,.:<h2>$1</h2>:.)m4_dnl
 m4_define(.:_link:.,.:<a href="$2">$1</a>:.)m4_dnl
 m4_define(.:_idx_link:.,.:<a href="$2.html">$1</a>:.)m4_dnl
-m4_define(.:_ul_link:.,.:<li><a href="$2.html">$1</a></li>:.)m4_dnl
+m4_define(.:_ul_link:.,.:<li><a href="site/$2.html">$1</a></li>:.)m4_dnl
 m4_define(.:_header:., .:<!DOCTYPE html>
 <html lang='en'>
 <head>
