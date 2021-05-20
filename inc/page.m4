@@ -22,7 +22,7 @@ m4_define(.:_header:., .:<!DOCTYPE html>
 </head>
 <body>
 <header>
-	<a href='index.html'><img src="/media/img/ui/logo.svg" alt="Park Imminent" height="48px"></a>
+	<a href='/index.html'><img src="/media/img/ui/logo.svg" alt="Park Imminent" height="48px"></a>
 </header>
 <nav></nav>
 <main>
