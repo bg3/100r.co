@@ -1,6 +1,6 @@
 _header(.:Black pepper tofu:.)m4_dnl
 <p>The _link(.:original recipe:.,.:https://ottolenghi.co.uk/recipes/black-pepper-tofu-a:.) is from Yotam Ottolenghi's Plenty. It is <em>very</em> peppery.<p>
-<figure><img src="../media/img/codex/3.jpg" class="wide"><figcaption>Black pepper tofu, Melbourne 2019<p>Grind the pepper to a size you wouldn't mind biting into.</p></figcaption></figure>
+<figure><img src="../media/img/codex/3.jpg" class="wide"><figcaption>Grind the pepper to a size you wouldn't mind biting into.</figcaption></figure>
 <h2>Ingredients</h2>
 <ul>
 	<li>800g firm tofu</li>
