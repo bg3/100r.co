@@ -1,0 +1,110 @@
+body {
+	text-align: left;
+	margin: 5.7em 6em 6em 10em;
+	max-width: 36em;
+	font-size: 1em;
+	font-family: Courier, monospace;
+	color: #000;
+	background-color: #fffff;
+}
+
+.col3 {
+	-webkit-column-count: 3;
+	-webkit-column-width: 10em;
+  	-moz-column-count: 3;
+	-moz-column-width: 10em;
+	column-count: 3;
+	column-width: 10em;
+	/*column-rule: dotted 1px #333;*/
+	list-style-type: none;
+	padding-left: 0;
+}
+
+header {
+	float:left;
+	position: fixed;
+	top: 6em;
+	left: 3em;
+}
+
+ul.col3 li {
+	margin-bottom: 0.5em;
+	display: inline-block;
+	width: 100%;
+}
+
+p {
+	line-height: 1.5;
+}
+
+h1 {
+	font-family: Courier, monospace;
+	font-weight: bold;
+	font-size: 1em;
+	width: 66%;
+}
+
+h2 {
+	font-family: Courier, monospace;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1.8em 0 0.4em 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+h3 {
+	padding: 0;
+	font-size: 0.9em;
+}
+
+figure {
+	padding: 0;
+	margin: 1.5em 0 1.5em 0;
+}
+
+li {
+	line-height: 1.5em
+}
+
+img {
+	width: 100%;
+}
+
+figure img {
+	width: 100%;
+}
+
+figure figcaption {
+	padding-top: 0.5em;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+a:link {
+	color: rgb(0,114,178);
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(0,114,178);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(213,94,0);
+}
+
+a:active {
+	color: rgb(204,121,167);
+}
+
+table {
+	border-collapse: collapse;
+
+}
+
+table, th, td {
+	 border: 1px solid #ccc;
+	 padding: 0.25em 1em;
+}
