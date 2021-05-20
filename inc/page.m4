@@ -26,8 +26,8 @@ m4_define(.:_header:., .:<!DOCTYPE html>
 </header>
 <nav></nav>
 <main>
-m4_ifdef(.:is_indexk:.,,_h1($1)):.)m4_dnl
+m4_ifdef(.:is_index:.,,_h1($1)):.)m4_dnl
 m4_define(.:_footer:.,.:</main>
-<a href="http://webring.xxiivv.com/"><img src="/media/img/ui/rotonde.svg" width="30 !important;" style="margin-top: 6em;"></a>
+m4_ifdef(.:is_index:.,.:<a href="http://webring.xxiivv.com/"><img src="/media/img/ui/rotonde.svg" style="margin-top: 6em; width:30 !important;"></a>:.)m4_dnl
 </body>
 </html>:.)m4_dnl
