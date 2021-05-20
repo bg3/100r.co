@@ -8,7 +8,7 @@ _header(.:Spanakopita with warrigal greens:.)m4_dnl
 	<li>1-2 cloves garlic</li>
 	<li>Olive oil</li>
 	<li>4-8 spring onions, chopped</li>
-	<li>[[https://en.wikipedia.org/wiki/Tetragonia_tetragonoides Warrigal greens]], about enough leaves to fill a large saucepan</li>
+	<li>_link(.:Warrigal greens:.,.:https://en.wikipedia.org/wiki/Tetragonia_tetragonoides:.), about enough leaves to fill a large saucepan</li>
 	<li>Handful of dill</li>
 	<li>Handful of parsley or mint</li>
 	<li>Filo pastry</li>

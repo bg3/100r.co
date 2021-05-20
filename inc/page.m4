@@ -18,7 +18,7 @@ m4_define(.:_header:., .:<!DOCTYPE html>
 	<link rel='alternate' type='application/rss+xml' title='RSS Feed' href='../links/rss.xml' />
 	<link rel='stylesheet' type='text/css' href='/css/style.css'>
 	<link rel='shortcut icon' type='image/png' href='/media/services/icon.png'>
-	<title> Park Imminent &mdash; $1</title>
+	<title>Park Imminent &mdash; $1</title>
 </head>
 <body>
 <header>
