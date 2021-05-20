@@ -28,6 +28,6 @@ m4_define(.:_header:., .:<!DOCTYPE html>
 <main>
 m4_ifdef(.:is_indexk:.,,_h1($1)):.)m4_dnl
 m4_define(.:_footer:.,.:</main>
-<a href="http://webring.xxiivv.com/"><img src="/media/img/ui/rotonde.svg" width="30" style="margin-top: 6em;"></a>
+<a href="http://webring.xxiivv.com/"><img src="/media/img/ui/rotonde.svg" width="30 !important;" style="margin-top: 6em;"></a>
 </body>
 </html>:.)m4_dnl
