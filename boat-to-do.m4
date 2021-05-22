@@ -77,4 +77,4 @@ _header(.:Boat to do list:.)m4_dnl
 	<li>Replace prop anode (April)</li>
 	<li>Defoul, paint</li>
 </ul>
-_footer(.:sailing:.)dnl
+_footer(.:sailing:.)m4_dnl
