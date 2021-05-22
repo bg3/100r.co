@@ -1,6 +1,6 @@
 _header(.:Swede gnocchi with cavolo nero:.)m4_dnl
 <p>I've had a few butter and sage gnocchi dishes, but cavolo nero is often for sale at our local market. It might be better to remove the stems entirely and cut the leaves into smaller pieces, but I didn't want to waste any. Both ways will be fine.</p>
-<figure><img src="../media/img/codex/swede-gnocchi.jpg" class="wide"><figcaption>You can make this with sage leaves instead of the cavolo nero</figcaption></figure>
+<figure><img src="../media/img/codex/swede-gnocchi-sage.jpg" class="wide"><figcaption>You can make this with sage leaves instead of the cavolo nero</figcaption></figure>
 <figure><img src="../media/img/codex/swede-gnocchi-cavolo-nero.jpg" class="wide"></figure>
 <h2>Ingredients</h2>
 <ul>
