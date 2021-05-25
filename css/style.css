@@ -72,7 +72,12 @@ li {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
+}
+
+img.logo {
+	width: 48px;
+	height: 48px;
 }
 
 figure img {
