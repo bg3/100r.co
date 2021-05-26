@@ -80,6 +80,10 @@ img.logo {
 	height: 48px;
 }
 
+pre {
+	overflow: auto;
+}
+
 figure img {
 	width: 100%;
 }

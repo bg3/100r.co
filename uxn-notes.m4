@@ -1,8 +1,5 @@
 _header(.:Uxn assembly notes:.)m4_dnl
 <p>Loose notes as I figure out how to use Uxn assembly.</p>
-<h2>DEO</h2>
-<p>[b] a</p>
-<p>b is the value to be written to the device, a is the device.
 <h2>neralie.usm</h2>
 <p>I reviewed the source to some of the programs that accompany the C Uxn emulator to learn how they work.</p>
 <pre>(
@@ -36,6 +33,6 @@ _header(.:Uxn assembly notes:.)m4_dnl
 @lines [ &x1 $2 &x2 $2 &y1 $2 &y2 $2 &addr $1 ]
 @neralie [ &n0123 $2 &n4 $1 &n5 $1 &n6 $1 &n7 $1 &n8 $1 &n9 $1 &color $1 &x $2 &y $2 &w $2 &h $2 ]
 @mul [ &ahi $1 &alo $1 &bhi $1 &blo $1 ]</pre>
-
+<p>These are memory addresses for variables, arranged into labels and sub-labels. The $x values indicate the padding before the address corresponding to the next label. So, @fps (and @fps/&current) are at memory address 0000. &current is intended to take up 1 byte, so there is a padding of $1 afterwards, then &next is at address 0001, and so on.</p>
 
 _footer(.:recipes:.)m4_dnl
