@@ -6,6 +6,7 @@ _h2(.:Recipes:.)
 	_ul_link(.:Chilli oil:., .:chilli-oil:.)
 	_ul_link(.:Corn congee:., .:corn-congee:.)
 	_ul_link(.:Fennel rice:., .:fennel-rice:.)
+	_ul_link(.:Fermented tomato soup:., .:fermented-tomato-soup:.)
 	_ul_link(.:Lazy bread:., .:lazy-bread:.)
 	_ul_link(.:Lemon cake:., .:lemon-cake:.)
 	_ul_link(.:Oatmeal biscuits:., .:oatmeal-biscuits:.)
@@ -28,6 +29,7 @@ _h2(.:Computers:.)m4_dnl
 	_ul_link(.:Low poly:., .:low-poly:.)
 	_ul_link(.:Nifty:., .:nifty:.)
 	_ul_link(.:Spectrum PI:., .:spectrum-pi:.)
+	_ul_link(.:Uxn assembly notes:., .:uxn-notes:.)
 </ul>
 
 _h2(.:Language:.)m4_dnl
