@@ -82,6 +82,8 @@ img.logo {
 
 pre {
 	overflow: auto;
+	padding: 1em;
+	background-color: #e3dfa5;
 }
 
 figure img {
@@ -117,7 +119,8 @@ a:active {
 
 table {
 	border-collapse: collapse;
-
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 table, th, td {
