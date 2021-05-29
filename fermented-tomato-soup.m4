@@ -1,5 +1,5 @@
 _header(.:Fermented tomato soup:.)m4_dnl
-<figure><img src="../media/img/codex/fermented-tomato-soup.jpg" class="wide"><figcaption>This bowl is one of my pottery failures - you can't see it in the photo but it's has a certain wobbly character. The glaze came out beautifully though.</figcaption></figure>
+<figure><img src="../media/img/codex/fermented-tomato-soup.jpg" class="wide"><figcaption>Small celadon glazed bowl</figcaption></figure>
 <h2>Ingredients</h2>
 <ul>
 	<li>5-6 large tomatoes</li>

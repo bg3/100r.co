@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-	<meta charset='utf-8'>
-	<meta name='description' content='TODO'/>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
-	<link rel='alternate' type='application/rss+xml' title='RSS Feed' href='../links/rss.xml' />
-	<link rel='stylesheet' type='text/css' href='/css/style.css'>
-	<link rel='shortcut icon' type='image/png' href='/media/services/icon.png'>
-	<title>Park Imminent &mdash; Lazy bread</title>
-</head>
-<body>
-<header>
-	<a href="/index.html"><img src="/media/img/ui/logo.svg" class="logo" alt="Park Imminent"></a>
-</header>
-<nav></nav>
-<main>
-<h1>Lazy bread</h1><figure><img src="../media/img/codex/bread.jpg" class="wide"></figure>
+_header(.:Easy bread:.)m4_dnl
+<figure><img src="../media/img/codex/bread.jpg" class="wide"></figure>
 <h2>Ingredients</h2>
 <ul>
 	<li>3 cups flour</li>
@@ -31,6 +15,4 @@
 <p>When oven is preheated, remove Dutch oven and place dough inside. You can place the boule on a piece of baking paper or flour the bottom of the Dutch oven.</p>
 <p>Return the Dutch oven to the oven, with the lid on and bake for 30 mins. Remove the Dutch oven lid and bake for a further 15-20 minutes</p>
 <p>Remove the bread from the oven, place on a rack until completely cooled.</p>
-</main>
-</body>
-</html>
+_footer(.:recipes:.)m4_dnl
