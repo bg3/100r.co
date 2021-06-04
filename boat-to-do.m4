@@ -77,4 +77,14 @@ _header(.:Boat to do list:.)m4_dnl
 	<li>Replace prop anode (April)</li>
 	<li>Defoul, paint</li>
 </ul>
+
+<h2>Refs</h2>
+<ul>
+	<li>_link(.:Marine How-to:., .:https://marinehowto.com/bed-it-tape/:.)</li>
+	<li>_link(.:Ocean Navigator: Controlling condensation below decks:., .:https://www.oceannavigator.com/controlling-condensation-belowdecks/:.)</li>
+	<li>_link(.:Cockpit sole table:., .:https://www.pbo.co.uk/practical-projects/lift-cockpit-sole-table-50146:.)</li>
+	<li>_link(.:Building boat bimini:., .:https://wayfindersnow.com/2019/08/28/tips-for-building-your-own-boat-bimini/:.)</li>
+	<li>_link(.:Cockpit canvas redesign:., .:http://commutercruiser.com/10-ideas-to-consider-when-redesigning-your-cockpit-canvas/:.)</li>
+	<li>_link(.:Marine How-to:., .:https://marinehowto.com/bed-it-tape/:.)</li>
+</ul>
 _footer(.:sailing:.)m4_dnl
