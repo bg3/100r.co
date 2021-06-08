@@ -15,13 +15,13 @@ _header(.:Uxn assembly notes:.)m4_dnl
 <tr><td>DUP</td><td>a</td><td>aa</td><td>Duplicate</td></tr>
 <tr><td>SWP</td><td>a b</td><td>b a</td><td>Swap</td></tr>
 <tr><td>OVR</td><td>a b</td><td>a b a</td><td>Over</td></tr>
-<tr><td>ROT</td><td>a b c</td><td>b c a</td><td>Rotate. Rotates left.</td></tr>
+<tr><td>ROT</td><td>a b c</td><td>b c a</td><td>Rotate. Rotates left. This is also handy when you want to swap a BYTE with a SHORT, e.g. a bc > bc a. Guess ROT ROT would be necessary to switch a SHORT with a BYE e.g. ab c > b c a > c ab</td></tr>
 <tr><th colspan="4">Memory</th></tr>
 <tr><td>LDZ</td><td>a</td><td>val</td><td>LoadZeropage. Loads value from address in the 0x0000 to 0x00FF range?</td></tr>
 <tr><td>STZ</td><td>val a</td><td></td><td>STore Zero page. Stores to addresses in the 0x0000 to 0x00FF range?</td></tr>
 <tr><td>LDR</td><td>a</td><td>val</td><td>LoaD Relative. Relative addresses are at labels defined in the program, not a specific memory address?</td></tr>
 <tr><td>STR</td><td>val a</td><td>AFT</td><td>STore Relative. Can be a position +0x7f -0x80 forward or back from the current position.</td></tr>
-<tr><td>LDA</td><td>a*</td><td>val</td><td>LoaD Absolute. This will always work (as opposed to relative and zero page) but takes more space to specify the full address.</td></tr>
+<tr><td>LDA</td><td>a*</td><td>val</td><td>LoaD Absolute. This will always work (as opposed to relative and zero page) but takes more space to specify the full address. NB: Actually, it doesn't seem to load values that are in the 0100 area correctly? I had issues using it but they disappeared when I changed calls to LDZ.</td></tr>
 <tr><td>STA</td><td>val a*</td><td></td><td>STore Absolute.</td></tr>
 <tr><td>DEI</td><td>a</td><td>val</td><td>DEvice In. Reads from the specified device port.</td></tr>
 <tr><td>DEO</td><td>val a</td><td></td><td>DEvice Out. Writes value to the specified device port.</td></tr>
@@ -45,6 +45,9 @@ _header(.:Uxn assembly notes:.)m4_dnl
 <tr><td>SFT</td><td>a b</td><td>result</td><td>ShiFT. Bitwise shift of a, by b. b is in the format #LR, where L is the number of places to shift left, R is the amount to shift right. e.g. #08 #02 SFT would shift 0x08 2 places right, resulting in 0x02. #08 #20 SFT would shift 2 places left, resulting in 0x20. I assume shifting by #22 would have no effect.</td></tr>
 </table>
 
+<h2>Comments</h2>
+<p>Anything in parentheses is a comment, and is ignored by the assembler. There must be white space between the comment parentheses and their content, otherwise the <code>(example</code> woudl be regarded as a non-existent macro.</p>
+
 
 <h2>neralie.usm</h2>
 <p>I reviewed the source to some of the programs that accompany the C Uxn emulator to learn how they work.</p>
@@ -54,7 +57,7 @@ _header(.:Uxn assembly notes:.)m4_dnl
 	TODO
 		- use splash screen when FPS calculation is unstable
 )</pre>
-<p>Anything in parentheses is a comment, and is ignored by the assembler.</p>
+<p>Anything in parentheses is a comment, and is ignored by the assembler. There must be white space between the comment parentheses and their content.</p>
 <pre>%h { .DateTime/hour   DEI }
 %m { .DateTime/minute DEI }
 %s { .DateTime/second DEI }
