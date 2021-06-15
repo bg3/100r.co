@@ -1,7 +1,6 @@
 _header(.:Uxn assembly notes:.)m4_dnl
 <p>Loose notes as I figure out how to use Uxn assembly.</p>
 <figure><img src="../media/img/codex/uxn-jumble.png" class="wide"><figcaption>Transferring tile map data to the screen</figcaption></figure>
-<figure><img src="../media/img/codex/bread.jpg" class="wide"></figure>
 <ul>
 	<li>_link(.:uxn - XXIIVV:., .:https://wiki.xxiivv.com/site/uxn.html:.)</li>
 	<li>_link(.:nihilazo's uxn notes:., .:https://tilde.town/~nihilazo/uxn.html:.)</li>
