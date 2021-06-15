@@ -1,5 +1,5 @@
 _header(.:Corn congee:.)m4_dnl
-<p>If you've had a bad experience with congee or the idea of savoury rice porridge doesn't sound appealing, I implore you to reconsider - it's such a satisfying dish. This recipe is from <i>Smith & Deli-cious</i> by Mo Wyse and Shannon Martinez.
+<p>This recipe is from <i>Smith & Deli-cious</i> by Mo Wyse and Shannon Martinez.
 <h2>Ingredients</h2>
 <ul>
 	<li>2 tbsp vegetable oil</li>

@@ -1,5 +1,6 @@
 _header(.:Uxn assembly notes:.)m4_dnl
 <p>Loose notes as I figure out how to use Uxn assembly.</p>
+<figure><img src="../media/img/codex/uxn-jumble.png" class="wide"><figcaption>Transferring tile map data to the screen</figcaption></figure>
 <ul>
 	<li>_link(.:uxn - XXIIVV:., .:https://wiki.xxiivv.com/site/uxn.html:.)</li>
 	<li>_link(.:nihilazo's uxn notes:., .:https://tilde.town/~nihilazo/uxn.html:.)</li>
@@ -45,9 +46,11 @@ _header(.:Uxn assembly notes:.)m4_dnl
 <tr><td>SFT</td><td>a b</td><td>result</td><td>ShiFT. Bitwise shift of a, by b. b is in the format #LR, where L is the number of places to shift left, R is the amount to shift right. e.g. #08 #02 SFT would shift 0x08 2 places right, resulting in 0x02. #08 #20 SFT would shift 2 places left, resulting in 0x20. I assume shifting by #22 would have no effect.</td></tr>
 </table>
 
-<h2>Comments</h2>
+<h2>Unsorted tips</h2>
 <p>Anything in parentheses is a comment, and is ignored by the assembler. There must be white space between the comment parentheses and their content, otherwise the <code>(example</code> woudl be regarded as a non-existent macro.</p>
-
+<p>If you are unexpectedly under/overflowing the stack, check you haven't missed the spaces in a comment somewhere.</p>
+<p>You can do <code>#1234 #01 SUB<code> if you're sure that the first byte won't go below zero. Same with ADD.</p>
+<p><code>#0a .Console/char DEO</code> will give a new line. #20 will give a space and #21 an exclamation mark. Useful for debugging.</p>
 
 <h2>neralie.usm</h2>
 <p>I reviewed the source to some of the programs that accompany the C Uxn emulator to learn how they work.</p>
@@ -104,7 +107,7 @@ _header(.:Uxn assembly notes:.)m4_dnl
 	DUP2 .Screen/width DEI2 SWP2 SUB2 #0001 SUB2 .lines/x2 STZ2
 	     .Screen/height DEI2 SWP2 SUB2 .lines/y2 STZ2</pre>
 
-<p>Store #000c at <b>lines/x1</b> and <b>lines/y1</p>, then (Screen/width - 12 - 1) and (Screen/height - 12) into x2 and y2. This looks like it's setting up a padding of 12 pixels around the screen.</p>
+<p>Store #000c at <b>lines/x1</b> and <b>lines/y1</b>, then (Screen/width - 12 - 1) and (Screen/height - 12) into x2 and y2. This looks like it's setting up a padding of 12 pixels around the screen.</p>
 
 <pre>	#02 .neralie/color STZ
 	.lines/x1 LDZ2 .lines/x2 LDZ2
