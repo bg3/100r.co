@@ -2,6 +2,7 @@ _header(.:Reading list:.)m4_dnl
 <p>Books that I chose not to finish are struck out.</p>
 <h2>2021</h2>
 <ul>
+	<li>Don't Sleep, There are Snakes, Daniel Everett</li>
 	<li>Metro 2033, Dmitry Glukhovsky</li>
 	<li><strike>Stars in My Pocket Like Grains of Sand, Samuel R. Delany</strike></li>
 	<li>The Unreal & The Real (Vol. 1), Ursula Le Guin</li>

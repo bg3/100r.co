@@ -1,4 +1,7 @@
-_header(.:Japanese notes (full):.)m4_dnl
+_header(.:Japanese grammar notes (full):.)m4_dnl
+
+_link(.:Takoboto grammar reference:.,.:https://takoboto.jp/bunpo/:.)
+_link(.:Maggie Sensei:.,.:https://maggiesensei.com/:.)
 <h2>の substituting for a noun</h2>
 <p>A noun can be left out of a sentence where it can be implied.</p>
 <table>
@@ -17,6 +20,20 @@ _header(.:Japanese notes (full):.)m4_dnl
 </table>
 
 <h2>〜も and 〜か</h2>
-<p>何も means nothing (or anything), 何か means something. 何も　食べません = "I'm not going to eat anything."</p>
-<p>
+<p>何も（なにも） means nothing (or anything), 何か（なにか） means something (or anything). 何も　食べません = "I'm not going to eat anything."</p>
+<p>も can be used this way with all interrogatives. e.g. どこも/どこへも　行きません = "not going anywhere", だれも　話しません = "nobody speaks".</p>
+
+<h2>な　and い　adjectives</h2>
+<h3>Inflections</h3>
+<p>な-adjectives are treated the same as nouns.</p>
+<table>
+<tr><th></th><th>な-adj.</th><th>い-adj.</th></tr>
+<tr><td>Non-past affirmative</td><td>しずかです</td><td>たかいです</td></tr>
+<tr><td>Non-past negative</td><td>しずかじゃ　ありません/じゃ　ない</td><td>たかくないです</td></tr>
+</table>
+
+
+<h2>Verb forms</h2>
+
+
 _footer(.:language:.)m4_dnl
