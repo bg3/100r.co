@@ -1,4 +1,5 @@
 _header(.:Black-eyed bean curry:.)m4_dnl
+<p>My friend Ryan described this as a revelation, "it's as though I've never eaten beans before".</p>
 <p>From _link(.:Natlicious food:., .:https://natliciousfood.com/recipes/black-eyed-peas-in-creamy-coconut-sauce/:.).</p>
 <h2>Ingredients</h2>
 <ul>
