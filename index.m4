@@ -3,6 +3,7 @@ _header(.:Park Imminent:.)m4_dnl
 _h2(.:Recipes:.)
 <ul class="col3">
 	_ul_link(.:Black pepper tofu:., .:black-pepper-tofu:.)
+	_ul_link(.:Black-eyed bean curry:., .:black-eyed-bean-curry:.)
 	_ul_link(.:Chilli oil:., .:chilli-oil:.)
 	_ul_link(.:Corn congee:., .:corn-congee:.)
 	_ul_link(.:Easy bread:., .:easy-bread:.)
